@@ -1,1 +1,0 @@
-~/iCloud/System/Multiplattform/Dotfiles/bash_profile ~/.bash_profile
