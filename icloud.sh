@@ -31,3 +31,6 @@ ln -s ~/iCloud/Segeln ~/Segeln
 
 # path for system relevant stuff
 ln -s ~/iCloud/System ~/System
+
+# not a iCloud path but also very useful to have the desktop linked
+ln -s ~/Desktop ~/Schreibtisch
