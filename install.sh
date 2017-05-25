@@ -20,3 +20,21 @@ brew update
 # upgrade brew
 brew upgrade
 
+# install macvim
+brew install macvim
+brew linkapps macvim
+
+# install tmux
+brew install tmux
+
+# install htop
+brew install htop
+
+# install speedtest via cli
+brew install speedtest_cli
+
+# install tree
+brew install tree
+
+# run brew doctor once again after installation
+brew doctor
