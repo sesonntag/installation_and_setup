@@ -4,7 +4,7 @@
 # Title: icloud.sh
 # Description: Symlink iCloud into home dir
 # Author: Sebastian Sonntag
-# Date: 2017-05-13
+# Date: 2017-06-10
 # License:
 #**********************************************************************************************
 
@@ -13,6 +13,12 @@ ln -s ~/Library/Mobile\ Documents/com~apple~CloudDocs ~/iCloud
 
 # path for temporarily content
 ln -s ~/iCloud/Aktuelles ~/Aktuelles
+
+# path for work realted documents (non company of course)
+ln -s ~/iCloud/Arbeit ~/Arbeit
+
+# path for car related files
+ln -s ~/iCloud/Auto ~/Auto
 
 # path to wallpapers
 ln -s ~/iCloud/Bilder/Wallpaper ~/Pictures/Wallpaper
