@@ -36,5 +36,9 @@ brew install speedtest_cli
 # install tree
 brew install tree
 
+# install zsh and oh-my-zsh
+brew install zsh zsh-completions
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
 # run brew doctor once again after installation
 brew doctor
