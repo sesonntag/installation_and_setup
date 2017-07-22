@@ -4,12 +4,13 @@
 # Title: install.sh
 # Description: installs home brew and and packages accordingly
 # Author: Sebastian Sonntag
-# Date: 2017-07-07
+# Date: 2017-07-22
 # License:
 #**********************************************************************************************
 
 # download and install home brew at first
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+cd
 
 # run brew doctor to check whether issues occur
 brew doctor
@@ -38,7 +39,13 @@ brew install tree
 
 # install zsh and oh-my-zsh
 brew install zsh zsh-completions
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+cd && sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+# install vundle for vim and create vim dirs
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+mkdir ~/.vim/swp
+mkdir ~/.vim/backup
+mkdir ~/.vim/undo
 
 
 
