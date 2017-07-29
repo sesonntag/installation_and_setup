@@ -25,8 +25,9 @@ brew tap caskroom/cask
 
 
 # install cli application first
-# install tmux
+# install tmux and tool to enable access to system clipboard
 brew install tmux
+brew install reattach-to-user-namespace
 
 # install htop
 brew install htop
