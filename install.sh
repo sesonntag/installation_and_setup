@@ -4,7 +4,7 @@
 # Title: install.sh
 # Description: installs home brew and and packages accordingly
 # Author: Sebastian Sonntag
-# Date: 2017-07-22
+# Date: 2017-08-04
 # License:
 #**********************************************************************************************
 
@@ -37,6 +37,9 @@ brew install speedtest_cli
 
 # install tree
 brew install tree
+
+# install bash-snippets for stock, weather, calc, ... info
+brew install bash-snippets
 
 # install zsh and oh-my-zsh
 brew install zsh zsh-completions
