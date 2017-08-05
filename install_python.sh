@@ -4,7 +4,7 @@
 # Title: install.sh
 # Description: installs python packages via pip
 # Author: Sebastian Sonntag
-# Date: 2017-07-07
+# Date: 2017-08-05
 # License:
 #**********************************************************************************************
 
@@ -22,3 +22,9 @@ pip install scipy
 
 # install libraries for plotting
 pip install matplotlib
+
+# install virtualenv for administration of multiple environments
+pip install virtualenv
+
+# install pytest as default testing framework
+pip install pytest
