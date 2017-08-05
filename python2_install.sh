@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 #**********************************************************************************************
-# Title: install.sh
+# Title: python2_install.sh
 # Description: installs python packages via pip
 # Author: Sebastian Sonntag
 # Date: 2017-08-05
