@@ -4,7 +4,7 @@
 # Title: install.sh
 # Description: installs home brew and and packages accordingly
 # Author: Sebastian Sonntag
-# Date: 2017-08-04
+# Date: 2017-08-18
 # License:
 #**********************************************************************************************
 
@@ -40,6 +40,9 @@ brew install tree
 
 # install bash-snippets for stock, weather, calc, ... info
 brew install bash-snippets
+
+# install cli search engine googler
+brew install googler
 
 # install zsh and oh-my-zsh
 brew install zsh zsh-completions
