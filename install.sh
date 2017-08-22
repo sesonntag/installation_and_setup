@@ -44,6 +44,9 @@ brew install bash-snippets
 # install cli search engine googler
 brew install googler
 
+# install the silver searcher
+brew install the_silver_searcher
+
 # install zsh and oh-my-zsh
 brew install zsh zsh-completions
 cd && sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
