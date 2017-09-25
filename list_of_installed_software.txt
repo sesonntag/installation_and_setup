@@ -1,0 +1,62 @@
+Android File Transfer.app
+App Store.app
+Automator.app
+BBEdit.app
+Caffeine.app
+Calculator.app
+Calendar.app
+Chess.app
+Cisco
+ClipGrab.app
+Contacts.app
+DVD Player.app
+Dashboard.app
+Debit & Credit.app
+Dictionary.app
+Dropbox.app
+Duplicates Cleaner.app
+FaceTime.app
+Font Book.app
+FreeCAD.app
+Gimp.app
+Google Chrome.app
+Image Capture.app
+JetDriveToolbox.app
+Keka.app
+Launchpad.app
+MacVim.app
+Mail.app
+Maps.app
+Messages.app
+Microsoft Excel.app
+Microsoft OneNote.app
+Microsoft Outlook.app
+Microsoft PowerPoint.app
+Microsoft Word.app
+Mission Control.app
+Notes.app
+Photo Booth.app
+Photos.app
+Preview.app
+PyCharm CE.app
+QuickTime Player.app
+Reminders.app
+Safari.app
+Siri.app
+Skype.app
+SourceTree.app
+Stickies.app
+System Preferences.app
+TeX
+TeamViewer.app
+Texpad.app
+TextEdit.app
+Time Machine.app
+Twitter.app
+Utilities
+VLC.app
+WhatsApp.app
+Xcode.app
+iBooks.app
+iMovie.app
+iTunes.app
