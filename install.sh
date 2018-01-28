@@ -51,6 +51,9 @@ brew install the_silver_searcher
 brew install zsh zsh-completions
 cd && sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
+# install cli calculator
+brew install calc
+
 # install vundle for vim and create vim dirs
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 mkdir ~/.vim/swp
