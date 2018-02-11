@@ -22,8 +22,6 @@ brew upgrade
 # install cask to get acces to gui applications
 brew tap caskroom/cask
 
-
-
 # install cli application first
 # install tmux and tool to enable access to system clipboard
 brew install tmux
@@ -43,9 +41,6 @@ brew install bash-snippets
 
 # install cli search engine googler
 brew install googler
-
-# install the silver searcher
-brew install the_silver_searcher
 
 # install zsh and oh-my-zsh
 brew install zsh zsh-completions
