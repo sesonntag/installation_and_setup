@@ -1,12 +1,4 @@
 #!/bin/bash
-#
-#**********************************************************************************************
-# Title: install.sh
-# Description: installs home brew and and packages accordingly
-# Author: Sebastian Sonntag
-# Date: 2017-08-18
-# License:
-#**********************************************************************************************
 
 # download and install home brew at first
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -31,16 +23,13 @@ brew install reattach-to-user-namespace
 brew install htop
 
 # install speedtest via cli
-brew install speedtest_cli
+# brew install speedtest_cli # python package?!
 
 # install tree
 brew install tree
 
 # install bash-snippets for stock, weather, calc, ... info
 brew install bash-snippets
-
-# install cli search engine googler
-brew install googler
 
 # install zsh and oh-my-zsh
 brew install zsh zsh-completions
@@ -70,7 +59,7 @@ brew cask install mactex
 brew cask install macvim
 brew cask install bbedit
 brew cask install sourcetree
-brew cask install pycharm-ce
+#brew cask install pycharm-ce
 # Matlab -> install manually
 
 # {Soziale Netzwerke}
