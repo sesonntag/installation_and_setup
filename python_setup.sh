@@ -1,12 +1,4 @@
 #!/bin/bash
-#
-#**********************************************************************************************
-# Title: setup.sh
-# Description: installs python packages via homebrew and pip
-# Author: Sebastian Sonntag
-# Date:
-# License:
-#**********************************************************************************************
 
 # download and install pip
 version=$1
@@ -31,11 +23,11 @@ then
         then
         virtualenv $project
         source $project/bin/activate
-        pip install scipy numpy matplotlib ipython pytest --ignore-installed six
+        pip install scipy numpy matplotlib ipython speedtest-cli pytest --ignore-installed six
     elif [ "$version" == "py3" ]
     then
         virtualenv --python=python3 $project
         source $project/bin/activate
-        pip3 install scipy numpy matplotlib ipython pytest --ignore-installed six
+        pip3 install scipy numpy matplotlib ipython speedtest-cli pytest --ignore-installed six
     fi
 fi
