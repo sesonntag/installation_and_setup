@@ -25,6 +25,9 @@ brew install tree
 # install bash-snippets for stock, weather, , ... info
 brew install bash-snippets
 
+# install git repo issue checker
+brew install git-sizer
+
 # install zsh and oh-my-zsh
 brew install zsh zsh-completions
 cd && sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
