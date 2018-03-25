@@ -1,3 +1,13 @@
+<!-- **************************************************************************
+Title: manual_settings.md
+Description: To-do list of things which need to be done after a fresh install 
+             of macOS
+Author: Sebastian Sonntag
+Date: 2018-03-25
+License:
+*************************************************************************** -->
+
+
 # List of settings and configuration which have to be applied manually
 
 ## System settings

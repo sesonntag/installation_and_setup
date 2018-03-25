@@ -1,4 +1,13 @@
 #!/bin/bash
+#
+#*******************************************************************************
+# Title: install_cli_apps.sh
+# Description: Shell script to install and setup all cli apps on a new macOS 
+#              device
+# Author: Sebastian Sonntag
+# Date: 2018-03-25
+# License:
+#*******************************************************************************
 
 # download and install home brew at first
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"

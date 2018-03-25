@@ -1,4 +1,13 @@
 #!/bin/bash
+#
+#*******************************************************************************
+# Title: install_cli_apps.sh
+# Description: Shell script to install and setup all gui apps on a new macOS 
+#              device
+# Author: Sebastian Sonntag
+# Date: 2018-03-25
+# License:
+#*******************************************************************************
 
 # update brew and run doctor to check whether issues occur
 brew update
