@@ -1,62 +1,62 @@
-Android File Transfer.app
-App Store.app
-Automator.app
-BBEdit.app
-Caffeine.app
-Calculator.app
-Calendar.app
-Chess.app
-Cisco
-ClipGrab.app
-Contacts.app
-DVD Player.app
-Dashboard.app
-Debit & Credit.app
-Dictionary.app
-Dropbox.app
-Duplicates Cleaner.app
-FaceTime.app
-Font Book.app
-FreeCAD.app
-Gimp.app
-Google Chrome.app
-Image Capture.app
-JetDriveToolbox.app
-Keka.app
-Launchpad.app
-MacVim.app
-Mail.app
-Maps.app
-Messages.app
-Microsoft Excel.app
-Microsoft OneNote.app
-Microsoft Outlook.app
-Microsoft PowerPoint.app
-Microsoft Word.app
-Mission Control.app
-Notes.app
-Photo Booth.app
-Photos.app
-Preview.app
-PyCharm CE.app
-QuickTime Player.app
-Reminders.app
-Safari.app
-Siri.app
-Skype.app
-SourceTree.app
-Stickies.app
-System Preferences.app
-TeX
-TeamViewer.app
-Texpad.app
-TextEdit.app
-Time Machine.app
-Twitter.app
-Utilities
-VLC.app
-WhatsApp.app
-Xcode.app
-iBooks.app
-iMovie.app
-iTunes.app
+total 16
+drwxrwxr-x+ 61 root       admin  1952 29 Mär 13:39 .
+drwxr-xr-x  29 root       wheel   928  1 Apr 20:49 ..
+-rw-rw-r--   1 root       admin  6148 26 Mär 17:04 .DS_Store
+-rw-r--r--   1 root       wheel     0 15 Jul  2017 .localized
+drwxr-xr-x@  3 sebastian  admin    96 28 Okt 00:15 Android File Transfer.app
+drwxr-xr-x@  3 root       wheel    96 24 Jan 17:41 App Store.app
+drwxr-xr-x@  3 root       wheel    96 24 Jan 17:41 Automator.app
+drwxr-xr-x@  3 sebastian  staff    96 13 Mär  2010 Caffeine.app
+drwxr-xr-x@  3 root       wheel    96 24 Jan 17:41 Calculator.app
+drwxr-xr-x@  3 root       wheel    96 24 Jan 17:41 Calendar.app
+drwxr-xr-x@  3 root       wheel    96 24 Jan 17:41 Chess.app
+drwxr-xr-x@  3 root       wheel    96 24 Jan 17:41 Contacts.app
+drwxr-xr-x@  3 root       wheel    96 24 Jan 17:41 DVD Player.app
+drwxr-xr-x@  3 root       wheel    96 24 Jan 17:41 Dashboard.app
+drwxr-xr-x   3 root       wheel    96 12 Feb 22:30 Debit & Credit.app
+drwxr-xr-x@  3 root       wheel    96 24 Jan 17:41 Dictionary.app
+drwxr-xr-x   3 sebastian  admin    96  1 Apr 20:49 Dropbox.app
+drwxr-xr-x@  3 root       wheel    96 24 Jan 17:41 FaceTime.app
+drwxr-xr-x@  3 root       wheel    96 24 Jan 17:41 Font Book.app
+drwxr-xr-x@  3 sebastian  admin    96 11 Mai  2017 GIMP.app
+drwxrwxr-x@  3 sebastian  admin    96 20 Mär 04:08 Google Chrome.app
+drwxr-xr-x   3 root       wheel    96  9 Mär 17:13 Google Earth Pro.app
+drwxr-xr-x@  3 root       wheel    96 24 Jan 17:41 Image Capture.app
+drwxr-xr-x@  3 sebastian  admin    96 18 Dez 03:52 JetDriveToolbox.app
+drwxr-xr-x   3 root       wheel    96 29 Mär 13:36 Keka.app
+drwxr-xr-x@  3 root       wheel    96 24 Jan 17:41 Launchpad.app
+lrwxr-xr-x   1 sebastian  admin    32 26 Sep  2017 MacVim.app -> /usr/local/opt/macvim/MacVim.app
+drwxr-xr-x@  3 root       wheel    96 24 Jan 17:41 Mail.app
+drwxr-xr-x@  3 root       wheel    96 24 Jan 17:41 Maps.app
+drwxr-xr-x@  3 root       wheel    96 24 Jan 17:41 Messages.app
+drwxrwxr-x   3 root       wheel    96 22 Mär 21:19 Microsoft Excel.app
+drwxrwxr-x   3 root       wheel    96 13 Mär 22:34 Microsoft OneNote.app
+drwxrwxr-x   3 root       wheel    96 13 Mär 22:37 Microsoft Outlook.app
+drwxrwxr-x   3 root       wheel    96 22 Mär 21:19 Microsoft PowerPoint.app
+drwxrwxr-x   3 root       wheel    96 22 Mär 21:20 Microsoft Word.app
+drwxr-xr-x@  3 root       wheel    96 24 Jan 17:41 Mission Control.app
+drwxr-xr-x@  3 root       wheel    96 24 Jan 17:41 Notes.app
+drwxr-xr-x@  3 root       wheel    96 24 Jan 17:41 Photo Booth.app
+drwxr-xr-x@  3 root       wheel    96 24 Jan 17:41 Photos.app
+drwxr-xr-x@  3 root       wheel    96 24 Jan 17:41 Preview.app
+drwxr-xr-x@  3 sebastian  admin    96  6 Mär 14:00 PyCharm CE.app
+drwxr-xr-x@  3 root       wheel    96 24 Jan 17:41 QuickTime Player.app
+drwxr-xr-x@  3 root       wheel    96 24 Jan 17:41 Reminders.app
+drwxr-xr-x@  3 root       wheel    96 24 Jan 17:41 Safari.app
+drwxr-xr-x@  3 root       wheel    96 24 Jan 17:41 Siri.app
+drwxr-xr-x   3 sebastian  staff    96 16 Mär 14:11 Skype.app
+drwxr-xr-x   3 sebastian  staff    96 18 Feb 17:26 Sourcetree.app
+drwxr-xr-x@  3 root       wheel    96 24 Jan 17:41 Stickies.app
+drwxr-xr-x@  3 root       wheel    96 24 Jan 17:41 System Preferences.app
+drwxrwxr-x  15 root       admin   480 29 Mär 13:31 TeX
+drwxr-xr-x   3 root       wheel    96 20 Mär 11:09 TeamViewer.app
+drwxr-xr-x   3 sebastian  admin    96 15 Mär 22:06 Texpad.app
+drwxr-xr-x@  3 root       wheel    96 24 Jan 17:41 TextEdit.app
+drwxr-xr-x@  3 sebastian  staff    96  6 Nov  2016 TextMate.app
+drwxr-xr-x@  3 root       wheel    96 24 Jan 17:41 Time Machine.app
+drwxr-xr-x+ 21 root       admin   672 21 Sep  2017 Utilities
+drwxr-xr-x@  3 sebastian  admin    96 26 Feb 21:05 VLC.app
+drwxr-xr-x   3 root       wheel    96 29 Mär 13:39 WhatsApp.app
+drwxr-xr-x@  3 sebastian  admin    96 25 Nov  2016 dupeGuru.app
+drwxr-xr-x@  3 root       wheel    96 24 Jan 17:41 iBooks.app
+drwxr-xr-x@  3 root       wheel    96 24 Jan 17:31 iTunes.app
