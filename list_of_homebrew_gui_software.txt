@@ -1,0 +1,12 @@
+caffeine
+clipy
+dropbox
+google-earth-pro
+keka
+mactex
+skype
+teamviewer
+texpad
+textmate
+vlc
+whatsapp
