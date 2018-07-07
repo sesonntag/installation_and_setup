@@ -1,12 +1,15 @@
 caffeine
 clipy
 dropbox
+emacs
 google-earth-pro
 keka
 mactex
+macvim
 skype
+sourcetree
 teamviewer
 texpad
-textmate
+visual-studio-code
 vlc
 whatsapp
