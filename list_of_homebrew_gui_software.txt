@@ -1,11 +1,13 @@
 caffeine
 clipy
 dropbox
-emacs
+gimp
 google-earth-pro
 keka
 mactex
 macvim
+pokerth
+pycharm-ce
 skype
 sourcetree
 teamviewer
