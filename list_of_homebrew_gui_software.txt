@@ -1,7 +1,6 @@
 caffeine
 clipy
 dropbox
-gimp
 google-earth-pro
 keka
 mactex
