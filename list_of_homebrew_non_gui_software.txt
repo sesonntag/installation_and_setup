@@ -16,6 +16,7 @@ glib
 gmp
 gnutls
 htop
+ispell
 jemalloc
 jpeg
 libevent
@@ -49,6 +50,7 @@ rsync
 ruby
 sqlite
 task
+the_silver_searcher
 tmux
 tree
 unibilium
