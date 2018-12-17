@@ -1,0 +1,232 @@
+=========================================================================================
+                        =========================================                
+                        |                   ___  ____           |
+                        |     |   |  |\  |   |     |   |__|     |
+                        |     |   |  | \ |   |     |    /       |
+                        |     |___|  |  \|  _|_    |   /        |
+                        |                                       |
+                        =========================================
+=========================================================================================
+Datum: 2013-05-28                                                             Zeit: 19:30  
+
+
+=====================================================
+- Nullter Installationsprozess: [MANUELL!!!]
+  - Partnerquellen für Ubuntu in der /etc/apt/sources.list unten mit sudo-Rechten aktivieren und Paketquellen updaten (s.u.)
+- Erster Installationsprozess:
+  - sudo add-apt-repository -j ppa:stebbins/handbrake-releases einrichten
+  - sudo add-apt-repository -j ppa:blahota/texstudio einrichten
+  - sudo add-apt-repository -j ppa:jtasker/weather-indicator einrichten
+  - sudo add-apt-repository -j ppa:aims/sagemath einrichten
+  - Medienkey-Ring libdvdcss gstreamer0.10-plugins-ugly libavcodec-extra-53 libavdevice-extra-53 libavformat-extra-53 libavutil-extra-51 libpostproc-extra-52 libswscale-extra-2 non-free-codecs installieren
+- Zweiter Installationsprozess:
+  - Dropbox encfs Ubuntu One installieren
+  - bzr bzr-explorer installieren
+- Dritter Installationsprozess:
+  - libreoffice-calc, -draw, -impress, -math, -writer installieren
+  - firefox mozplugger installieren
+  - thunderbird installieren
+  - gcc installieren
+  - g++ installieren
+  - bash-completion 
+  - meld installieren
+  - ghex installieren
+  - language-pack-de language-pack-de-base language-pack-gnome-de language-pack-gnome-de-base installieren
+  - soundconverter installieren
+  - lame installieren
+  - gscan2pdf installieren
+  - gparted installieren
+  - texlive-full installieren
+  - gelemental installieren
+  - pyrenamer installieren
+  - pinta installieren
+  - vlc installieren
+  - dvipng installieren
+  - usb-creator-gtk installieren
+  - stellarium installieren
+  - automake installieren
+  - autoconf installieren
+  - ipython python-scipy python-matplotlib python-progressbar installieren
+  - p7zip-* installieren
+  - imagemagick installieren
+  - aspell aspell-de hunspell hunspell-de-de installieren
+  - nano installieren
+  - lynx installieren
+  - pdfmod installieren
+  - arista installieren
+  - skype installieren
+  - flashplugin-installer installieren
+  - ttf-mscorefonts-installer installieren
+  - ubuntu-restricted-extras installieren
+  - gthumb installieren
+  - nautilus-image-converter nautilus-open-terminal installieren
+  - gwibber installieren
+  - openjdk-7-jre installieren
+  - icedtea-7-plugin installieren
+  - htop installieren
+  - screen installieren
+  - handbrake-gtk installieren
+  - geany geany-plugins installieren
+  - inkscape dia-gnome libwmf-bin pstoedit sketch installieren
+  - libnotify-bin installieren
+  - shutter installieren
+  - sound-juicer installieren
+  - octave installieren
+  - rar unrar installieren
+  - avidemux installieren
+  - hplip* installieren
+  - 0ad installieren
+  - xournal installieren
+  - winff installieren
+  - openssh-server installieren
+  - virtualbox virtualbox-guest-additions-iso installieren
+  - preload installieren
+  - samba system-config-samba cifs-utils installieren
+  - gimp installieren
+  - backintime-gnome installieren
+  - lyx installieren
+  - sqlite3 sqliteman installieren
+  - indicator-weather installieren
+  - root-system libroot-bindings-python-dev installieren
+  - empathy account-plugin-icq installieren
+  - undistract-me installieren
+  - synergy quicksynergy installieren
+  - texstudio installieren
+  - wajig installieren
+  - vino remmina installieren
+  - filezilla installieren
+  - keepassx installieren
+  - sciadvis installieren
+  - unetbootin installieren
+  - hardinfo installieren
+  - sage installieren
+  - undistract-me installieren
+- #Vierter Installationsprozess [MANUELL!!!]:
+  - Steam und suchen manuell installieren
+
+
+- System einrichten:
+====================
+  - Partnerquellen für Ubuntu in der /etc/apt/sources.list unten mit sudo-Rechten aktivieren, Paketquellen updaten
+  - System updaten
+  - Neustarten
+  - Evtl. aktuellsten Grafiktreiber installieren: Driver -> nVidia
+  - Neustarten
+  - Ubuntu Two/Ubuntu One/Dropbox/EncFS
+    - (User der Gruppe Fuse hinzufügen: "sudo usermod -aG fuse sonntux")
+    - Datenverzeichnis (Desktop: ???, Notebook: UUID=8a424433-1add-413e-b211-3a930b525d51) in /etc/fstab mit sudo-Rechten eintragen
+    - (ubuntu_two einhängen: "encfs media/data/ubuntu_one/container media/data/ubuntu_two")
+    - (.atilla in /media/data anlegen)
+    - ubuntu_two Skript von media/data/ubuntu_two/system/linux_pc/argus nach ~/.unity/Autostart kopieren (Ornder im Vorfeld anlegen), checken ob Unity ausgewählt und ausführbar gesetzt, in Startprogramme neuen Eintrag nur mit "/home/sonntux/.unity/Autostart/encfs_mount_ubuntu_two.sh" machen, in ".bash_logout" den Inhalt unter Gnome-Zeile aus "encfs_unmount_ubuntu_two.sh" eintragen
+    - #Ubuntu One ...
+  - (Installation aller restlichen benötigten Programme)
+  - Neustarten
+  - Systemeinstellungen:
+    - Darstellung: Erscheinungsbild:Icons in Pixelgröße 40 statt 48 im Dash zeigen, Verhalten: Arbeitsflächen und Desktopanzeige aktivieren
+    - Helligkeit und Sperren: Sperre deaktivieren
+    - Online-Konten: Facebook hinzufügen (Shotwell deaktivieren), #ICQ hinzufügen()
+    - Privatsphäre: Online Suchergebnisse deaktivieren
+    - Sprachen: fehlende Sprachen nachinstallieren, Regionale Formate: checken, ob Deutsch(Deutschland)
+    - #Leistung: ggf. Ausschalten bei kritischem Akku
+    - Informationen: Vorgabe-Programme: Video-VLC, Foto-gThumb
+    - Zeit und Datum: Checken ob Ort Siegen, Wochentag, Tag und Monat, monatlicher Kalender inklusive Kalenderwochen, Zeit am automatisch erkannten Ort
+    - #Drucken: Netzwerkdrucker: HP... in Rainers Büro, Papiergröße: A4
+  - Starteinstellungen:
+    - alle Startprogramme anzeigen: "cd /etc/xdg/autostart/ && sudo sed --in-place 's/NoDisplay=true/NoDisplay=false/g' *.desktop"
+    - Programme deaktivieren:
+      - Datensicherungsüberwachung
+      - HP System Tray Service
+      - ggf. Orca Screenreader
+      - ggf. Bluetooth
+  - Desktop:
+    - Reihenfolge der Favoriten im Dock:
+      - Home-Ordner
+      - Firefox
+      - Thunderbird
+      - Empathy
+      - Skype
+      - Taschenrechner
+    - #Indicator-Weather:
+      - erstmals starten
+      - Einstellungen:
+        - Show temperature near indicator
+        - Benachrichtigungen für Unwetterwarnungen anzeigen
+        - Wind in Km/h anzeigen
+        - Siegen, Lemmer und Rethymnon hinzufügen
+  - Vorlagen in Vorlagen-Ordner einfügen
+  - Standarddateitypen:
+    - Bilder: gThumb
+    - Latex: geany
+    - Musik: Rhythmbox
+    - Skript: geany
+    - Vektorgraphik: Inkscape
+    - Video: VLC
+  - Geany:
+    - Editor: visueller Zeilenumbruch, Einrückung 2, Typ ist Leerzeichen
+    - Werkzeuge: x-terminal-emulator -> gnome-terminal
+    - Terminal: Hintergrundfarbe "#300A24" anstelle von Schwarz
+  - Lyx:
+    - Einstellungen -> Rechtschreibung: Enchant, de_DE als alternative Sprache, Rechschreibung bei Eingabe prüfen
+  - gThumb:
+    - Ansicht -> Sortieren nach... -> Dateiname
+    - checken, ob: Einstellungen -> Betrachter -> In Fenster einpassen, falls größer
+  - #HandBrake:
+    - Preferences -> Audio/Subtitles: Language: Deutsch
+  - LibreOffice:
+    - Autokorrektur Optionen: Tab als Vervollständigungsbefehl, Länge: 5
+  - Empathy:
+    - Einstellungen:
+      - Klänge: Deaktiviere "bei Abwesenheit oder Beschäftigung deaktivieren", alle anderen aktivieren
+      - Rechtschreibprüfung: Deutsch
+      - Erscheinungsbild: Ubuntu
+  - Thunderbird 17.x:
+    - Ordner laden und als .thunderbird im Home-Ornder speichern
+    - Thunderbird erstmals starten und in offline Modus gehen
+  - Firefox 21.x:
+    - Grundsätzlich:
+      - key3.db und signons.sqlite einkopieren
+    - Einstellungen:
+      - Tabs und Fenster der letzten Sitzung anzeigen
+      - Kein Downloadmanager
+      - immer fragen wohin speichern
+    - Allgemein: 
+      - about:Config: print: letter->a4
+      - keine Vorschau bei neuen Tabs
+    - Addons nachinstallieren bzw. einrichten:
+      - Xmarks (sync Tabs, keine Search bars, Bookmarks from Server, don't ask for snyc)
+      - DownloadHelper (Speichern in ~/Arbeitsfläche, 20 Downloads max, kein Social Share)
+      - AdBlock Plus (easylist+germany hinzufügen)
+      - AdBlock Plus Popup-Addon
+      - German Dictionary
+      - Unityfox
+    - Oberfläche:
+      - kleine Symbole verwenden
+      - keine Status/Addon-Bar
+
+
+ - Konoslenbefehle für Aktualisierung:
+======================================
+  - (Update-/Upgrade-Befehl (s.u.) als alias mit "sudo_update" in .bashrc eintragen)
+  - per apt-get: sudo apt-get update && sudo apt-get upgrade && sudo apt-get autoremove --purge && sudo apt-get autoremove && sudo apt-get autoclean && sudo apt-get clean
+
+
+	Alias eintragen:
+========================
+  - Update-/Upgrade-Befehl
+    - && cd && echo "" >> ~/.bashrc && echo "# Update alias" >> ~/.bashrc && echo "alias sudo_update='sudo wajig update && sudo wajig dist-upgrade && sudo wajig autoremove && sudo wajig autoclean && sudo wajig clean'" >> ~/.bashrc && . ~/.bashrc
+  - SSH-Befehle
+    - && cd && echo "" >> ~/.bashrc && echo "# SSH aliases" >> ~/.bashrc && echo "alias ssh_uni='ssh -Xp 54322 sonntag@nolde.hep.pysik.uni-siegen.de'" >> ~/.bashrc && echo "alias ssh_nolde='ssh -X sonntag@nolde'" >> ~/.bashrc && echo "alias ssh_server='ssh -X sonntuxmin@sonntux-server'" >> ~/.bashrc && . ~/.bashrc
+  - Bzr-Bachelor-Befehl
+    - echo "" >> ~/.bashrc && echo "# bzr_bachelor alias" >> ~/.bashrc && echo "alias bzr_bachelor='pwd > ~/.path.txt && cd ~/Dropbox/uni/work/projects/ba_pmt_wupsi/ba_thesis/trunk && bzr add && bzr commit && cd $(cat ~/.path.txt) && rm ~/.path.txt'" >> ~/.bashrc && . ~/.bashrc
+  - Grub-Reparatur
+    - echo "" >> ~/.bashrc && echo "# grub-repair alias" >> ~/.bashrc && echo "alias sudo_grub='sudo grub-install /dev/sda && sudo update-grub'" >> ~/.bashrc && . ~/.bashrc
+
+
+- Anmerkung zum Deinstallieren:
+===============================
+ggf. sind Abhängigkeitsprobleme und zusätlich relevante Pakete in "ubuntu_13.04_archiv-log.txt" zu finden.
+
+
+- Anmerkungen für nächste Ubuntu Version 13.10:
+===============================================
+  - 

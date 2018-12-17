@@ -1,0 +1,43 @@
+****************************************************
+*Name: ubuntu_12_04_lts_archiv.txt                 *
+*Author: Sebastian Sonntag                         *
+*Date of last modification: 2012-11-15             *
+****************************************************
+
+Deinstalliert/en über: sudo wajig remove [...]
+================================================
+	- lyx
+	- freecad
+	- librecad
+	- kicad
+	- myunity
+
+
+Zur Zeit sind folgende Programm nicht eingestellt, z.T. aber installiert:
+=========================================================================
+  - aktuellste Version von Truecrypt auf "http://www.truecrypt.org/downloads" checken
+  - Dropbox/Truecrypt
+      - Container erstmals einhängen
+      - Dropbox-Icons einfügen
+      - Dropboxstarter im Menü anlegen, dazu Icon aus Dropbox-Ordner nutzen
+      - KDE Integration verbessern: "mv ~/.dropbox-dist/libstdc++.so.6{,.bak}"  
+    - sudo sh /home/sonntux/Dropbox/system/linux_pc/software/truecrypt/truecrypt-7.1a-setup-x64 &&
+  - Latexila:
+		- Zeilennummern anzeigen
+		- Keine Bestätigung beim Löschen, automatisch Löschen vor Beenden
+	- #gedit:
+		- 1. Zeilenummern anzeigen
+		- 2. Aktuelle Zeile hervorheben
+		- 3. Übereinstimmenden Klammern hervorheben
+		- 4. 2 Leerzeichen anstelle von Tabs
+		- 5. Automatischer Einzug
+		- 6. #Plugin für eingebettetes Terminal aktivieren
+		- 7. #Plugin für intelligente Leerzeichen aktivieren
+		- 8. #Plugin für Quelltextkommentare aktivieren
+		- 9. #Plugin für Wortvervollständigung aktivieren
+	- Lyx:
+		- Einstellungen -> Rechtschreibung: Enchant, de_DE als alternative Sprache, Rechschreibung bei Eingabe Prüfen
+	- Gwibber:
+		- Twitter-Account einrichten
+		- auf minimale Breite reduzieren
+		- Einstellungen: Service nicht mit System starten

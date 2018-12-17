@@ -1,0 +1,24 @@
+****************************************************
+*Name: ubuntu_12_10_archiv.txt                     *
+*Author: Sebastian Sonntag                         *
+*Date of last modification: 2013-22-14             *
+****************************************************
+
+Deinstalliert/en über: sudo wajig remove [...]
+================================================
+	- zim bzr bzr-explorer
+
+
+Zur Zeit sind folgende Programm nicht eingestellt, z.T. aber installiert:
+=========================================================================
+  -Zim:
+    - Einstellungen -> Oberfläche:
+      - Schrift: Ubuntu Mono 12
+    - Einstellungen -> Anwendungen:
+      - File-browser: Nautilus
+      - Web-browser: Firefox
+      - Email-browser: Thunderbird
+      - Text-editor: gedit
+    - Einstellungen -> Plugins:
+      - Formeln einfügen
+      - Rechtschreibprüfung

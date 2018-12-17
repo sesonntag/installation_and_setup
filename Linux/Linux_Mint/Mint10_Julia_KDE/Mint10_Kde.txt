@@ -1,0 +1,198 @@
+=============================================
+           ==================================
+           |               __        __     |
+           |     |  /     |  \      |       |
+           |     |<       |   |     |--     |
+           |     |  \     |__/      |__     |
+           |                                |
+           ==================================
+=============================================
+
+
+	Installieren [Softwareverwaltung] Liste s.u.:
+=====================================================
+ 	- g++ installieren
+	- gcc installieren
+	- okteta installieren
+	- Soundkonverter installieren
+	- lame installieren
+	- gscan2pdf installieren
+	- pdfedit installieren
+	- partitionmanager installieren
+	- texlive-full installieren
+	- adobereader-deu installieren
+	- HomeBank installieren
+	- kalzium installieren
+	- krename installieren
+	- kolourpaint installieren
+	- dvdrip, cdrdao, mjpegtools, ogmtools, subtitleripper, vcdimager, xine-ui, xvid4conf, xvidenc installieren
+	- dvdauthor installieren
+	- vlc installieren
+	- gimp installieren
+	- AssaultCube, AssaultCube-Data installieren
+	- Hedgewars installieren
+	- kdegames installieren
+	- dvipng installieren
+	- unetbootin installieren
+	- Lyx installieren
+	- Kile installieren
+	- Sweet Home 3D installieren
+	- Stellarium installieren
+	- Skype installieren
+	- winff installieren
+	- Krusader installieren
+	- Xournal installieren
+	- WxMaxima, Kyali installieren
+	- gnuplot, gnuplot-x11 installieren
+	- scidavis installieren
+	- referencer installieren
+	- Yakuake installieren
+	- Gambas2 installieren
+	- kdevelop4 installieren
+	- qtcreator installieren
+	- ROOT-system installieren
+	- KiCAD installieren
+	- FeeCAD installieren
+	- Ktechlab installieren
+	- Klogic installieren
+	- gnome-disk-utility??? installieren
+	- kdialog installieren
+	- gm-notify??? installieren
+	- aspell-de installieren
+	- fortunes-de installieren
+ 	- Dropbox installieren
+	- Scite installieren
+	- PokerTH, pokerth-server installieren
+	- smc, smc-music installieren
+	- ipython, python-scipy, python-matplotlib installieren
+	- Evolution, evolution-webcal, evolution-plugins, openoffice.org-evolution installieren:
+
+
+	Einrichten:
+===================
+	    - Deutsche Rechtschreibung unter Lyx: "sudo ln -s /usr/lib/aspell/de-common.rws /usr/lib/aspell/ngerman"
+	- Startbildschirm deaktivieren
+	- Netzwerk einstellen (Schlüssel, speichern, KWallet: kein Passwort - unsichere Verschlüsselung verwenden)
+	- ???Energiesparmodus-Unterdrückungsapplet zum Panel hinzufügen (rechts, bis an Benachrichtigungs-feld Apllet [WLAN, Updates, ...])
+	- Dropbox
+		- Dropbox-Ordner laden
+		- Drobpox aktivieren (Programm erstmals starten)
+		- Verlinkung zu Dropbox-Ordner als Oberstes in 2. Block bei Nautilus anlegen (ziehen)
+	- Systemeinstellungen:
+		- Startprogramme: Yakuake eintragen, testen ob Dropbox und Email-Überwachung eingetragen sind
+		- Sprache Deutsch(Deutschland) installieren
+		- Filter "Entfernbar" in Synaptic anlegen (=> verbl. Konfigurationen)
+		- Bildschirmschoner, Energieverwaltung
+		- Drucker hinzufügen (socket://192.168.178.1) -> CMYK drucken (IP3600 als IP4600 einstellen)
+		- Standardanwendungen (Browser: Firefox, Email: Evolution, Player: Totem Film-Betrachter)
+		- Proprietäre Treiber: ggf. Grafiktreiber installieren
+		- Tastaturbelegung: Konsole auf "Strg+Alt+T" und ggf. Taschenrechner-Shortcut auf (Suche-Taste)
+	- ???gThumb -> Ansicht -> Sortieren nach ... -> file name
+	- Evolution: Backup laden, Standard dabei bestätigen
+	- ???Skype: Look auf GTK+ stellen
+	- ???Yakuake: Kein Systray-Icon anzeigen, Verstecken wenn Fokus verloren, Transparenz auf Mitte des Grüns schieben
+	- Geany 
+		- Plugins: alle Plugins unter Werkzeuge aktivieren
+		- Editor: Vervollständigung aller Wörter, ab 2 Zeichen vervollständigen
+	- Gambas2:
+		- keine Tipps beim Starten anzeigen
+		- Einstellungen -> Editor -> Zeilennummer anzeigen "ja"
+	- dvd::rip:
+		- Desktop als Zielverzeichnis
+		- unrar statt rar zum packen nutzen
+	- HomeBank:
+		- Einstellungen: Geldbörse, Importieren, Exportieren /home/wayne/Dropbox/Dokumente/HomeBank
+		- Backup laden
+	- ???gedit: 
+		- Zeilennummerierung
+		- Klammern betonen
+	- ???Anjuta:
+		- Editor: Dokumentenvervollständigung einschalten
+		- Editor: keine Sicherungskopie erstellen
+		- Editor: Übereinstimmende Klammern anzeigen
+	- gm-notify: 
+		- bs.sonntag@googlemail.com
+		- play sound (usr/share/sounds/LinuxMint/stereo/dialog-question.wav)
+		- in den Autostart legen aktivieren
+	- ???TeXMaker: 
+		- Kodierung auf ISO-8859-15 setzen
+		- PDFs in externem Viewer öffnen (envince)
+		- Deutsche Rechtschreibung
+		- Interface: Classic
+		- Buttons: PDFLaTex, PDF ansehen
+	- ???Menü:
+		- Root zu Wissenschaft kopieren und in Entwicklung deaktivieren
+		- Python in Entwicklung aktivieren
+		- Gnuplot für "in Terminal" mit Kommentar "Funktionen plotten und drucken" in Wissenschaft anlegen
+		- Scidavis zu Wissenschaft kopieren und in Grafik deaktivieren
+		- Oregano in Wissenschaft deaktivieren
+		- KiCAD in Entwicklung deaktivieren
+	- ???Standarddateitypen: 
+		- Musik: Totem
+		- Video: vlc
+		- Bilder: gThumb
+		- LaTeX-Dokumente: TeXMaker
+	- FreeCAD:
+		- auf Deutsch stellen
+		- keine Tipps beim Start
+	- Lyx:
+		- Sichere Orig. beim Speichern deaktivieren
+		- Sprache Deutsch
+		- Rechtschreibung: aspell, de_DE als Alternative, persönliches Wörterbuch: /home/USER/.aspell.de.pws
+		- Ansicht-> Werkzeugleisten Mathe, Mathe-Kontrollflächen
+	- ???Pidgin:
+		- LaTeX-Plugin installieren [Ordner]
+		- wiederhole "sudo nautilus", dann <USER alle Rechte, GRUPPE und ANDERE zugreifen> für .purple und .purple/plugins geben
+		- Konto einrichten:
+			- ICQ: (Name, ICQ-Nummer, ISO 8859-15, Immer SSL, Immer AIM/ICQ-Proxyserver)
+		- Anzeigen: nur Offlinebuddies markieren
+		- Buddys sortieren: nach Status
+		- Plugins: Benachrichtigung, Gesprächsvorhersage-Modus, LaTeX-Plugin, libnotify Popups, Verlauf
+		- Einstellungen: Stausicon immer anzeigen, keine falschen Wörter hervorheben, 4 Zeilen, Start- und Endport 8010, keine Klänge im Fokus, Klänge immer aktivieren, Sound-Kommando mit "aplay %s", niemals Inaktivtät zeigen, 999 Minuten abwesend, Status dann offline, niemals Auto-Antworten, beim Neustart offline
+		- Kontrollleistenicon: Bei neuen Nachrichten blinken
+	- Firefox 3.6.xx:
+		- Allgemein: 
+			- Meldungen nicht anzeigen: Neustarten, Beenden, Privates Browsen
+			- Zum Standardbrowser machen
+			- Google Instant-Search deaktivieren
+		- Einstellungen:
+			- Grundsätzlich: Letzte Sitzungen Laden, Home: www.google.de, Download-Speicherort nachfragen
+			- Inhalt: ISO-8859-15 auswählen und Deutsch als Sprache einstellen
+			- Erweitert: Allgemein: Submit Chrashreport deaktivieren
+		- Oberfläche:
+			- keine Status-Leiste
+			- keine Lesezeichen-Leiste
+			- kein Such-Feld anzeigen
+			- Symbole (kleine Symbole verwenden): Zurück, Vor, Wiederholen, Abbrechen, Home
+		- Addons nachinstallieren:
+			- AdBlock Plus
+			- DownloadHelper (Speichern in /home/USER/Desktop)
+			- Fission
+			- TubeStop
+			- Xmarks (Bookmarks und Passwörter synchronisieren, automatisch, nicht nachfragen, Sync beim Beenden)
+	- ???Reihenfolge der Favoriten im Menü:
+		- Firefox
+		- Evolution
+		- ???Pidgin
+		- Skype
+		- VLC
+		- ???gedit
+		- WxMaxima
+		- Lyx
+		- Taschenrechner
+		- Systemüberwachung
+
+
+	Konoslenbefehle für Installation:
+=========================================
+sudo apt-get update && sudo apt-get upgrade && sudo apt-get install gcc g++ bless soundconverter gscan2pdf pdfmod gparted texlive-full gthumb homebank homebank-data gelemental pyrenamer pinta dvdrip cdrdao mjpegtools ogmtools subtitleripper vcdimager xine-ui xvid4conf xvidenc lame assaultcube assaultcube-data hedgewars slingshot gnome-games gbrainy dvipng unetbootin lyx referencer gnome-disk-utility texmaker sweethome3d stellarium stellarium-data skype winff guake gnome-commander xournal wxmaxima gnuplot gnuplot-x11 scidavis gambas2 anjuta glade zenity gm-notify indicator-messages dropbox nautilus-dropbox geany geany-plugins pokerth pokerth-server smc smc-music evolution evolution-webcal evolution-plugins openoffice.org-evolution adobereader-deu aspell-de root-system freecad kicad oregano nautilus-image-converter dvdauthor fortunes-de python-scipy python-matplotlib ipython && sudo ln -s /usr/lib/aspell/de-common.rws /usr/lib/aspell/ngerman
+
+
+	Konsolenbefehle für Aktualisierung:
+===========================================
+sudo apt-get update && sudo apt-get upgrade && sudo apt-get autoremove --purge && sudo apt-get autoremove && sudo apt-get autoclean && sudo apt-get clean
+
+
+	Anmerkung zum Deinstallieren:
+=====================================
+ggf. sind Abhängigkeitsprobleme und zusätlich relevante Pakete in "Install-Uninstall-Undefined.txt" zufinden. => Insbesondere bei Sweet Home 3D muss die Datei beachtet werden!

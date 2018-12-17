@@ -1,0 +1,205 @@
+Deinstallieren über: sudo apt-get remove [...]
+==============================================
+gm-notify mit allen Komponenten deinstallieren:
+  gm-notify python-twisted-words
+
+KiCAD mit allen Komponenten deinstallieren:
+  extra-xdg-menus kicad kicad-common zlib-bin
+
+Oregano mit allen Komponenten deinstallieren:
+  gnucap oregano
+
+FreeCAD mit allen Komponenten deinstallieren:
+  freecad libcoin60 libopencascade-foundation-6.3.0 libopencascade-modeling-6.3.0 libqt4-help libqt4-scripttools libqt4-test libqt4-xmlpatterns libsoqt4-20 libzipios++0c2a python-pivy python-qt4 python-qt4-gl python-sip
+
+Ipython,python-matplotlib und python-scipy mit allen Komponenten deinstallieren:
+  global ipython libamd2.2.0 libblas3gf liblapack3gf libumfpack5.4.0 python-dateutil python-foolscap python-matplotlib python-matplotlib-data python-numpy python-pyparsing python-scipy python-tz python-wxgtk2.8 python-wxversion
+  global ipython libamd2.2.0 libumfpack5.4.0 python-dateutil python-foolscap python-matplotlib python-matplotlib-data python-pyparsing python-scipy
+  python-tz python-wxgtk2.8 python-wxversion
+
+Gnome-Disk-utility mit allen Komponenten deinstallieren:
+  gnome-disk-utility libavahi-ui0 libgdu-gtk0
+
+Slingshot mit allen Komponenten deinstallieren:
+  libportmidi0 python-pygame slingshot
+
+gnome-games mit allen Komponenten deinstallieren:
+  aisleriot gir1.0-atk-1.0 gir1.0-clutter-1.0 gir1.0-clutter-gtk-0.10 gir1.0-freedesktop gir1.0-gconf-2.0 gir1.0-gdkpixbuf-2.0 gir1.0-gstreamer-0.10 gir1.0-gtk-2.0 gir1.0-json-glib-1.0 gir1.0-pango-1.0 glchess glines gnect gnibbles gnobots2 gnome-games gnome-games-common gnome-js-common gnome-mahjongg gnome-sudoku gnomine gnotravex gnotski gtali iagno libgtkglext1 libseed0 lightsoff python-gtkglext1 python-opengl python-rsvg quadrapassel seed swell-foop
+
+smc smc-music mit allen Komponenten deinstallieren:
+  libcegui-mk2-1 libdevil1c2 libfreeimage3 libxerces-c28 smc smc-data smc-music
+
+Stellarium mit allen Komponenten deinstallieren:
+  stellarium stellarium-data
+
+Referencer mit allen Komponenten deinstallieren:
+   libgnome-vfsmm-2.6-1c2a libgnomecanvasmm-2.6-1c2a libgnomemm-2.6-1c2 libgnomeuimm-2.6-1c2a referencer
+
+Evolution mit allen Komponenten deinstallieren:
+   evolution evolution-common evolution-plugins evolution-webcal fetchyahoo getlive libconvert-binhex-perl libcrypt-ssleay-perl libgmime-2.0-2a libmime-tools-perl libpst4 libterm-readkey-perl mail-notification mail-notification-evolution openoffice.org-evolution postfix procmail
+
+Gambas2 mit allen komponenten deinstallieren:
+  build-essential debhelper dpkg-dev fakeroot firebird2.5-common firebird2.5-common-doc gambas2 gambas2-dev gambas2-doc gambas2-gb-chart gambas2-gb-compress gambas2-gb-compress-bzlib2 gambas2-gb-compress-zlib gambas2-gb-crypt gambas2-gb-db gambas2-gb-db-firebird gambas2-gb-db-form gambas2-gb-db-mysql gambas2-gb-db-odbc gambas2-gb-db-postgresql gambas2-gb-db-sqlite3 gambas2-gb-desktop gambas2-gb-form gambas2-gb-form-dialog gambas2-gb-form-mdi gambas2-gb-gtk gambas2-gb-gtk-ext gambas2-gb-gtk-svg gambas2-gb-gui gambas2-gb-image gambas2-gb-info gambas2-gb-net gambas2-gb-net-curl gambas2-gb-net-smtp gambas2-gb-opengl gambas2-gb-pcre gambas2-gb-pdf gambas2-gb-qt gambas2-gb-qt-ext gambas2-gb-qt-kde gambas2-gb-qt-kde-html gambas2-gb-qt-opengl gambas2-gb-report gambas2-gb-sdl gambas2-gb-sdl-sound gambas2-gb-settings gambas2-gb-v4l gambas2-gb-vb gambas2-gb-web gambas2-gb-xml gambas2-gb-xml-rpc gambas2-gb-xml-xslt gambas2-ide gambas2-runtime gettext html2text intltool-debian kdelibs-data kdelibs4c2a kdelibs5-data launchpad-integration libalgorithm-diff-perl libalgorithm-merge-perl libavahi-qt3-1 libdpkg-perl libfbclient2 liblua50 liblualib50 libmail-sendmail-perl libpq5 libqt3-mt librpm1 librpmbuild1 librpmio1 libsys-hostname-long-perl libunistring0 patch po-debconf rpm rpm-common rpm2cpio
+
+Anjuta mit allen Komponenten deinstallieren:
+  anjuta anjuta-common autoconf autogen automake autotools-dev devhelp-common exuberant-ctags intltool libapr1 libaprutil1 libdevhelp-1-1 libgda-4.0-4 libgda-4.0-common libgdl-1-3 libgdl-1-common libltdl-dev libopts25 libopts25-dev libsvn1 libtool m4
+
+Glade mit allen Komponenten deinstallieren:
+  devhelp docbook-xsl docbook-xsl-doc-html glade libatk1.0-dev libatk1.0-doc libcairo-gobject2 libcairo2-dev libexpat1-dev libffi-dev libfontconfig1-dev libgdk-pixbuf2.0-dev libglade2-dev libglib2.0-bin libglib2.0-dev libglib2.0-doc libgtk2.0-dev libgtk2.0-doc libice-dev libpango1.0-dev libpango1.0-doc libpixman-1-dev libpng12-dev libsm-dev libxcb-render0-dev libxcb-shm0-dev libxcomposite-dev libxcursor-dev libxdamage-dev libxext-dev libxfixes-dev libxft-dev libxi-dev libxinerama-dev libxml2-dev libxrandr-dev libxrender-dev python-dev python-gobject-dev python-gtk2-dev python-gtk2-doc python2.6-dev x11proto-composite-dev x11proto-damage-dev x11proto-fixes-dev x11proto-randr-dev x11proto-render-dev x11proto-xext-dev x11proto-xinerama-dev
+
+Hedgewars mit allen Komponenten deinstallieren:
+  hedgewars hedgewars-data libsdl-net1.2 libsdl-ttf2.0-0
+
+Spe mit allen Komponenten deinstallieren:
+  kiki libwxbase2.6-0 libwxgtk2.6-0 pychecker python-wxglade python-wxgtk2.6 python-wxgtk2.8 python-wxversion spe winpdb wx2.8-doc
+
+Scidavis mit allen Komponenten deinstallieren:
+  libmuparser0 libqtassistantclient4 libqwt5-qt4 libqwtplot3d-qt4-0qt-assistant-compat scidavis
+
+Sweet Home 3D mit allen Komponenten deinstallieren:
+  janino java-wrappers java3ds-fileloader javahelp2 junit libfreehep-export-java libfreehep-graphics2d-java libfreehep-graphicsio-java libfreehep-graphicsio-svg-java libfreehep-graphicsio-tests-java libfreehep-io-java libfreehep-swing-java libfreehep-util-java libfreehep-xml-java libitext-java libjas-plotter-java libjava3d-java libjava3d-jni libjaxp1.3-java libjdom1-java libopenide-util-java libsunflow-java libtablelayout-java libvecmath-java libxerces2-java sweethome3d
+   	Beachte ausserdem:
+	-> Java Webstart:
+	Um das Programm restlos zu entfernen, muss man es aus dem Java-Cache löschen. 
+	Bei Sun Java 6 erfolgt dies unter System -> Einstellungen -> Sun 	Java 6 Plugin Control Panel. 
+	Hier kann man sich die installierten Anwendungen anzeigen lassen und einzeln entfernen. 
+	Die XML-Konfigurationen von Java befinden sich unter ~/.java/.userPrefs/com/eteks/sweethome3d/, 
+	welche man löschen kann. Allerdings ist die Gesamtgröße nur ein paar Kilobyte und stört nicht weiter, 
+	falls man das Programm später doch noch einmal verwenden möchte. Hat man eigene 3D-Modelle importiert, 
+	sind diese im Verzeichnis ~/.eteks/sweethome3d/ abgelegt, welches man je nach Bedarf löschen oder behalten kann.
+ 	-> Binär Dateien
+	Zur Deinstallation genügt es, das bei der Installation entpackte Verzeichnis zu löschen.
+	Hat man eigene 3D-Modelle importiert, sind diese im Verzeichnis ~/.eteks/sweethome3d/ abgelegt, 
+	welches man je nach Bedarf löschen oder behalten kann.
+
+Texmaker mit allen Komponenten deinstallieren:
+  asymptote asymptote-doc freeglut3 libphonon4 libqtwebkit4 libsigsegv0 phonon phonon-backend-xine texmaker texmaker-data
+
+Texmaker mit allen Komponenten deinstallieren:
+  asymptote asymptote-doc blt freeglut3 libphonon4 libpoppler-qt4-3 libqtwebkit4 libsigsegv0 libxcb-shape0 libxine1 libxine1-bin libxine1-console libxine1-misc-plugins libxine1-x phonon phonon-backend-xine python-imaging-tk python-tk tcl8.5 texmaker texmaker-data tk8.5
+HomeBank mit allen Komponenten deinstallieren:
+  homebank homebank-data libofx4 libosp5
+
+dvd::rip mit allen Komponenten deinstallieren:
+  apport apport-hooks-medibuntu apport-symptoms cdrdao dvdrip dvdrip-doc dvdrip-utils faac fping gpac libanyevent-perl libao-common libao4 libasync-interrupt-perl libcommon-sense-perl libevent-execflow-perl libevent-perl libevent-rpc-perl libgpac0.4.5 libgtk2-ex-formfactory-perl libintl-perl libio-socket-ssl-perl libmp4v2-0 libnet-libidn-perl libnet-ssleay-perl libopenjpeg2 libsox-fmt-alsa libsox-fmt-base libsox1b libxcb-shape0 libxine1 libxine1-bin libxine1-console libxine1-ffmpeg libxine1-misc-plugins libxine1-x lsdvd mencoder mjpegtools mkvtoolnix ogmtools pv python-apport sox subtitleripper transcode transcode-doc transcode-utils twolame vcdimager vorbis-tools xine-ui xvid4conf xvidenc
+ 
+Lyx mit allen Komponenten deinstallieren:
+  libaiksaurus-1.2-0c2a libaiksaurus-1.2-data libboost-signals1.40.0 lyx lyx-common ttf-lyx
+
+WxMaxima mit allen Komponenten deinstallieren:
+  emacs23 emacs23-bin-common emacs23-common emacsen-common gnuplot-nox gnuplot-x11 groff gv libanthy0 libgnomecups1.0-1 libgnomeprint2.2-0 libgnomeprint2.2-data libgnomeprintui2.2-0 libgnomeprintui2.2-common libm17n-0 libotf0 libwxbase2.8-0 libwxgtk2.8-0 m17n-contrib m17n-db maxima maxima-doc maxima-emacs maxima-share ttf-jsmath wxmaxima xaw3dg
+
+
+Zur Zeit sind folgende Programm nicht eingestellt, z.T. aber installiert:
+=========================================================================
+	- /redshift:
+		- Installationspaket: redshift
+		- redshift -l 50.52:08.01 in Autostart anlegen	
+	- /Google Chromium:
+		- Google als Standardsuchmaschine verwenden
+		- Chromium als Standardbrowser
+		- Synchronisation einrichten (alles bis auf Lesezeichen)
+		- in Desktop downloaden, aber dennoch nachfragen
+		- Erweiterungen einstellen (Mensa-Planer, Bubble Translate, Xmarks)
+		- #Home-Button anzeigen
+		- #Autofill aktivieren
+		- #Titelleisten des Systems ausbelnden und Kompaktränder verwenden
+		- #Lesezeichen immer Anzeigen aktivieren
+		- #Chromium-Erweiterungen:
+			- Adblock Plus for Google Chrome™ Beta, Bubble Translate, Clickable Links, #Currency Converter, Docs-Viewer für PDF/PowerPoint von Google, #Google Calendar Checker Plus, #Google Mail Checker Plus, Google Quick Scroll, #Lite Weather, Mensa-Planer [1], Stop Autoplay for YouTube, wikipedia image preview, Xmarks Bookmark and Password Sync [2]
+	- /Empathy:
+		- Kontodeteils eingeben: ICQ, Nummer, Passwort, ISO-8859-15, Personen in deiner Nähe deaktivieren
+		- Persönliche Informationen: Bild einfügen
+		- Ansicht: Kompakte Größe wählen 
+		- Einstellungen:
+			- automatisch beim Starten verbinden deaktivieren
+			- Benachrichtigung bei Abwesenheit/Beschäftigung deaktiveren ausstellen
+			- Benachrichtigung wenn Chat nicht fokussiert ist
+			- Benachrichtigung wenn Kontakt anmeldet
+			- Benachrichtigung wenn Kontakt abmeldet
+			- Klänge immer für Nachricht empfangen, neue Unterhaltung, Kontakt meldet sich an oder ab
+			- Keine Rechtschreibprüfung
+			- Chat-Erscheinungsbild Ubuntu
+	    - /Klang -> Default statt Mint
+	    - /"sudo apt-get install sound-theme-freedesktop" installieren [Terminal] 
+	- /Firefox 4:
+		- Allgemein: 
+			- Neustarten-Meldung nicht anzeigen
+			- Speichern+Beenden nicht nachfragen
+		- Einstellungen:
+			- Grundsätzlich: Letzte Sitzungen Laden, Home: www.google.de, Downloadmanager anziegen, Speicherort nachfragen
+			- Tabs: alles bis auf Link in neuem Tab sofort anzeigen
+			- Inhalt: alles makiert, ISO-8859-15 auswählen und Deutsch als Sprache einstellen
+			- Applications: PDF -> Adobe Reader im Browser
+			- Privatsphäre: Chronik behalten, Location Bar: Chronik und Lesezeichen
+			- Sicherheit: alles bis auf Masterpasswort
+			- Erweitert: General: Hardware Beschleunigung an, Rechtschreibkorrektur an, auf Standardexplorer prüfen an
+				     Netzwerk: Bescheid geben wenn Seite Offline-Daten speichern will an
+			             Updates: Add-ons und Suchmaschinen
+			             Verschlüsselung: alles bis auf automatisch auswählen an
+	 		- Sync: Aus
+		- Oberfläche:
+			- keine Addon-Leiste
+			- keine Lesezeichen-Leiste
+			- nur Adresszeile, keine Suchmaschinen
+			- Addons rechts anzeigen Mail Notifier (1) und Xmarks Synchronisation (2)
+			- Symbole (kleine Symbole verwenden): Zurück, Vor, Wiederholen, Abbrechen, Home
+		- Addons:
+			- AdBlock Plus
+			- Google Mail Watcher (alert only when unread increase aktivieren, hide status-bar icon deaktivieren)
+			- DownloadHelper ( Speichern in /home/wayne/Desktop)
+			- Siphon (z.Z. deaktiviert)
+			- TubeStop
+			- Ubuntu Firefox (z.Z. deaktiviert)
+			- Xmarks (Bookmarks und Passwörter synchronisieren, automatisch, nicht nachfragen, sync beim beenden)
+	- /Akonadi:
+		- "Akonadi-Einrichtung" im KMenü öffnen, im Reiter "Einrichtung des Akonadi-Servers" den Server neu starten (unten rechts).
+		- In Reiter "Einrichtung der Akonadi-Ressourcen" wechseln und unter "hinzufügen" folgende Optionen wählen "Akonadi Google Calender Resource" und "Akonadi Google Contacts Resource"
+		- bs.sonntag und Passwort eingeben
+		- bei Systemeinstellungen -> Erweitert -> KDE-Ressource -> unter Kontakte den neuen Akonadi-Server (...resource) hinzufügen und als Standard setzen.
+		- unter KOrganizer den neuen Kalender anwählen (...resource) und als Standard setzen
+	- /Kontact einrichten:
+		- starten mit Emails
+		- keine Nachrichten anzeigen
+	- /KMail einrichten:
+		- Name
+		- IMAP (SSL, Port 993, imap.gmail.com)
+		- SMTP (SSL, Port 465, smtp.gmail.com)
+		- Ordner [Google Mail] nicht abonieren, nicht abonierte Ordner nicht anzeigen
+		- Adressbuch
+		- regelmäßig prüfen (alle 1 Min)
+		- beim Starten nach neuen Mails sehen
+		- Anzeige (Klassisch, Flache Datumsansicht, Signatur)
+		- Mülleimer beim beenden immer leeren
+		- Signatur über zitiertem Text
+		- Posteingang als Standardordner
+		- /Ordner "Mülleimer" verlinken
+		- /Ordner "Verschickt" verlinken
+		- /Ordner "Konzepte" verlinken
+		- /Ordner "Vorlagen" verlinken
+		- HTML Emails direkt laden, auch mit Referenzen aus Inet
+		- Systemeinst. -> Erweitert -> KDE-Ressource -> Akonadi hinzufügen als Standard
+	- /Kopete:
+		- Konten (ICQ-Nr, IP verbergen, Autorisieren, Bild)
+		- Schnellsuchleiste, Statusleiste nicht anzeigen
+		- Kontaktliste:
+			- Keine Kontaktfotos anzeigen
+			- Vertikale Bildaufleiste nach 5 Sekunden
+			- compactes Layout
+		- Verhalten:
+			- Anfangszustand offline
+			- Automatische Abwesenheit deaktivieren
+			- Automatische Rechtschreibprüfung deaktivieren
+		- Chat-Fenster:
+			- Stil: Pidgin Name-Colors
+			- Animierte ICQ6 Smilies
+		- Module:
+			- KopeteTeX
+			- Nachrichtenanzeiger
+			- Verlauf (10 Nachrichten, schwarze Schrift)
+	- /Kile:
+		- Keine Tipps zum Programmstart anzeigen
+		- Autor: Sebastian Sonntag, Document class options: a4paper, 10pt, Zeichen-Kodierung: latin9, Dateien nach dem schließen automatisch aufräumen
+		- PDFLaTeX -> PDF (Okular)
+		- Dynamischer Zeilenumbruch, Zeilennummern anzeigen, Bereiche zwischen Klammern besonders hervorheben
+		- Kodierung Westeuropäisch (ISO 8859-15), Keine Sicherungskopie anlegen

@@ -1,0 +1,50 @@
+****************************************************
+*Name: ubuntu_12_04_lts_archiv.txt                 *
+*Author: Sebastian Sonntag                         *
+*Date of last modification: 2012-10-05             *
+****************************************************
+
+Deinstalliert/en über: sudo wajig remove [...]
+================================================
+	- lyx
+	- freecad
+	- librecad
+	- kicad
+	- myunity
+
+
+Zur Zeit sind folgende Programm nicht eingestellt, z.T. aber installiert:
+=========================================================================
+  - encfs -> filebox:
+           - encfs installieren
+           - sonntux als User zur Gruppe fuse hinzufügen
+           - Ordner filebox im Home Folder anlegen
+           - filebox aus ~/Dropbox/safe mounten
+           - filebox/Dropbox/EncFS
+      - (User der Gruppe Fuse hinzufügen: "sudo usermod -aG fuse sonntux")
+      - (filebox Ordner im Home-Verzeichnis erstellen: "mkdir filebox")
+      - (filebox einhängen: "encfs ~/Dropbox/safe ~/filebox")
+      - filebox Skripte von ~/filebox/system/argus nach ~/.kde/Autostart kopieren, checken ob ausführbar und KDE, in Systemeinstellungen eintragen
+      - .atilla in Home kopieren
+      - Dropbox-Icons einfügen
+      - Dropboxstarter im Menü anlegen, dazu Icon aus Dropbox-Ordner nutzen
+           - sudo wajig -y install encfs && sudo usermod -aG fuse sonntux && mkdir filebox && encfs ~/Dropbox/safe ~/filebox
+  - Latexila:
+		- Zeilennummern anzeigen
+		- Keine Bestätigung beim Löschen, automatisch Löschen vor Beenden
+	- #gedit:
+		- 1. Zeilenummern anzeigen
+		- 2. Aktuelle Zeile hervorheben
+		- 3. Übereinstimmenden Klammern hervorheben
+		- 4. 2 Leerzeichen anstelle von Tabs
+		- 5. Automatischer Einzug
+		- 6. #Plugin für eingebettetes Terminal aktivieren
+		- 7. #Plugin für intelligente Leerzeichen aktivieren
+		- 8. #Plugin für Quelltextkommentare aktivieren
+		- 9. #Plugin für Wortvervollständigung aktivieren
+	- Lyx:
+		- Einstellungen -> Rechtschreibung: Enchant, de_DE als alternative Sprache, Rechschreibung bei Eingabe Prüfen
+	- Gwibber:
+		- Twitter-Account einrichten
+		- auf minimale Breite reduzieren
+		- Einstellungen: Service nicht mit System starten

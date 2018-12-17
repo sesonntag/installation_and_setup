@@ -1,0 +1,27 @@
+Programme die zur Zeit evtl. installiert sind, aber nicht genutzt/eingerichtet werden:
+======================================================================================
+	- kubuntu-low-fat-settings 
+	- Systemsettings:
+		- Printer Configuration: (socket://192.168.178.35) -> CMYK drucken (IP3600 als IP4600 einstellen))
+		- Shortcuts and Gestures: Examples aktivieren, Konsole aktivieren
+	- Kontact: 
+		- Keine Tipps beim Starten anzeigen
+		- Kalender aus Intranet laden falls nicht automatisch geladen
+		- Kontakte aus Intranet laden falls nicht automatisch geladen
+		- KMail einrichten:
+			- Identität (Sebastian Sonntag mit Gmail und Sebastian Sonntag mit Studium) [Sound, regelmäßig prüfen (5Mins), beim Starten, Papierkorb]
+			- IMAP [(imap.googlemail.com) Server abrufen, via 993 und SSL], [(mail.uni-siegen.de), g002229@uni-siegen.de Server abrufen]
+			- SMTP [(smtp.googlemail.com) Server abrufen], [(mail.uni-siegen.de), erfordert Login g002229@uni-siegen.de, TLS Port 25]
+			- Beim Starten neue Mails holen und Beep aktivieren
+			- Disconnected Mode aktiveren
+			- Gmail als Standardkonto setzen
+			- Flache Datumsansicht, klassischer Look
+			- Signatur über zitiertem Text
+			- HTML-Ansicht bevorzugen
+			- Emails dürfen Referenzen aus Inet laden
+			- beim Starten Privaten Posteingang anzeigen
+			- Lokalen Mülleimer beim beenden immer leeren
+			- Adressbuch hinzufügen als Datei (das Alte löschen)
+			- Kalenderfarbe setzen: Sammlung = #A2D2F2
+			- Kalenderfarben setzen: Allgemein->#6D86C0, Geburtstage->#9CEF7E, Uni Arbeit->#C4C4A8, Uni Internes->#E9D34F, Uni Studium->#8F8F8F 
+			- nicht melden, wenn Termin in Vergangenheit gelegt wird 

@@ -1,0 +1,208 @@
+==================================================================
+           ============================================
+           |               __        __               |
+           |     |  /     |  \      |       |         |
+           |     |<       |   |     |--     |         |
+           |     |  \     |__/      |__     ---|-     |     
+           |                                   |      |
+           ============================================
+==================================================================
+Datum: 2011-10-18	                               Zeit: 18:45  
+
+
+=================================================:
+	- su -c 'yum -y --nogpgcheck install http://dnmouse.org/autoplus-1.2-5.noarch.rpm'
+
+
+	Installieren [Softwareverwaltung] Liste s.u.:
+=====================================================
+	- zenity installieren
+	- autoplus installieren
+	- wuala installieren
+	- @kde-desktop installieren
+	- libreoffice-calc, -draw, -graphicfilter, -impress, -math, -writer, -xsltfilter installieren
+	- fiefox installieren
+	- gcc installieren
+	- gcc-c++ installieren
+	- bash-completion installieren
+	- kdesdk (okteta, kompare) installieren
+	- kde-l10n-de installieren
+	- Soundconverter installieren
+	- lame installieren
+	- simplescan installieren
+	- pdfedit installieren
+	- kde-partitionmanager installieren
+	- texlive-* installieren
+	- HomeBank installieren
+	- kdeedu (kalzium) installieren
+	- krename installieren
+	- kdegraphics (kolourpaint) installieren
+	- dvdrip cdrdao cdrecord mjpegtools mkisofs mplayer ogmtools unrar subtitleripper vcdimager xine-ui xvid4conf installieren
+	- dvdauthor installieren
+	- vlc installieren
+	- kdegames installieren
+	- dvipng installieren
+	- unetbootin installieren
+	- kile installieren
+	- kdeedu-kstars installieren
+	- krusader installieren
+	- gnuplot installieren
+	- scidavis installieren
+	- referencer installieren
+	- ROOT-system installieren
+	- ktechlab installieren
+	- kicad installieren
+	- gspiceui installieren
+	- automake installieren
+	- autoconf installieren
+	- PokerTH installieren
+	- ipython, scipy, python-matplotlib installieren
+	- p7zip installieren
+	- kate installieren
+	- ImageMagick installieren
+	- qalculate-qt installieren
+	- aspell-de installieren
+	- hunspell-de installieren
+	- kbibtex installieren
+	- mathomatic installieren
+	- nano installieren
+	- lynx installieren
+	- kdebase-workspace-wallpapers installieren
+
+	Einrichten:
+===================
+	- Netzwerk einstellen (Schlüssel, speichern, KWallet: kein Passwort - unsichere Verschlüsselung verwenden)
+	- System updaten
+	- zenity installieren
+	- autoplus starten:
+		- flash-plugin installieren
+		- mp3-Codecs installieren
+		- DVD-Codecs installieren
+		- Most codecs installieren
+		- Skype installieren
+		- Sun Java installieren
+		- winff installieren
+	- Installation aller benötigten Programme
+	- Neustarten
+	- Wuala
+		- Synchronisation-Ordner laden
+		- Wuala aktivieren (Programm erstmals starten)
+		- Ordnerverlinkung in Dolphin unter Home anlegen
+	- Systemeinstellungen:
+		- Application Appearence: Symbole als Oxygen speichern
+		- Locale: Country: Germany Preferred Languages: Americane English, Spell Checker: German (Germany)
+		- Personal Informatio: Ressourcen: 
+			- Contacts hinzufügen aus Datei "/home/USER/Voila/Uni/Work/Account/Adressbook/contacts.vcf"
+			- Calendar hinzufügen aus Datei "/home/USER/Voila/Uni/Work/Account/Calendar/xyz.ics"
+		- Shortcuts and Gestures: Examples aktivieren, Konsole aktivieren
+		- Desktop Effects: Einschalten
+		- Default Applications: Internet->Firefox
+		- /Printer Configuration: (socket://192.168.178.35) -> CMYK drucken (IP3600 als IP4600 einstellen))
+		- Input Devices: Num immer einschalten, 105 Tasten-Tastatur, ggf. Touchpad aktivieren
+		- Power Management: kein Dimmen, nach 30/10 Min in Tiefschlaf, nach 10/5 Min Bildschirm aus)
+		- Startup and Shutdown: Startprogramm "wuala -blobs" hinzufügen, System immer mit leerer Sitzung starten
+	- Hintergrundbild: Stripes
+	- Datum in digitaler Uhr anzeigen, inkl. Wochentag
+	- Nicht fragen, ob entgültig löschen
+	- Nicht fragen, ob in Papierkorb
+	- Nicht fragen, ob Papierkorb leeren
+	- Standarddateitypen: 
+		- Musik: Amarok
+		- Video: vlc
+		- Bilder: gwenview
+		- txt: Kate
+	- Skype: Look auf Oxygen stellen
+	- dvd::rip:
+		- de als Preferred Language
+		- /home/USER/Videos als Zielverzeichnis
+		- unrar statt rar zum packen nutzen
+	- kate: 
+		- Keine Tipps zum Programmstart anzeigen
+		- dynamischer Zeilenumbruch
+		- Zeilennummerierung
+		- Klammern betonen
+	- Homebank:
+		- Backupdatei öffnen (/home/USER/Voila/Dokumente/Homebank/Bastian_Gelduebersicht.xhb)
+		- Preferences: 
+			- General: Verzeichnisse: /home/USER/Dropbox/Dokumente/HomeBank
+			- Display format: Prefix symbol: € 
+	- LibreOffice:
+		- Options-> Languages: Default currency: EUR (German(Germany)), Default language for documents (German(Germany))
+	- Kile:
+		- Portierung auf KDE4? -> ja
+		- Keine Tipps zum Programmstart anzeigen
+		- Autor: Sebastian Sonntag, Document class options: a4paper, 10pt, Zeichen-Kodierung: latin9, Dateien nach dem schließen automatisch aufräumen
+		- PDFLaTeX -> PDF (Okular)
+		- Dynamischer Zeilenumbruch, Zeilennummern anzeigen, Bereiche zwischen Klammern besonders hervorheben
+		- Rechtschreibprüfung: Deutsch(Deutschland)
+		- Speichern in ISO-8851-15
+	- Kontact: 
+		- Keine Tipps beim Starten anzeigen
+		- Kalender aus Intranet laden falls nicht automatisch geladen
+		- Kontakte aus Intranet laden falls nicht automatisch geladen
+		- KMail einrichten:
+			- Identität (Sebastian Sonntag mit Gmail und Sebastian Sonntag mit HEP Arbeit) [Signaturen, Sound, regelmäßig prüfen (5Mins), beim Starten, Papierkorb]
+			- IMAP [(imap.googlemail.com) Server abrufen, via 993 und SSL], [(mail.uni-siegen.de), g002229@uni-siegen.de Server abrufen]
+			- SMTP [(smtp.googlemail.com) Server abrufen], [(mail.uni-siegen.de), erfordert Login g002229@uni-siegen.de, TLS Port 25]
+			- Beim Starten neue Mails holen und Beep aktivieren
+			- Gmail als Standardkonto setzen
+			- Signatur über zitiertem Text
+			- HTML-Ansicht bevorzugen
+			- Emails dürfen Referenzen aus Inet laden
+			- beim Starten Privaten Posteingang anzeigen
+			- Mülleimer beim beenden immer leeren
+			- Adressbuch hinzufügen als Datei (das Alte löschen)
+			- Kalenderfarben setzen: Allgemein->#6D86C0, Geburtstage->#9CEF7E, Uni Arbeit->#C4C4A8, Uni Internes->#E9D34F, Uni Studium->#8F8F8F 
+			- nicht melden, wenn Termin in Vergangenheit gelegt wird
+	- Kopete:
+		- Schnellsuchleiste nicht anzeigen
+		- Accounts (MSN; ICQ, IP verbergen, Autorisieren, ISO-8859-15 Kodierung)
+		- Contact List:
+			- keine baumartigen Linien anzeigen
+			- Vertikale Bildaufleiste nach 5 Sekunden
+			- compactes Layout
+		- Behavior:
+			- Automatische Abwesenheit deaktivieren
+			- Automatische Rechtschreibprüfung deaktivieren
+		- Plugins:
+			- Bildvorschauen in Chat anzeigen
+			- KopeteTeX
+	- Firefox 7.0.1:
+		- Addons nachinstallieren:
+			- AdBlock Plus
+			- AdBlock Plus Popup-Addon
+			- DownloadHelper (Speichern in /home/USER/Downloads)
+			- Xmarks (Bookmarks und Passwörter synchronisieren, automatisch, nicht nachfragen, Sync beim Beenden)
+			- LastPass (unsicheren internen Passwortmanager deaktivieren, Passwort speichern)
+		- Allgemein: 
+			- Meldungen nicht anzeigen: Privates Browsen
+		- Einstellungen:
+			- Grundsätzlich: Letzte Sitzungen Laden, Home: http://www.google.de statt "http://start.fedoraproject.org/"
+			- keinen Downloadmanager anzeigen, fragen wo speichern
+		- Oberfläche:
+			- kleine Symbole verwenden
+			- keine Status/Addon-Bar
+	- Reihenfolge der Favoriten im Menü:
+		- Firefox
+		- Kontact
+		- Kopete
+		- Taschenrechner
+		- Konsole
+		- Systemeinstellungen
+		- Systemüberwachung
+		- Ordner
+
+
+	Konoslenbefehle für KDE-Installation:
+=============================================
+su -c 'yum -y --nogpgcheck install http://dnmouse.org/autoplus-1.2-5.noarch.rpm' && sudo yum install java-1.6.0-openjdk && wget http://cdn.wuala.com/repo/rh/wuala-current.i386.rpm && sudo rpm -ihv wuala-current.i386.rpm && rm wuala-current.i386.rpm* && sudo yum install zenity @kde-desktop libreoffice-calc libreoffice-draw libreoffice-graphicfilter libreoffice-impress libreoffice-math libreoffice-writer libreoffice-xsltfilter firefox gcc gcc-c++ bash-completion kdesdk kde-l10n-de soundconverter lame simple-scan pdfedit kde-partitionmanager texlive-* homebank kdeedu krename kdegraphics dvdrip cdrdao cdrecord mjpegtools mkisofs mplayer ogmtools unrar subtitleripper vcdimager xine-ui xvid4conf dvdauthor vlc kdegames dvipng unetbootin kile kdeedu-kstars krusader gnuplot scidavis referencer root-* ktechlab kicad gspiceui automake autoconf pokerth ipython scipy python-matplotlib p7zip kate aspell-de hunspell-de kbibtex mathomatic nano lynx kdebase-workspace-wallpapers
+
+
+	Testinstallation:
+=========================
+-=-=-=-=-=
+
+
+	Anmerkung zum Deinstallieren:
+=====================================
+ggf. sind Abhängigkeitsprobleme und zusätlich relevante Pakete in "Install-Uninstall-Undefined.txt" zu finden.

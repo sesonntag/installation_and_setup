@@ -1,0 +1,74 @@
+**************************************************
+*Name: fedora_16_archiv.txt                      *
+*Author: Sebastian Sonntag                   		 *
+*Date of last modification: 2012-05-25	      	 *
+**************************************************
+
+Deinstalliert/en über: sudo yum remove [...]
+==============================================
+	- dvd::rip -> dvdrip
+	- Docky -> docky
+	- Latexila -> latexila
+
+
+Zur Zeit sind folgende Programm nicht eingestellt, z.T. aber installiert:
+=========================================================================
+	- gedit:
+		- 1. Line numbers
+		- 2. Highlite current line
+		- 3. Highlite matching brackets
+		- 4. Insert tab width as spaces with 4
+		- 5. Automatic Identation
+		- 6. Plugin für Code Comment aktivieren
+		- 7. Plugin für Embedded Terminal aktivieren
+		- 8. Plugin für Smart Spaces aktivieren
+		- 9. Plugin für Word Completion aktivieren
+	- Latexila:
+		- Zeilennummern
+		- Keine Bestätigung beim löschen, automatisch löschen vor beenden
+	- TexMaker:
+		- Commands: External Viewer
+		- Quickbuild: Don't launch new instance while open
+		- Editor: ISO-8859-15, check for external changes, /usr/share/myspell/de_DE.dic als Rechtschreibung, spaces instead of tabs
+	- Docky:
+			- Docks: Start with PC, HUD, Intellihide with animation, Icon Size 24, Panel Mode, Indicate Multiple Windows
+			- Starter: Keine
+	- dvd::rip:
+		- de als Preferred Language
+		- "~/Videos" als Zielverzeichnis
+		- unrar statt rar zum packen nutzen
+	- Kontact: 
+		- Keine Tipps beim Starten anzeigen
+		- Kalender aus Intranet laden falls nicht automatisch geladen
+		- Kontakte aus Intranet laden falls nicht automatisch geladen
+		- KMail einrichten:
+			- Identität (Sebastian Sonntag mit Gmail und Sebastian Sonntag mit Studium) [Sound, regelmäßig prüfen (5Mins), beim Starten, Papierkorb]
+			- IMAP [(imap.googlemail.com) Server abrufen, via 993 und SSL], [(mail.uni-siegen.de), g002229@uni-siegen.de Server abrufen]
+			- SMTP [(smtp.googlemail.com) Server abrufen], [(mail.uni-siegen.de), erfordert Login g002229@uni-siegen.de, TLS Port 25]
+			- Beim Starten neue Mails holen und Beep aktivieren
+			- Disconnected Mode aktiveren
+			- Gmail als Standardkonto setzen
+			- Flache Datumsansicht, klassischer Look
+			- Signatur über zitiertem Text
+			- HTML-Ansicht bevorzugen
+			- Emails dürfen Referenzen aus Inet laden
+			- beim Starten Privaten Posteingang anzeigen
+			- Lokalen Mülleimer beim beenden immer leeren
+			- Adressbuch hinzufügen als Datei (das Alte löschen)
+			- Kalenderfarbe setzen: Sammlung = #A2D2F2
+			- Kalenderfarben setzen: Allgemein->#6D86C0, Geburtstage->#9CEF7E, Uni Arbeit->#C4C4A8, Uni Internes->#E9D34F, Uni Studium->#8F8F8F 
+			- nicht melden, wenn Termin in Vergangenheit gelegt wird 
+	- /Homebank:
+		- Backupdatei öffnen (/home/USER/Voila/Dokumente/Homebank/Bastian_Gelduebersicht.xhb)
+		- Preferences: 
+			- General: Verzeichnisse: /home/USER/Dropbox/Dokumente/HomeBank
+			- Display format: Prefix symbol: €
+	- /tint2
+		- Zeile 007: roundef = 0 vorher 7
+		- Zeile 009: backgroundcolour = 100 vorher 60
+		- Zeile 010: boardcolour = #000000 100 vorher #FFFFFF 16
+		- Zeile 027: panel_size = 100 27 vorher 94 30
+		- Zeile 075: systray = 0 vorher 1
+		- Zeile 087: clock_font_colour #000000 100 vorher #FFFFFF 74
+		- Zeile 103: mouse_right = none vorher close
+	

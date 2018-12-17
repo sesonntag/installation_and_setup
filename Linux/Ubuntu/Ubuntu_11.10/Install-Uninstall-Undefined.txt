@@ -1,0 +1,6 @@
+- TeXMaker:
+	- PDFs in externem Viewer öffnen (envince)
+	- Kodierung auf ISO-8859-15 setzen
+	- Deutsche Rechtschreibung
+	- Interface: Classic
+	- Buttons: PDFLaTex, PDF ansehen

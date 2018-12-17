@@ -1,0 +1,33 @@
+Beachten:
+=========
+- Lyx: Werkzeugleisten testen auf Automatik - ggf. NICHT anklicken wie bisher!
+(- Es gibt ein Tool (Name: qtnx) um etliche Programme ausprobieren zu können, bevor man installiert -> installieren!)
+- es gibt kein ROOT!
+- Unetbootin nicht installieren
+- Aspell und aspell-de nicht installieren
+- Vorlagen auf Libre-Office umbenennen
+- gnome-gmail-notifier nicht installieren
+- statt gm-notify popper installieren
+
+
+===========================================================================
+
+
+- unity installieren
+	- empfehlungen installieren?!
+	- empathy installieren
+	- UnityFox Erweiterung für Firefox installieren (Download in Bar)
+	- Unity-Nachträglichkeiten:
+		- lo-menubar für Libre-office	\
+		- unity-compiz-manager 		 \__ Ubuntu-Anmerkungen
+		- deconf-manager		 /
+___________________________________________________________________________
+	- Natty Desktop einrichten 	\__ Screenshot
+	- Ubuntu Schrift einrichten	/
+
+
+===========================================================================
+
+
+- gnome-shell installieren
+	...

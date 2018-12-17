@@ -1,0 +1,224 @@
+=========================================================================================
+                        =========================================                
+                        |                   ___  ____           |
+                        |     |   |  |\  |   |     |   |__|     |
+                        |     |   |  | \ |   |     |    /       |
+                        |     |___|  |  \|  _|_    |   /        |
+                        |                                       |
+                        =========================================
+=========================================================================================
+Datum: 2013-02-05                                                             Zeit: 16:00  
+
+
+=====================================================
+- Nullter Installationsprozess: [MANUELL!!!]
+  - Partnerquellen für Ubuntu in der /etc/apt/sources.list unten mit sudo-Rechten aktivieren und Paketquellen updaten (s.u.)
+  - aktuellste Version von ROOT checken auf "http://root.cern.ch/drupal/"
+- Erster Installationsprozess:
+  - sudo add-apt-repository ppa:stebbins/handbrake-releases einrichten
+  - Medienkey-Ring libdvdcss gstreamer0.10-plugins-ugly libavcodec-extra-53 libavdevice-extra-53 libavformat-extra-53 libavutil-extra-51 libpostproc-extra-52 libswscale-extra-2 non-free-codecs installieren
+- Zweiter Installationsprozess:
+  - Dropbox installieren
+  - encfs installieren und integrieren:
+    - encfs installieren
+    - sonntux als User zur Gruppe fuse hinzufügen
+    - Ordner filebox im Home Folder anlegen
+    - filebox aus ~/Dropbox/container mounten
+- Dritter Installationsprozess:
+  - libreoffice-calc, -draw, -impress, -math, -writer installieren
+  - firefox mozplugger installieren
+  - thunderbird installieren
+  - gcc installieren
+  - g++ installieren
+  - bash-completion 
+  - meld installieren
+  - ghex installieren
+  - language-pack-de language-pack-de-base language-pack-gnome-de language-pack-gnome-de-base installieren
+  - soundconverter installieren
+  - lame installieren
+  - gscan2pdf installieren
+  - gparted installieren
+  - texlive-full installieren
+  - gelemental installieren
+  - pyrenamer installieren
+  - pinta installieren
+  - vlc installieren
+  - gnome-games installieren
+  - dvipng installieren
+  - unetbootin installieren
+  - stellarium installieren
+  - automake installieren
+  - autoconf installieren
+  - ipython python-scipy python-matplotlib python-progressbar installieren
+  - p7zip-* installieren
+  - imagemagick installieren
+  - aspell aspell-de hunspell hunspell-de-de installieren
+  - nano installieren
+  - lynx installieren
+  - pdfmod installieren
+  - arista installieren
+  - skype installieren
+  - flashplugin-installer installieren
+  - ttf-mscorefonts-installer installieren
+  - ubuntu-restricted-extras installieren
+  - gthumb installieren
+  - nautilus-image-converter nautilus-open-terminal installieren
+  - gwibber installieren
+  - openjdk-7-jre installieren
+  - icedtea-7-plugin installieren
+  - htop installieren
+  - screen installieren
+  - handbrake-gtk installieren
+  - geany geany-plugins installieren
+  - inkscape dia-gnome libwmf-bin pstoedit sketch installieren
+  - libnotify-bin installieren
+  - shutter installieren
+  - sound-juicer installieren
+  - octave installieren
+  - rar unrar installieren
+  - avidemux installieren
+  - hplip* installieren
+  - 0ad installieren
+  - xournal installieren
+  - winff installieren
+  - openssh-server installieren
+  - virtualbox-ose virtualbox-guest-additions-iso installieren
+  - preload installieren
+  - samba system-config-samba cifs-utils installieren
+  - gimp installieren
+  - backintime-gnome installieren
+  - lyx installieren
+  - sqlite3 sqliteman installieren
+  - indicator-weather installieren
+- Vierter Installationsprozess:
+  - ROOT kompilieren und installieren
+- #Fünfter Installationsprozess [MANUELL!!!]:
+  - Teamviewer suchen und manuell installieren
+  - Steam und suchen manuell installieren
+
+
+- System einrichten:
+====================
+  - Partnerquellen für Ubuntu in der /etc/apt/sources.list unten mit sudo-Rechten aktivieren, Paketquellen updaten
+  - Dropbox-Ordner ins Home-Verzeichnis kopieren
+  - System updaten
+  - Neustarten
+  - Evtl. aktuellsten Grafiktreiber installieren: Driver -> nVidia
+  - Neustarten
+  - filebox/Dropbox/EncFS
+    - (User der Gruppe Fuse hinzufügen: "sudo usermod -aG fuse sonntux")
+    - (filebox Ordner im Home-Verzeichnis erstellen: "mkdir filebox")
+    - (filebox einhängen: "encfs ~/Dropbox/container ~/filebox")
+    - .atilla in ~ anlegen
+    - filebox Skript von ~/filebox/system/argus nach /usr/local/bin kopieren, checken ob Unity ausgewählt und ausführbar gesetzt, in Startprogramme neuen Eintrag nur mit "encfs_mount_filebox.sh" machen, in ".bash_logout" den Inhalt unter Gnome-Zeile aus "encfs_unmount_filebox.sh" eintragen
+  - (Installation aller restlichen benötigten Programme)
+  - Neustarten
+  - Systemeinstellungen:
+    - Darstellung: Icons in Pixelgröße 40 statt 48 im Dash zeigen
+    - Helligkeit und Sperren: Kein Dimmen, Sperre aus
+    - Privatsphäre: Shopping Linse deaktivieren
+    - Sprachen: fehlende Sprachen nachinstallieren, Regionale Formate: checken, ob Deutsch(Deutschland)
+    - Leistung: ggf. Ausschalten bei kritischem Akku
+    - Informationen: Vorgabe-Programme: Video-VLC, Foto-gThumb
+    - Zeit und Datum: Wochentag, inklusive Kalenderwochen
+    - #Drucken: Netzwerkdrucker: HP... in Rainers Büro, Papiergröße: A4
+ #- Starteinstellungen:
+    - "sudo sed -i 's/NoDisplay=true/NoDisplay=false/g' /etc/xdg/autostart/*.desktop"
+    - Programme deaktivieren:
+      - xxx
+  - Desktop:
+    - Reihenfolge der Favoriten im Dock:
+      - Home-Ordner
+      - Firefox
+      - Thunderbird
+      - Empathy
+      - Skype
+      - Taschenrechner
+    - #Indicator-Weather:
+      - ...
+  - Vorlagen in Vorlagen-Ordner einfügen
+  - Standarddateitypen:
+    - Bilder: gThumb
+    - Latex: geany
+    - Musik: Rhythmbox
+    - Skript: geany
+    - Vektorgraphik: Inkscape
+    - Video: VLC
+  - Nautilus:
+    - Ansicht -> Statusbar aktivieren
+  - Geany:
+    - Plugins: Geany-Latex und Rechtschreibprüfung aktivieren (KOMA als Standard; beim Tippen korrigieren, de_DE als Sprache mit /usr/share/hunspell)
+    - Schnittstelle: Monospace 10 -> Ubuntu Mono 12
+    - Editor: visueller Zeilenumbruch, Einrückung 2, Typ ist Leerzeichen
+    - Werkzeuge: x-terminal-emulator -> gnome-terminal
+    - Vorlagen: Mail ist bs.sonntag@gmail.com
+    - Terminal: Hintergrundfarbe "#300A24" anstelle von Schwarz
+  - Lyx:
+    - Einstellungen -> Rechtschreibung: Enchant, de_DE als alternative Sprache, Rechschreibung bei Eingabe prüfen
+  - gThumb:
+    - Ansicht -> Sortieren nach... -> Dateiname
+    - checken, ob: Einstellungen -> Betrachter -> In Fenster einpassen, falls größer
+  - HandBrake:
+    - Preferences -> Audio/Subtitles: Language: Deutsch
+  - LibreOffice:
+    - Autokorrektur Optionen: Tab als Vervollständigungsbefehl, Länge: 5
+  - Empathy:
+    - Konto für ICQ anlegen (ISO8859-15 setzen), Konto für Facebook anlegen (nur ich kann die App sehen, nur Chat den Zugriff erlauben) und alle Alias Sebastian Sonntag
+    - Einstellungen:
+      - Benachrichtigen: Alle bis auf Abwesenheit aktivieren, das deaktivieren
+      - Klänge: Deaktiviere "bei Abwesenheit oder Beschäftigung deaktivieren", alle anderen aktivieren
+      - Rechtschreibprüfung: Keine
+  - Thunderbird 18.x:
+    - Ordner aus laden und als .thunderbird im Home-Ornder speichern
+    - Thunderbird erstmals starten und in offline Modus gehen
+  - Firefox 18.x:
+    - Grundsätzlich:
+      - key3.db und signons.sqlite einkopieren
+    - Einstellungen:
+      - Tabs und Fenster der letzten Sitzung anzeigen
+      - Startseite ist "www.duckduckgo.com" anstelle von "about:startpage"
+      - Kein Downloadmanager
+      - immer fragen wohin speichern
+    - Allgemein: 
+      - about:Config: print: letter->a4
+      - keine Vorschau bei neuen Tabs
+    - Addons nachinstallieren bzw. einrichten:
+      - Xmarks (sync Tabs, keine Search bars, Bookmarks from Server, don't ask for snyc)
+      - DownloadHelper (Speichern in ~/Downloads, 20 Downloads max, kein Social Share)
+      - Unityfox
+      - AdBlock Plus (easylist+germany hinzufügen)
+      - AdBlock Plus Popup-Addon
+      - German Dictionary
+    - Oberfläche:
+      - kleine Symbole verwenden
+      - keine Status/Addon-Bar
+      - ggf. Download-Button rechts oben entfernen
+
+
+ - Konoslenbefehle für Aktualisierung:
+======================================
+  - (Update-/Upgrade-Befehl (s.u.) als alias mit "sudo_update" in .bashrc eintragen)
+  - per apt-get: sudo apt-get update && sudo apt-get upgrade && sudo apt-get autoremove --purge && sudo apt-get autoremove && sudo apt-get autoclean && sudo apt-get clean
+
+
+ - Alias eintragen:
+===================
+  - Update-/Upgrade-Befehl
+    - && cd && echo "" >> ~/.bashrc && echo "# Update alias" >> ~/.bashrc && echo "alias sudo_update='sudo apt-get update && sudo apt-get upgrade && sudo apt-get autoremove --purge && sudo apt-get autoremove && sudo apt-get autoclean && sudo apt-get clean'" >> ~/.bashrc && . ~/.bashrc
+  - SSH-Befehl
+    - && cd && echo "" >> ~/.bashrc && echo "# SSH alias" >> ~/.bashrc && echo "alias ssh_nolde='ssh -Xp 54322 sonntag@nolde.hep.pysik.uni-siegen.de'" >> ~/.bashrc && . ~/.bashrc 
+
+
+- Konoslenbefehle für Installation:
+===================================
+das Skript mit den Installationsbefehlen ist unter ~/Dropbox/system/linux/installation&einrichtung zu finden
+
+
+- Anmerkung zum Deinstallieren:
+===============================
+ggf. sind Abhängigkeitsprobleme und zusätlich relevante Pakete in "ubuntu_12.10_archiv-log.txt" zu finden.
+
+
+- Anmerkungen für nächste Ubuntu Version 13.04:
+===============================================
+  - undistract-me für pop-ups über fertige Terminal-Kommandos einer Mindestdauer von 10 Sekunden

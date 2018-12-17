@@ -1,0 +1,53 @@
+Deinstallieren über: sudo yum remove [...]
+==============================================
+
+
+
+Zur Zeit sind folgende Programm nicht eingestellt, z.T. aber installiert:
+=========================================================================	
+	- /Empathy:
+		- Kontodeteils eingeben: ICQ, Nummer, Passwort, ISO-8859-15, Personen in deiner Nähe deaktivieren
+		- Persönliche Informationen: Bild einfügen
+		- Ansicht: Kompakte Größe wählen 
+		- Einstellungen:
+			- automatisch beim Starten verbinden deaktivieren
+			- Benachrichtigung bei Abwesenheit/Beschäftigung deaktiveren ausstellen
+			- Benachrichtigung wenn Chat nicht fokussiert ist
+			- Benachrichtigung wenn Kontakt anmeldet
+			- Benachrichtigung wenn Kontakt abmeldet
+			- Klänge immer für Nachricht empfangen, neue Unterhaltung, Kontakt meldet sich an oder ab
+			- Keine Rechtschreibprüfung
+			- Chat-Erscheinungsbild Ubuntu
+	    - /Klang -> Default statt Mint
+	    - /"sudo apt-get install sound-theme-freedesktop" installieren [Terminal] 
+	- /Firefox 4:
+		- Allgemein: 
+			- Neustarten-Meldung nicht anzeigen
+			- Speichern+Beenden nicht nachfragen
+		- Einstellungen:
+			- Grundsätzlich: Letzte Sitzungen Laden, Home: www.google.de, Downloadmanager anziegen, Speicherort nachfragen
+			- Tabs: alles bis auf Link in neuem Tab sofort anzeigen
+			- Inhalt: alles makiert, ISO-8859-15 auswählen und Deutsch als Sprache einstellen
+			- Applications: PDF -> Adobe Reader im Browser
+			- Privatsphäre: Chronik behalten, Location Bar: Chronik und Lesezeichen
+			- Sicherheit: alles bis auf Masterpasswort
+			- Erweitert: General: Hardware Beschleunigung an, Rechtschreibkorrektur an, auf Standardexplorer prüfen an
+				     Netzwerk: Bescheid geben wenn Seite Offline-Daten speichern will an
+			             Updates: Add-ons und Suchmaschinen
+			             Verschlüsselung: alles bis auf automatisch auswählen an
+	 		- Sync: Aus
+		- Oberfläche:
+			- keine Addon-Leiste
+			- keine Lesezeichen-Leiste
+			- nur Adresszeile, keine Suchmaschinen
+			- Addons rechts anzeigen Mail Notifier (1) und Xmarks Synchronisation (2)
+			- Symbole (kleine Symbole verwenden): Zurück, Vor, Wiederholen, Abbrechen, Home
+		- Addons:
+			- AdBlock Plus
+			- Google Mail Watcher (alert only when unread increase aktivieren, hide status-bar icon deaktivieren)
+			- DownloadHelper ( Speichern in /home/wayne/Desktop)
+			- Siphon (z.Z. deaktiviert)
+			- TubeStop
+			- Ubuntu Firefox (z.Z. deaktiviert)
+			- Xmarks (Bookmarks und Passwörter synchronisieren, automatisch, nicht nachfragen, sync beim beenden)
+	- 

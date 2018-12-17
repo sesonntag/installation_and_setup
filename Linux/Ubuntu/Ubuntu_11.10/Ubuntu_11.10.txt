@@ -1,0 +1,182 @@
+=================================================================
+           ===========================================
+           |      __           ___            __     |
+           |     |  |  |\  |  |   |  |\  /|  |       |
+           |     |__   | \ |  |   |  | \/ |  |--     |
+           |     |__|  |  \|  |___|  |    |  |__     |
+           |        |                                |
+           ===========================================
+=================================================================
+Datum: 2012-04-11		           	      Zeit: 19:00  
+
+
+=====================================================
+    - Nullter Installationsprozess: [MANUELL!!!]
+	- Partnerquellen für Ubuntu in der /etc/apt/sources.list unten mit sudo-Rechten aktivieren und Paketquellen updaten (s.u.)
+    - Erster Installationsprozess:
+	- sudo add-apt-repository ppa:stebbins/handbrake-releases in der /etc/apt/sources.list unten mit sudo-Rechten eintragen
+	- Medienkey-Ring und libdvdcss installieren
+    - Zweiter Installationsprozess:
+	- !Dropbox installieren
+	- encfs installieren
+    - Dritter Installations:
+	- libreoffice-calc, -draw, -impress, -math, -writer installieren
+	- firefox installieren
+	- mozplugger installieren
+	- Thunderbird installieren
+	- gcc installieren
+	- g++ installieren
+	- bash-completion installieren
+	- meld installieren
+	- bless installieren
+	- language-pack-de language-pack-de-base language-support-de language-pack-gnome-de language-pack-gnome-de-base
+	- Soundconverter installieren
+	- lame installieren
+	- gscan2pdf installieren
+	- gparted installieren
+	- texlive* installieren
+	- gelemental installieren
+	- pyrenamer installieren
+	- pinta installieren
+	- cdrdao cdrecord mjpegtools mkisofs mplayer ogmtools unrar subtitleripper vcdimager xine-ui xvid4conf installieren
+	- dvdauthor installieren
+	- vlc installieren
+	- gnome-games installieren
+	- dvipng installieren
+	- usb-creator-gtk installieren
+	- latexila installieren
+	- lyx installieren
+	- stellarium installieren
+	- automake installieren
+	- autoconf installieren
+	- PokerTH installieren
+	- ipython, python-scipy, python-matplotlib installieren
+	- p7zip-full installieren
+	- gedit, -plugins installieren
+	- ImageMagick installieren
+	- aspell-de installieren
+	- hunspell installieren
+	- mathomatic installieren
+	- nano installieren
+	- lynx installieren
+	- ubuntu-wallpapers, gnome-backgrounds installieren
+	- pdfmod installieren
+	- winff installieren
+	- librecad installieren
+	- kicad installieren
+	- skype installieren		
+	- flashplugin-installer installieren
+	- ttf-mscorefonts-installer installieren
+	- ubuntu-restricted-extras installieren
+	- gthumb installieren
+	- nautilus-image-converter installieren
+	- nautilus-open-terminal installieren
+	- gnome-sushi installieren
+	- gwibber installieren
+	- openjdk-6-jre installieren
+	- icedtea-plugin installieren
+	- >>audex installieren
+	- htop installieren
+	- screen installieren
+	- handbrake-gtk installieren
+
+
+	Einrichten:
+===================
+	- Partnerquellen für Ubuntu in der /etc/apt/sources.list unten mit sudo-Rechten aktivieren, Paketquellen updaten
+	- Dropbox-Ordner ins Home-Verzeichnis kopieren
+	- System updaten
+	- Neustarten
+	- Evtl. aktuellsten Grafiktreiber installieren: Driver -> nVidia
+	- Neustarten
+	- Installation von Dropbox
+		- Starten des Dienstes
+	- Installation aller benötigten Programme
+	- Neustarten
+	- CloudSync/Dropbox/EncFS
+		- User der Gruppe Fuse hinzufügen: "sudo usermod -aG fuse sonntux"
+		- CloudSync Ordner im Home-Verzeichnis erstellen: "mkdir CloudSync"
+		- CloudSync einhängen: "encfs ~/Dropbox/Safe ~/CloudSync"
+		- #CloudSync Skripte von ~/CloudSync/System/Argus nach ~/.kde/Autostart kopieren, checken ob ausführbar
+		- Ordnerverlinkung in Dolphin unter Home anlegen
+	- Systemsettings:
+		- Language Support: Install missing support, Regional Formats: Deutsch(Deutschland)
+		- Screen: Lock off, Dim off
+		- Power: Hibernate when Battery is empty
+		- Printer: Network printer: HP... in Rainers Office, Paper size: A4
+		- System Info: Default Appl.: Video-VLC, Foto-gThumb
+		- Time and Date: 24-h-Mode, Show Day and Date in Calendar
+	- Vorlagen in Templates einfügen
+	- Standarddateitypen: 
+		- Bilder: gThumb
+		- Musik: Rhythmbox
+		- Video: VLC
+	- gThumb -> View -> Sort by... -> file name
+	- HandBrake:
+		- Prferences -> Audio/Subtitles: Language: Deutsch 
+	- gedit: 
+		- Line numbers
+		- Highlite current line
+		- Klammern betonen
+		- Automatic Identation
+		- Plugin für Snippets aktivieren
+		- Plugin für Terminal aktivieren
+	- Latexila:
+		- Zeilennummern
+		- Keine Bestätigung beim löschen, automatisch löschen vor beenden
+	- Lyx:
+		- Language: Spellcheck via Enchant und de_DE als alternative Sprache, continous Spellcheck
+	- LibreOffice:
+		- Options -> Languages: Default currency: EUR (German(Germany)), Default language for documents (German(Germany))
+		- Tools -> AutoCorrect Options: Accept with Tab, Length: 5
+	- Gwibber:
+		- Twitter account einrichten
+	- Empathy:
+		- Konten für MSN und ICQ anlegen, Konto für Netzwerkchat deaktivieren, ISO8859-15 setzen
+		- Preferences:
+			- General: No Automatic connection
+			- Notifications: Alle bis auf Away aktivieren, das deaktivieren
+			- Sounds: Deaktivieren Disable when away, aber aktivieren: contact on-/offline
+			- Spellcheck: No spellcheck 
+	- Thunderbird 11.0:
+		- Ordner aus ~/CloudSync/System/Software/Thunderbird laden und als .thunderbird im Home-Ornder speichern
+		- Thunderbird erstmals starten und in offline Modus gehen
+	- Firefox 11.0:
+		- Einstellungen:
+			- Sync einrichten (Addons, Bookmarks, Passwords, Preferences)
+		- Allgemein: 
+			- About:Config: print: letter->a4
+		- Oberfläche:
+			- kleine Symbole verwenden
+			- keine Status/Addon-Bar
+			- Downloads-anzeige-Button entfernen, dafür Download Statusbar
+		- Addons nachinstallieren bzw. einrichten:
+			- 1. AdBlock Plus (Deutsch+Englischer Filter)
+			- 2. AdBlock Plus Popup-Addon
+			- 3. DownloadHelper (Speichern in ~/Downloads)
+			- 4. Download Statusbar (Minimode)
+			- 5. German Dictionary
+			- 6. ProxTube
+	- Reihenfolge der Favoriten Dash:
+		- Home-Folder
+		- Firefox
+		- Thunderbird
+		- Empathy
+		- Skype
+		- Taschenrechner
+		- Terminal
+
+
+	Konoslenbefehle für Installation:
+=========================================
+sudo add-apt-repository ppa:stebbins/handbrake-releases && sudo apt-get update && sudo wget --output-document=/etc/apt/sources.list.d/medibuntu.list http://www.medibuntu.org/sources.list.d/$(lsb_release -cs).list && sudo apt-get --quiet update && sudo apt-get --yes --quiet --allow-unauthenticated install medibuntu-keyring && sudo apt-get --quiet update && sudo apt-get install libdvdcss2 && sudo apt-get -y install nautilus-dropbox encfs && sudo apt-get -y install libreoffice-calc libreoffice-draw libreoffice-impress libreoffice-math libreoffice-writer firefox mozplugger thunderbird gcc g++ bash-completion meld bless language-pack-de language-pack-de-base language-pack-gnome-de language-pack-gnome-de-base soundconverter lame gscan2pdf gparted texlive* gelemental pyrenamer pinta cdrdao cdrecord mjpegtools mkisofs mplayer ogmtools unrar subtitleripper vcdimager xine-ui xvid4conf dvdauthor vlc gnome-games dvipng usb-creator-gtk latexila lyx stellarium automake autoconf pokerth ipython python-scipy python-matplotlib p7zip-full gedit gedit-plugins imagemagick aspell-de hunspell mathomatic nano lynx ubuntu-wallpapers gnome-backgrounds pdfmod winff librecad kicad skype flashplugin-installer ttf-mscorefonts-installer ubuntu-restricted-extras gthumb nautilus-image-converter nautilus-open-terminal gnome-sushi gwibber openjdk-6-jre icedtea-plugin htop hplip* screen handbrake-gtk && sudo apt-get update && sudo apt-get upgrade && sudo apt-get autoremove --purge && sudo apt-get autoremove && sudo apt-get autoclean && sudo apt-get clean
+
+
+	Konsolenbefehle für Aktualisierung:
+===========================================
+sudo apt-get update && sudo apt-get upgrade && sudo apt-get autoremove --purge && sudo apt-get autoremove && sudo apt-get autoclean && sudo apt-get clean
+
+
+	Anmerkung zum Deinstallieren:
+=====================================
+ggf. sind Abhängigkeitsprobleme und zusätlich relevante Pakete in "Install-Uninstall-Undefined.txt" zufinden.

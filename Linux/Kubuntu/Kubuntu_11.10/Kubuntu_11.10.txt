@@ -1,0 +1,234 @@
+========================================================================================
+                      ============================================
+                      |               __        __               |
+                      |     |  /     |  \      |       |         |
+                      |     |<       |   |     |--     |         |
+                      |     |  \     |__/      |__     ---|-     |     
+                      |                                   |      |
+                      ============================================
+========================================================================================
+Datum: 2012-04-26				       			     Zeit: 01:30  
+
+
+=====================================================
+    - Nullter Installationsprozess: [MANUELL!!!]
+	- Partnerquellen für Ubuntu in der /etc/apt/sources.list unten mit sudo-Rechten aktivieren und Paketquellen updaten (s.u.)
+    - Erster Installationsprozess:
+	- sudo add-apt-repository ppa:stebbins/handbrake-releases in der /etc/apt/sources.list unten mit sudo-Rechten eintragen
+	- Medienkey-Ring libdvdcss installieren
+    - Zweiter Installationsprozess:
+	- !Dropbox installieren
+	- encfs installieren
+	- sonntux als User zur Gruppe fuse hinzufügen
+	- Ordner Filebox im Home Folder anlegen
+	- Filebox aus ~/Dropbox/Safe mounten
+	- Dropbox starten
+    - Dritter Installations:
+	- libreoffice-calc, -draw, -impress, -math, -writer installieren
+	- !firefox installieren
+	- mozplugger installieren
+	- !thunderbird installieren
+	- gcc installieren
+	- g++ installieren
+	- bash-completion installieren
+	- kompare installieren
+	- okteta installieren
+	- kde-l10n-de installieren
+	- !Soundconverter installieren
+	- lame installieren
+	- !gscan2pdf installieren
+	- partitionmanager installieren
+	- texlive* installieren
+	- kalzium installieren
+	- !pyrenamer installieren
+	- kolourpaint4 installieren
+	- cdrdao cdrecord mjpegtools mkisofs mplayer ogmtools unrar subtitleripper vcdimager xine-ui xvid4conf installieren
+	- dvdauthor installieren
+	- vlc installieren
+	- kdegames installieren
+	- dvipng installieren
+	- usb-creator-kde installieren
+	- kile installieren
+	- lyx installieren
+	- kstars installieren
+	- automake installieren
+	- autoconf installieren
+	- PokerTH installieren
+	- ipython, python-scipy, python-matplotlib installieren
+	- p7zip-full installieren
+	- kate installieren
+	- ImageMagick installieren
+	- aspell-de installieren
+	- hunspell installieren
+	- mathomatic installieren
+	- nano installieren
+	- lynx installieren
+	- kde-wallpapers installieren
+	- pdfmod installieren
+	- winff installieren
+	- librecad installieren
+	- kicad installieren
+	- skype installieren		
+	- flashplugin-installer installieren
+	- ttf-mscorefonts-installer installieren
+	- kubuntu-restricted-extras installieren
+	- gwenview kipi-plugins installieren
+	- #kbibtex installieren
+	- openjdk-6-jre installieren
+	- icedtea-plugin installieren
+	- choqok installieren!gimp installieren
+	- audex installieren
+	- htop installieren
+	- oxygen-cursor-theme -extra installieren
+	- screen installieren
+	- handbrake-gtk installieren
+
+
+	Einrichten:
+===================
+	- Partnerquellen für Ubuntu in der /etc/apt/sources.list unten mit sudo-Rechten aktivieren, Paketquellen updaten
+	- Dropbox-Ordner ins Home-Verzeichnis kopieren
+	- System updaten
+	- Neustarten
+	- Evtl. aktuellsten Grafiktreiber installieren: Driver -> nVidia
+	- Neustarten
+	- Installation aller benötigten Programme
+	- Neustarten
+	- Filebox/Dropbox/EncFS
+		- [User der Gruppe Fuse hinzufügen: "sudo usermod -aG fuse sonntux"]
+		- Filebox Ordner im Home-Verzeichnis erstellen: "mkdir Filebox"
+		- Filebox einhängen: "encfs ~/Dropbox/Safe ~/Filebox"
+		- Filebox Skripte von ~/Filebox/System/Argus nach ~/.kde/Autostart kopieren, checken ob ausführbar
+		- Ordnerverlinkung in Dolphin unter Home anlegen
+	- Systemeinstellungen:
+		- Locale: Country: Germany, Spell Checker: German(Germany), System Languages installieren Systemsprache: English(US)
+		- Shortcuts & Gestures: Examples aktivieren, Konsole aktivieren
+		- Desktop Effects: checken ob aktiv (ab Systemstart)
+		- Workspace Appearance: Cursor Theme: Oxygen black; Desktop Theme: Oxygen (black)
+		- Default Applications: Email->Thunderbird; Webbrowser->Firefox
+		- Workspace Behavior: 4 Workspaces, switch via slide, use strg+alt+down für nächste und strg+alt+up für letzte Workspace
+		- #Printer: 
+			- "hp-makeuri 192.168.178.34" in Terminal eingeben und CUPS URI Adresse in Systemeinstellungen eintragen
+			-Adresse von oben hinzufügen als HP LaserJet Professional m1212nf MFP mit A4 in rainers_office
+			- in HP Device Manager Plugin installieren
+			- HP Status Service beenden
+			- Testprint aus ~/Filebox/System/Dateitypen/KDE/Text1.txt drucken
+		- Display & Monitor: Screensaver deaktivieren
+		- Input Devices: Num immer einschalten, 105 Tasten-Tastatur
+		- Power Management: 
+			- Batteriefüllstand (10, 7, 5),  kein Dimmen, nach 30/15 bzw. 60 Min in Tiefschlaf, nach 10/5 Min Bildschirm aus)
+			- #ggf. neues Schema mit Presentation anlegen (alles leer), Symbol von Kpresenter
+		- Startup and Shutdown: Startprogramm "Dropbox" checken, EncFS-Skripte aus ~/.kde/Autostart eintragen, System immer mit leerer Sitzung starten
+	- Dolphin:
+		- Configure -> Services -> Attach to Thunderbird installieren
+		- Configure Toolsbars: Ordnerhochbutton einfügen mit Trenner zwischen Pfeil-rechts und Miniaturansicht
+	- Desktop:
+		- Uhr:
+			- Datum in digitaler Uhr anzeigen, inkl. Wochentag (compact Date)
+			- Kalender: United (not used) und German (days off)
+		- Activities Manager entfernen
+		- Desktop_shortcuts aus ~/Filebox/System/Software/KDE in Desktop entpacken
+		- Reihenfolge der Favoriten im Menü:
+			- Firefox
+			- Thunderbird
+			- Kopete
+			- Skype
+			- Choqok
+			- Taschenrechner
+			- Konsole
+			- Systemüberwachung
+			- Ordner
+	- Standarddateitypen KDE:
+		- Bilder: gwenview 
+		- Musik: Amarok
+		- Video: vlc
+	- HandBrake:
+		- Prferences -> Audio/Subtitles: Language: Deutsch
+	- LibreOffice:
+		- Options -> Languages: Default currency: EUR (German(Germany)), Default language for documents (German(Germany))
+		- Tools -> AutoCorrect Options: Accept with Tab, Length: 5
+	- kate: 
+		- Terminal mit aktuellem Verzeichnis synchronisieren
+		- Klammern betonen
+		- Zeilennummerierung
+	- Kile:
+		- Portierung auf KDE4? -> ja
+		- Keine Tipps zum Programmstart anzeigen
+		- Autor: Sebastian Sonntag, Document class options: a4paper, 10pt, Zeichen-Kodierung: latin9, Dateien nach dem schließen automatisch aufräumen, kein Splash-Screen
+		- PDFLaTeX -> PDF (Okular)
+		- Dynamischer Zeilenumbruch, Zeilennummern anzeigen, Bereiche zwischen Klammern besonders hervorheben
+		- Rechtschreibprüfung: Deutsch(Deutschland), Automatic by default
+		- Save in ISO-8859-15
+	- Lyx:
+		- Language: Spellcheck via Enchant und de_DE als alternative Sprache
+		- continous Spellcheck
+	- Thunderbird 12.0:
+		- Ordner aus ~/Filebox/System/Software/Thunderbird laden und als .thunderbird im Home-Ornder speichern
+		- Thunderbird erstmals starten und in offline Modus gehen
+	- Kopete:
+		- Schnellsuchleiste nicht anzeigen
+		- Accounts (ICQ, IP verbergen, Autorisieren, ISO-8859-15 Kodierung)
+		- Contact List:
+			- keine baumartigen Linien anzeigen
+			- Bildaufleiste nach 5 Sekunden ausblenden
+			- compactes Layout
+		- Behavior:
+			- Automatische Rechtschreibprüfung deaktivieren
+		- Plugins:
+			- Bildvorschauen in Chat anzeigen
+			- KopeteTeX
+	- Choqok:
+		- Twitter Account hinzufügen
+		- Brieftasche ohne Passwort akzeptieren
+	- #Firefox 12.0:
+		- Einstellungen:
+			- Sync einrichten (Addons, Bookmarks, Passwords, Preferences)
+		- Allgemein: 
+			- About:Config: print: letter->a4
+		- Oberfläche:
+			- kleine Symbole verwenden
+			- keine Status/Addon-Bar
+			- Downloads-anzeige-Button entfernen, dafür Download Statusbar
+		- Addons nachinstallieren bzw. einrichten:
+			- 1. AdBlock Plus (Deutsch+Englischer Filter)
+			- 2. AdBlock Plus Popup-Addon
+			- 3. DownloadHelper (Speichern in ~/Downloads)
+			- 4. Download Statusbar (Minimode)
+			- 5. German Dictionary
+			- 6. ProxTube
+	- ROOT installieren (s.u.)
+
+
+
+	Konoslenbefehle für Installation:
+=========================================
+sudo apt-get update && sudo apt-get upgrade && sudo add-apt-repository ppa:stebbins/handbrake-releases && sudo apt-get update && sudo wget --output-document=/etc/apt/sources.list.d/medibuntu.list http://www.medibuntu.org/sources.list.d/$(lsb_release -cs).list && sudo apt-get --quiet update && sudo apt-get --yes --quiet --allow-unauthenticated install medibuntu-keyring && sudo apt-get --quiet update && sudo apt-get install libdvdcss2 && sudo apt-get -y install nautilus-dropbox encfs && sudo usermod -aG fuse sonntux && sudo dropbox start -i && sudo apt-get -y install libreoffice-calc libreoffice-draw libreoffice-impress libreoffice-math libreoffice-writer firefox mozplugger thunderbird gcc g++ bash-completion kompare okteta kde-l10n-de soundconverter lame gscan2pdf partitionmanager texlive* kalzium pyrenamer kolourpaint4 cdrdao cdrecord mjpegtools mkisofs mplayer ogmtools unrar subtitleripper vcdimager xine-ui xvid4conf dvdauthor vlc kdegames dvipng usb-creator-kde kile lyx kstars automake autoconf pokerth ipython python-scipy python-matplotlib p7zip-full kate imagemagick aspell-de hunspell mathomatic nano lynx kde-wallpapers pdfmod winff librecad kicad skype flashplugin-installer ttf-mscorefonts-installer kubuntu-restricted-extras gwenview kipi-plugins openjdk-6-jre icedtea-plugin choqok audex htop oxygen-cursor-theme oxygen-cursor-theme-extra screen handbrake-gtk && sudo apt-get update && sudo apt-get upgrade && sudo apt-get autoremove --purge && sudo apt-get autoremove && sudo apt-get autoclean && sudo apt-get clean
+
+
+        Anleitung für ROOT-Installation:
+========================================
+Prerequisists:
+"sudo apt-get install subversion dpkg-dev make g++ gcc binutils libx11-dev libxpm-dev libxft-dev libxext-dev"
+
+Installation:
+- Root Archiv downloaden, entpacken und verschieben nach /opt: "sudo mv /root_5.xx.yy /opt"
+- in diesem Ordner "sudo ./configure --enable-minuit2 --enable-python --enable-roofit --enable-soversion --enable-unuran"
+- "sudo make" ausführen
+- dem Standardbenutzer die entsprechenden Rechte geben, um ROOT auszuführen: "sudo chown -cR <USER> /opt/root_5.xx.yy/*"
+- .bashrc anpassen, bzw. eintragen:
+	- export ROOTSYS = opt/root_5.xx.yy
+	- export PATH = $PATH:$ROOTSYS/bin
+	- export LD_LIBRARY_PATH = $ROOTSYS/lib
+	- export PYTHONPATH = $PYTHONPATH:$ROOTSYS/lib
+- fix adobe-helvetica Fehler:
+ 	- "sudo apt-get install xfs xfstt t1-xfree86-nonfree ttf-xfree86-nonfree ttf-xfree86-nonfree-syriac xfonts-75dpi xfonts-100dpi"
+
+
+	Konsolenbefehle für Aktualisierung:
+===========================================
+sudo apt-get update && sudo apt-get upgrade && sudo apt-get autoremove --purge && sudo apt-get autoremove && sudo apt-get autoclean && sudo apt-get clean
+
+
+	Anmerkung zum Deinstallieren:
+=====================================
+ggf. sind Abhängigkeitsprobleme und zusätlich relevante Pakete in "Install-Uninstall-Undefined.txt" zufinden.

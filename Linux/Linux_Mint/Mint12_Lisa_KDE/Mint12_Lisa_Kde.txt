@@ -1,0 +1,179 @@
+=================================================================
+           ============================================
+           |               __        __               |
+           |     |  /     |  \      |       |         |
+           |     |<       |   |     |--     |         |
+           |     |  \     |__/      |__     ---|-     |     
+           |                                   |      |
+           ============================================
+==================================================================
+Datum: 2012-01-29		                       Zeit: 14:00  
+
+
+=====================================================
+	- Dropbox installieren
+	- libreoffice-calc, -draw, -impress, -math, -writer installieren
+	- firefox installieren
+	- mozplugger installieren
+	- Thunderbird installieren
+	- gcc installieren
+	- g++ installieren
+	- bash-completion installieren
+	- kompare installieren
+	- oktetea installieren
+	- kde-l10n-de installieren
+	- Soundkonverter installieren
+	- lame installieren
+	- gscan2pdf installieren
+	- partitionmanager installieren
+	- texlive* installieren
+	- kalzium installieren
+	- krename installieren
+	- kolourpaint4 installieren
+	- dvdrip cdrdao cdrecord mjpegtools mkisofs mplayer ogmtools unrar subtitleripper vcdimager xine-ui xvid4conf installieren
+	- dvdauthor installieren
+	- vlc installieren
+	- kdegames installieren
+	- dvipng installieren
+	- unetbootin installieren
+	- kile installieren
+	- lyx installieren
+	- kstars installieren
+	- krusader installieren
+	- kicad installieren
+	- gspiceui installieren
+	- automake installieren
+	- autoconf installieren
+	- PokerTH installieren
+	- ipython, python-scipy, python-matplotlib installieren
+	- p7zip-full installieren
+	- kate installieren
+	- ImageMagick installieren
+	- aspell-de installieren
+	- hunspell installieren
+	- mathomatic installieren
+	- nano installieren
+	- lynx installieren
+	- kde-wallpapers installieren
+	- pdfmod installieren
+	- winff installieren
+	- freecad installieren
+	- skype installieren
+	- yakuake installieren
+	- ttf-mscorefonts-installer installieren
+	- kubuntu-restricted-extras installieren
+	- #kbibtex installieren
+
+
+	Einrichten:
+===================
+	- System updaten
+	- Startbildschirm nie anzeigen
+	- Neustarten
+	- Evtl. aktuellsten Grafiktreiber installieren: Driver -> nVidia
+	- Neustarten
+	- Dropbox-Ordner ins Home-Verzeichnis kopieren
+	- Installation aller benötigten Programme
+	- Neustarten
+	- Dropbox
+		- Dropbox aktivieren (Programm erstmals starten)
+		- Ordnerverlinkung in Dolphin unter Home anlegen
+		- Bandwidth: Down/Upload nicht beschränken
+	- Systemeinstellungen:
+		- Locale: Country: Germany, Language: English(US), Spell Checker: German(Germany), System Languages installieren
+		- Shortcuts & Gestures: Examples aktivieren, Konsole aktivieren
+		- Workspaces: 4
+		- Displays and Monitors: Deactivate Screensaver
+		- Input Devices: Num immer einschalten, 105 Tasten-Tastatur, SingleClick aktivieren
+		- Power Management: kein Dimmen, nach 30/10 Min in Tiefschlaf, nach 10/5 Min Bildschirm aus)
+		- Startup and Shutdown: Startprogramme "Dropbox" und "Yakuake" hinzufügen, System immer mit leerer Sitzung starten
+	- Dolphin
+		- Adjust View Properties "Detail-Ansicht" , für alle Ordner übernehmen, als Standard setzen
+		- Configure Dolphin -> Services -> Install "Attach to Thunderbird"
+	- Uhr:
+		- Datum in digitaler Uhr anzeigen, inkl. Wochentag (compact Date)
+		- Kalender: United (not used) und German (days off)
+	- Pager als Widget zwischen Desktop Taskleiste hinzufügen
+	- Standarddateitypen: 
+		- Musik: Amarok
+		- Video: vlc
+		- Bilder: gwenview	
+	- Yakuake: Hight: 40%
+	- dvd::rip:
+		- de als Preferred Language
+		- "/home/USER/Videos" als Zielverzeichnis
+		- unrar statt rar zum packen nutzen
+	- kate: 
+		- Zeilennummerierung
+		- Klammern betonen
+	- LibreOffice:
+		- Options-> Languages: Default currency: EUR (German(Germany)), Default language for documents (German(Germany))
+	- Kile:
+		- Portierung auf KDE4? -> ja
+		- Keine Tipps zum Programmstart anzeigen
+		- Autor: Sebastian Sonntag, Document class options: a4paper, 10pt, Zeichen-Kodierung: latin9, Dateien nach dem schließen automatisch aufräumen
+		- PDFLaTeX -> PDF (Okular)
+		- Dynamischer Zeilenumbruch, Zeilennummern anzeigen, Bereiche zwischen Klammern besonders hervorheben
+		- Rechtschreibprüfung: Deutsch(Deutschland)
+		- Speichern als ISO-8859-15
+	- Lyx:
+		- Language: Spellcheck via Enchant und de_DE als alternative Sprache, continous Spellcheck	
+	- Kopete:
+		- Schnellsuchleiste nicht anzeigen
+		- Accounts (MSN; ICQ, IP verbergen, Autorisieren, ISO-8859-15 Kodierung)
+		- Contact List:
+			- keine baumartigen Linien anzeigen
+			- Vertikale Bildaufleiste nach 5 Sekunden
+			- compactes Layout
+		- Behavior:
+			- Automatische Abwesenheit deaktivieren
+			- Automatische Rechtschreibprüfung deaktivieren
+		- Plugins:
+			- Bildvorschauen in Chat anzeigen
+			- KopeteTeX
+	- Thunderbird-Ordner als .thunderbird in /home/sonntux/ einfügen
+	- Firefox 9.0.1:
+		- Sync einrichten (Bookmakrs, Passwords, Preferences)
+		- Addons nachinstallieren:
+			- 1. AdBlock Plus (Deutsch+Englischer Filter)
+			- 2. AdBlock Plus Popup-Addon
+			- 3. DownloadHelper (Speichern in /home/USER/Documents) deaktivieren)
+			- 4. German Dictionary
+			- 5. Downloads in Tab
+			- 6. ProxTube
+		- Allgemein: 
+			- Meldungen nicht anzeigen: Privates Browsen
+			- deutsches Wörterbuch verwenden
+			- Google als Suchmaschine hinzufügen und als Standard setzten
+		- Einstellungen:
+			- Grundsätzlich: Letzte Sitzungen Laden, aber nicht vor ausgewählt, Home: http://www.google.de statt "about:startpage"
+			- Nach Möglichkeit Deutsche Seiten anzeigen
+			- Google als Standardsuchmaschine verwenden
+		- Oberfläche:
+			- kleine Symbole verwenden
+			- keine Status/Addon-Bar, keine Lesezeichenleiste
+	- Reihenfolge der Favoriten im Menü:
+		- Firefox
+		- Thunderbird
+		- Kopete
+		- Taschenrechner
+		- Konsole
+		- Systemeinstellungen
+		- Systemüberwachung
+		- Ordner
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        	Konoslenbefehle für KDE-Installation:
+=============================================
+ sudo apt-get install nautilus-dropbox libreoffice-calc libreoffice-draw libreoffice-impress libreoffice-math libreoffice-writer firefox mozplugger thunderbird gcc g++ bash-completion kompare okteta kde-l10n-de soundkonverter lame gscan2pdf partitionmanager texlive* kalzium krename kolourpaint4 dvdrip cdrdao cdrecord mjpegtools mkisofs mplayer ogmtools unrar subtitleripper vcdimager xine-ui xvid4conf dvdauthor vlc kdegames dvipng unetbootin kile lyx kstars krusader kicad gspiceui automake autoconf pokerth ipython python-scipy python-matplotlib p7zip-full kate imagemagick aspell-de hunspell mathomatic nano lynx kde-wallpapers pdfmod winff freecad skype yakuake ttf-mscorefonts-installer kubuntu-restricted-extras
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        	Noch offen:
+===================
+kbibtex ktechlab
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        	Konsolenbefehle zum Aktualisieren:
+========================================== 
+sudo apt-get update && sudo apt-get upgrade && sudo apt-get autoremove --purge && sudo apt-get autoremove && sudo apt-get autoclean && sudo apt-get clean
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        	Anmerkung zum Deinstallieren:
+=====================================
+ggf. sind Abhängigkeitsprobleme und zusätzlich relevante Pakete in "Install-Uninstall-Undefined.txt" zu finden.

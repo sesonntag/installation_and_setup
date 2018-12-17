@@ -1,0 +1,187 @@
+===========================================================================
+           =====================================================
+           |      __           ___            __      ___      |
+           |     |  |  |\  |  |   |  |\  /|  |           |     |
+           |     |__   | \ |  |   |  | \/ |  |--      ---|     |
+           |     |__|  |  \|  |___|  |    |  |__      ___|     |
+           |        |                                          |
+           =====================================================
+===========================================================================
+
+
+	Einbinden der Softwarequellen Liste s.u.:
+=================================================:
+	- su -c 'yum -y --nogpgcheck install http://dnmouse.org/autoplus-1.1-8.noarch.rpm'
+
+
+	Installieren [Softwareverwaltung] Liste s.u.:
+=====================================================
+	- gcc installieren
+	- #bash-completion installieren
+	- &bless installieren
+	- #system-config-language installieren
+	- &Soundconverter installieren
+	- lame installieren
+	- gscan2pdf installieren
+	- pdfshuffler installieren
+	- gparted installieren
+	- texlive-* installieren
+	- gthumb installieren
+	- gnome-chemistry-utils installieren
+	- pyrenamer installieren
+	- pinta installieren
+	- dvdrip cdrdao cdrecord mjpegtools mkisofs mplayer ogmtools unrar subtitleripper vcdimager xine-ui xvid4conf installieren
+	- dvdauthor installieren
+	- vlc installieren
+	- gimp installieren
+	- Hedgewars installieren
+	- gnome-games installieren
+	- gbrainy installieren
+	- dvipng installieren
+	- unetbootin installieren
+	- Lyx installieren
+	- latexila installieren
+	- Stellarium installieren
+	- GNOME Commander installieren
+	- Xournal installieren
+	- WxMaxima installieren
+	- gnuplot installieren
+	- scidavis installieren
+	- referencer installieren
+	- ROOT-system installieren
+	- gspiceui installieren
+	- checkgmail installieren
+	- nautilus-image-converter installieren
+	- nautilus-open-terminal installieren
+	- gresistor installieren
+	- kicad installieren
+	- automake installieren
+	- autoconf installieren
+	- PokerTH installieren
+	- smc, smc-music installieren
+	- ipython, scipy, python-matplotlib, ipython-gui installieren
+	- eclipse, eclipse-pydev, eclipse-cdt installieren
+	- p7zip installieren
+	- evince-djvu installieren
+	- ImageMagick installieren
+	- qalculate-gtk installieren
+	- gedit-plugins installieren
+	- mathomatic installieren
+	- tint2 installieren
+	- gnome-shell-extensions-alternative-status-menu installieren
+	- gconf-editor installieren
+
+
+	Einrichten:
+===================
+	- ggf. Netzwerk einstellen (Schlüssel, speichern, Brieftasche: kein Passwort - unsichere Verschlüsselung verwenden)
+	- System updaten
+	- Autostart (Alt+F2 "gnome-session-properties"):
+		- gnome-disk-utility desktivieren -> Benachrichtigungen über das Laufwerk
+		- tint2 anlegen
+	- autoplus starten:
+		- flash-plugin installieren
+		- mp3-Codecs installieren
+		- DVD-Codecs installieren
+		- Most codecs installieren
+		- Skype installieren
+		- Sun Java installieren
+		- winff installieren
+		- Dropbox installieren
+	- Configuration Editor: desktop>gnome>shell>windows>button_layout ":minimize,maximize,close"
+	- Dropbox
+		- Dropbox-Ordner laden
+		- Drobpox aktivieren (Programm erstmals starten)
+	- Sprache Deutsch(Deutschland) installieren im Menü
+	- Vorlagen einfügen "de_DE"
+	- Systemeinstellungen:
+		- Leistung (30/10min), Bildschirm (Sperre aus, nicht abdunkeln)
+		- #(Drucker hinzufügen (socket://192.168.178.1) -> CMYK drucken (IP3600 als IP4600 einstellen))
+		- Tastaturbelegung: Alt+T Terminal
+		- ggf. Maus -> Touchpad -> Touchpad-klicken freischalten
+	- Standarddateitypen: 
+		- Musik: Totem
+		- Video: vlc
+		- Bilder: gThumb
+		- djvu: Evince
+	- gThumb 
+		- Ansicht: Sortieren nach ... Dateiname
+		- Einstellungen: Größe an Fenster anpassen
+	- Evolution: Backup laden
+	- Skype: Look auf GTK+ stellen
+	- Eclipse: PyDev -> Pythoninterpr. -> autoconfig ausführen
+	- dvd::rip:
+		- /home/USER/Videos als Zielverzeichnis
+		- unrar statt rar zum packen nutzen
+	- gedit: 
+		- Zeilennummerierung
+		- Klammern betonen
+		- Aktulle Zeile betonen
+		- kein Backup speichern
+		- Plugin für Terminal laden!?
+	- checkgmail: 
+		- bs.sonntag@googlemail.com
+		- save password
+		- Sprache Deutsch
+		- 24h-clock
+	- Lyx:
+		- Sichere Orig. beim Speichern deaktivieren
+		- Rechtschreibung: Hunspell, de_DE als Alternative, bei der Eingabe testen
+	- Latexila:
+		- zeige Zeilennummer
+		- keine Sicherung vor Speichern
+		- keine Bestätigung beim löschen, automatisch aufräumen
+	- Empathy:
+		- Kontos hinzufügen: 
+			- ICQ: 281324035, xxxxxxxxx; MSN: rueffer01@live.de
+			- Formatierung: ISO 8859-15
+		- Einstellungen:
+			- Automatisch beim Start verbinden deaktivieren
+			- Alle Benachrichtigungen aktivieren, [also 1. deaktivieren]
+			- Klänge auch für an- und abmeldende Kontakte, bei Abwesenheit ebenfalls [also deaktivieren]
+			- Rechtschreibprüfung deaktivieren
+		- Ansicht: kompakte Ansicht
+	- Firefox 5.0.0:
+		- Addons nachinstallieren:
+			- AdBlock Plus
+			- AdBlock Plus Popup-Addon
+			- DownloadHelper (Speichern in /home/USER/Downloads)
+			- TubeStop
+			- Xmarks (Bookmarks und Passwörter synchronisieren, automatisch, nicht nachfragen, Sync beim Beenden)
+		- Allgemein: 
+			- Meldungen nicht anzeigen: Neustarten, Beenden, Privates Browsen, PDFs als Kopie speichern
+			- keinen Downloadmanager anzeigen, alles in ~/Downloads laden
+		- Einstellungen:
+			- Grundsätzlich: Letzte Sitzungen Laden, Home: http://www.google.de statt "http://start.fedoraproject.org/"
+		- Anwendungen: PDF Dokumentenbetrachter
+		- Oberfläche:
+			- kleine Symbole verwenden
+			- keine Status/Addon-Bar
+	- Reihenfolge der Favoriten im Menü:
+		- Firefox
+		- Evolution
+		- Empathy
+		- Taschenrechner
+		- Terminal
+		- Systemüberwachung
+		- Ordner
+
+
+	Konoslenbefehle für Installation:
+=========================================
+su -c 'yum -y --nogpgcheck install http://dnmouse.org/autoplus-1.1-8.noarch.rpm' && sudo yum groupinstall 'office/productivity' && sudo yum install gcc bash-completion bless system-config-language soundconverter lame gscan2pdf pdfshuffler gparted texlive-* gthumb gnome-chemistry-utils pyrenamer pinta dvdrip cdrdao cdrecord mjpegtools mkisofs mplayer ogmtools unrar subtitleripper vcdimager xine-ui xvid4conf dvdauthor vlc gimp hedgewars gnome-games gbrainy dvipng unetbootin lyx latexila stellarium gnome-commander xournal wxmaxima gnuplot scidavis referencer root-* gspiceui checkgmail nautilus-image-converter nautilus-open-terminal gresistor kicad automake autoconf pokerth smc smc-music ipython scipy python-matplotlib ipython-gui eclipse eclipse-pydev eclipse-cdt p7zip evince-djvu ImageMagick qalculate-gtk gedit-plugins mathomatic tint2 gnome-shell-extensions-alternative-status-menu gconf-editor
+
+
+	Testinstallation:
+=========================
+
+
+
+	Konsolenbefehle für Aktualisierung:
+===========================================
+sudo yum update
+
+
+	Anmerkung zum Deinstallieren:
+=====================================
+ggf. sind Abhängigkeitsprobleme und zusätlich relevante Pakete in "Install-Uninstall-Undefined.txt" zufinden.

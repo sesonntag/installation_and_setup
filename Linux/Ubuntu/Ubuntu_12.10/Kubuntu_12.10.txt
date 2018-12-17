@@ -1,0 +1,217 @@
+========================================================================================
+                      ============================================
+                      |               __        __               |
+                      |     |  /     |  \      |       |         |
+                      |     |<       |   |     |--     |         |
+                      |     |  \     |__/      |__     ---|-     |     
+                      |                                   |      |
+                      ============================================
+========================================================================================
+Datum: 2013-04-11                                                            Zeit: 15:00
+
+
+=====================================================
+  - Nullter Installationsprozess: [MANUELL!!!]
+    - Partnerquellen für Ubuntu in der /etc/apt/sources.list unten mit sudo-Rechten aktivieren und Paketquellen updaten (s.u.)
+  - Erster Installationsprozess:
+    - sudo add-apt-repository ppa:stebbins/handbrake-releases installieren
+    - Medienkey-Ring libdvdcss gstreamer0.10-plugins-ugly libavcodec-extra-53 libavdevice-extra-53 libavformat-extra-53 libavutil-extra-51 libpostproc-extra-52 libswscale-extra-2 non-free-codecs installieren
+  - Zweiter Installationsprozess:
+    - bzr bzr-explorer installieren
+    - Owncloud-Client installieren
+    - Dropbox installieren
+  - Dritter Installationsprozess:
+    - !libreoffice-calc, -draw, -impress, -math, -writer installieren
+    - !firefox mozplugger installieren
+    - !thunderbird installieren
+    - gcc installieren
+    - g++ installieren
+    - bash-completion installieren
+    - kompare installieren
+    - okteta installieren
+    - kde-l10n-de installieren
+    - soundKonverter installieren
+    - lame installieren
+    - !gscan2pdf installieren
+    - partitionmanager installieren
+    - texlive* installieren
+    - kalzium installieren
+    - !pyrenamer installieren
+    - kolourpaint4 installieren
+    - vlc installieren
+    - kdegames installieren
+    - dvipng installieren
+    - unetbootin installieren
+    - kile kile-l10n installieren
+    - kstars installieren
+    - automake installieren
+    - autoconf installieren
+    - ipython python-scipy python-matplotlib python-progressbar installieren
+    - p7zip-* installieren
+    - kate installieren
+    - ImageMagick installieren
+    - aspell aspell-de installieren
+    - hunspell hunspell-de-de installieren
+    - nano installieren
+    - lynx installieren
+    - kde-wallpapers installieren
+    - pdfmod installieren
+    - skype installieren
+    - flashplugin-installer installieren
+    - ttf-mscorefonts-installer installieren
+    - kubuntu-restricted-extras installieren
+    - gwenview kipi-plugins installieren
+    - kbibtex installieren
+    - openjdk-7-jre installieren
+    - icedtea-7-plugin installieren
+    - choqok installieren
+    - gimp gimp-resynthesizer installieren
+    - audex installieren
+    - htop installieren
+    - screen installieren	
+    - handbrake-gtk installieren
+    - !inkscape installieren
+    - octave installieren
+    - !arista gnome-icon-theme-full installieren
+    - rar unrar installieren
+    - avidemux installieren
+    - 0ad installieren
+    - xournal installieren
+    - winff installieren
+    - openssh-server installieren
+    - virtualbox-ose virtualbox-ose-qt virtualbox-guest-additions-iso installieren
+    - samba system-config-samba cifs-utils installieren
+    - backintime-kde installieren
+    - lyx installieren
+    - sqlite3 sqliteman installieren
+    - root-system libroot-bindings-python-dev installieren
+    - wajig installieren
+    - yakuake installieren
+    - synergy quicksyergy installieren
+  - #Vierter Installationsprozess [MANUELL!!!]:
+    - Steam manuell installieren
+
+
+	System einrichten:
+==========================
+  - Partnerquellen für Ubuntu in der /etc/apt/sources.list unten mit sudo-Rechten aktivieren, Paketquellen updaten
+  - Dropbox-Ordner ins Home-Verzeichnis kopieren
+  - System updaten
+  - Neustarten
+  - Evtl. aktuellsten Grafiktreiber installieren: Driver -> nVidia
+  - Neustarten
+  - (Installation aller restlichen benötigten Programme)
+  - Neustarten
+  - Systemeinstellungen:
+    - Benutzerkontodetails: Bild von "~/Dropbox/bilder/internet/passbild_perso.jpeg" laden
+    - Kurzbefehle und Gestensteuerung: Beispiele aktivieren, Konsole aktivieren
+    - Regionales: Land: checken ob Deutschland, Bevorzugte Sprache: Deutsch, Systemsprache: installieren und auf Deutsch(Deutschland) setzen
+    - Standard-Komponenten: Email->Thunderbird; Webbrowser->Firefox
+    - Verhalten der Arbeitsfläche: 4 Arbeitsflächen, Wechsel: On-Screen Anzeige aktivieren, Bildschirmränder -> rechts unten: Raster anzeigen
+    - Instant Messaging und VoIP: ICQ hinzufügen, Facebook hinzufügen
+    - Anzeige und Monitor: Bildschirmschoner deaktivieren
+    - Eingabegeräte: Num immer einschalten, 105 Tasten-Tastatur
+    - Energieverwaltung: keine Bildschirmhelligkeit anpassen oder Dimmen, nach 20 bzw. 5 Min TFT aus, Batteriefüllstand (7, 5), wenn Ladestand kritisch: Herunterfahren
+    - Starten und Beenden: Dropbox hinzufügen, yakuake hinzufügen, System immer mit leerer Sitzung starten, checken ob filebox Skripte eingetragen sind
+    - #Printer: 
+      - "hp-makeuri 192.168.178.34" in Terminal eingeben und CUPS URI Adresse in Systemeinstellungen eintragen
+      - Adresse von oben hinzufügen als HP LaserJet Professional m1212nf MFP mit A4 in rainers_office
+      - in HP Device Manager Plugin installieren
+      - HP Status Service beenden
+      - Testprint drucken
+  - Dolphin:
+    - Einrichten -> Dienste -> Attach to Thunderbird installieren
+    - Werkzeugleisten einrichten: Ordnerhochbutton einfügen mit Trenner zwischen Pfeil-rechts und Miniaturansicht
+    - Ordnerverlinkung für Dropbox und filebox unter Home anlegen
+  - Desktop:
+    - Dropbox: KDE-Integration verbessern, wenn Dropbox alle Dateien initiiert hat und beendet ist "mv ~/.dropbox-dist/libstdc++.so.6{,.bak}"
+    - Plasmoid "Systemmonitor" hinzufügen und rechts auf volle Höhe speichern, alles Anzeigen, bis auf Laufwerke die Rate auf 1,0s
+    - Uhr:
+      - Datum in digitaler Uhr anzeigen (ISO)
+      - Kalender: checken, ob USA deaktiviert und Deutschland (Feiertage) aktiv ist
+    - Aktivitäten Manager entfernen
+    - Reihenfolge der Favoriten im Menü:
+      - Firefox
+      - Thunderbird
+      - Telepathy-KDE
+      - Skype
+      - Taschenrechner
+      - Konsole
+      - Ordner
+    - Desktop: Rechtsklick -> Miniprogramme sperren
+  - Standarddateitypen KDE:
+    - Bilder: Gwenview 
+    - Musik: Amarok
+    - Vektorgrafik: Inkscape
+    - Text: Kate
+    - Video: VLC
+  - HandBrake:
+    - Preferences -> Audio/Subtitles: Language: Deutsch
+  - LibreOffice:
+    - Extras -> Autokorrektur Optionen: Wortvervollständigung mit Tab, Länge: 5
+  - kate: 
+    - Terminal: Sync mit aktuellem Verzeichnis
+    - Erscheinungsbild: hebe Bereich zwischen zugehörigen Klammern hervor, Zeilennummerierung, hebe geänderte Zeilen vor
+    - Öffnen/Speichern: Zeilenlängen Limit: 1024 -> 0
+  - Kile:
+    - Portierung auf KDE4? -> ja
+    - Keine Tipps zum Programmstart anzeigen
+    - Autor: Sebastian Sonntag, Dokumentenklasse: a4paper, 10pt, kein Splash-Screen
+    - PDFLaTeX -> PDF (Okular)
+    - Erscheinungsbild: dynamischer Zeilenumbruch, hebe Bereich zwischen zugehörigen Klammern hervor, Zeilennummerierung, hebe geänderte Zeilen vor
+    - Editing: Rechtschreibkorrektur Deutsch(Deutschland), Prüfen bei Eingabe
+    - Öffnen/Speichern: Zeilenlängen Limit: 1024 -> 0
+  - Thunderbird 17.x:
+    - Ordner aus laden und als .thunderbird im Home-Ornder speichern
+    - Thunderbird erstmals starten und in offline Modus gehen
+  - Firefox 20.x:
+    - Grundsätzlich:
+      - key3.db und signons.sqlite einkopieren
+    - Einstellungen:
+      - Tabs und Fenster der letzten Sitzung anzeigen
+      - Startseite ist "www.google.de" anstelle von "about:startpage"
+      - Kein Downloadmanager
+      - immer fragen wohin speichern
+    - Allgemein: 
+      - about:Config: print: letter->a4
+      - keine Vorschau bei neuen Tabs
+    - Addons nachinstallieren bzw. einrichten:
+      - Xmarks (sync Tabs, keine Search bars, Bookmarks from Server, don't ask for snyc)
+      - DownloadHelper (Speichern in ~/Downloads, 20 Downloads max, kein Social Share)
+      - AdBlock Plus (easylist+germany hinzufügen)
+      - proxtube (Datenschutz zustimmen, kein Icon in Leiste)
+      - AdBlock Plus Popup-Addon
+      - German Dictionary
+    - Oberfläche:
+      - kleine Symbole verwenden
+      - keine Status/Addon-Bar
+      - ggf. Download-Button rechts oben entfernen
+
+      
+	Konoslenbefehle für Aktualisierung:
+===========================================
+  - (Update-/Upgrade-Befehl (s.u.) als alias mit "sudo_update" in .bashrc eintragen)
+  - per wajig: sudo wajig update && sudo wajig upgrade && sudo wajig autoremove && sudo wajig autoclean && sudo wajig clean
+
+	Alias eintragen:
+========================
+  - Update-/Upgrade-Befehl
+    - && cd && echo "" >> ~/.bashrc && echo "# Update alias" >> ~/.bashrc && echo "alias sudo_update='sudo wajig update && sudo wajig upgrade && sudo wajig autoremove && sudo wajig autoclean && sudo wajig clean'" >> ~/.bashrc && . ~/.bashrc
+  - SSH-Befehle
+    - && cd && echo "" >> ~/.bashrc && echo "# SSH aliases" >> ~/.bashrc && echo "alias ssh_uni='ssh -Xp 54322 sonntag@nolde.hep.pysik.uni-siegen.de'" >> ~/.bashrc && echo "alias ssh_nolde='ssh -X sonntag@nolde'" >> ~/.bashrc && echo "alias ssh_server='ssh -X sonntuxmin@sonntux-server'" >> ~/.bashrc && . ~/.bashrc
+  - Bzr-Linux-Befehl
+    - echo "" >> ~/.bashrc && echo "# bzr_linux alias" >> ~/.bashrc && echo "alias bzr_linux='pwd > ~/.path.txt && cd ~/Dropbox/system/linux/trunk && bzr add && bzr commit && cd $(cat ~/.path.txt) && rm ~/.path.txt'" >> ~/.bashrc && . ~/.bashrc
+  - Bzr-Bachelor-Befehl
+    - echo "" >> ~/.bashrc && echo "# bzr_bachelor alias" >> ~/.bashrc && echo "alias bzr_bachelor='pwd > ~/.path.txt && cd ~/Dropbox/uni/work/projects/ba_pmt_wupsi/ba_thesis/trunk && bzr add && bzr commit && cd $(cat ~/.path.txt) && rm ~/.path.txt'" >> ~/.bashrc && . ~/.bashrc
+  - Grub-Reparatur
+    - echo "" >> ~/.bashrc && echo "# grub-repair alias" >> ~/.bashrc && echo "alias sudo_grub='sudo grub-install /dev/sda && sudo update-grub'" >> ~/.bashrc && . ~/.bashrc
+
+
+	Anmerkung zum Deinstallieren:
+=====================================
+ggf. sind Abhängigkeitsprobleme und zusätlich relevante Pakete in der Archiv-Datei zu finden.
+
+
+	Anmerkungen für nächste Kubuntu Version 13.04:
+======================================================
+  - 

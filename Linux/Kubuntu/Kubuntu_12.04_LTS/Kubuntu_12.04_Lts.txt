@@ -1,0 +1,226 @@
+========================================================================================
+                      ============================================
+                      |               __        __               |
+                      |     |  /     |  \      |       |         |
+                      |     |<       |   |     |--     |         |
+                      |     |  \     |__/      |__     ---|-     |     
+                      |                                   |      |
+                      ============================================
+========================================================================================
+Datum: 2012-10-15							     Zeit: 03:00
+
+
+=====================================================
+  - Nullter Installationsprozess: [MANUELL!!!]
+     - Partnerquellen für Ubuntu in der /etc/apt/sources.list unten mit sudo-Rechten aktivieren und Paketquellen updaten (s.u.)
+     - aktuellste Version von Truecrypt auf "http://www.truecrypt.org/downloads" checken
+  - Erster Installationsprozess:
+    - sudo add-apt-repository ppa:stebbins/handbrake-releases installieren
+    - Medienkey-Ring libdvdcss gstreamer0.10-plugins-ugly installieren
+    - wajig installieren
+  - Zweiter Installationsprozess:
+    - Dropbox installieren
+    - Truecrypt installieren
+  - Dritter Installationsprozess:
+    - libreoffice-calc, -draw, -impress, -math, -writer installieren
+    - !firefox installieren
+    - mozplugger installieren
+    - !thunderbird installieren
+    - gcc installieren
+    - g++ installieren
+    - bash-completion installieren
+    - kompare installieren
+    - okteta installieren
+    - kde-l10n-de installieren
+    - !Soundconverter installieren
+    - lame installieren
+    - !gscan2pdf installieren
+    - partitionmanager installieren
+    - texlive* installieren
+    - kalzium installieren
+    - !pyrenamer installieren
+    - kolourpaint4 installieren
+    - vlc installieren
+    - kdegames installieren
+    - dvipng installieren
+    - unetbootin installieren
+    - kile kile-l10n installieren
+    - kstars installieren
+    - automake installieren
+    - autoconf installieren
+    - ipython, python-scipy, python-matplotlib installieren
+    - p7zip-* installieren
+    - kate installieren
+    - ImageMagick installieren
+    - aspell aspell-de installieren
+    - hunspell hunspell-de-de installieren
+    - nano installieren
+    - lynx installieren
+    - kde-wallpapers installieren
+    - pdfmod installieren
+    - skype installieren		
+    - flashplugin-installer installieren
+    - ttf-mscorefonts-installer installieren
+    - kubuntu-restricted-extras installieren
+    - gwenview kipi-plugins installieren
+    - kbibtex installieren
+    - openjdk-7-jre installieren
+    - icedtea-7-plugin installieren
+    - choqok installieren!gimp installieren
+    - audex installieren
+    - htop installieren
+    - \\oxygen-cursor-theme -extra installieren
+    - screen installieren
+    - handbrake-gtk installieren
+    - inkscape installieren
+    - octave installieren
+    - arista installieren
+    - unrar installieren
+    - avidemux installieren
+    - 0ad installieren
+    - calibre installieren
+  - Vierter Installationsprozess: [MANUELL!!!]
+    - ROOT installieren, s.u.
+
+
+	Einrichten:
+===================
+  - Partnerquellen für Ubuntu in der /etc/apt/sources.list unten mit sudo-Rechten aktivieren, Paketquellen updaten
+  - Dropbox-Ordner ins Home-Verzeichnis kopieren
+  - System updaten
+  - Neustarten
+  - Evtl. aktuellsten Grafiktreiber installieren: Driver -> nVidia
+  - Neustarten
+  - Dropbox/Truecrypt
+      - Container erstmals einhängen
+      - Dropbox-Icons einfügen
+      - Dropboxstarter im Menü anlegen, dazu Icon aus Dropbox-Ordner nutzen
+      - KDE Integration verbessern: "mv ~/.dropbox-dist/libstdc++.so.6{,.bak}"
+  - Installation aller benötigten Programme
+  - Neustarten
+  - Systemeinstellungen:
+      - Kurzbefehle und Gestensteuerung: Beispiele aktivieren, Konsole aktivieren
+      - Regionales: Land: Germany, Bevorzugte Sprache: Deutsch, Systemsprache: installieren und auf Deutsch(Deutschland) setzen
+      - Arbeitsflächeneffekte: checken ob aktiv (ab Systemstart)
+      - \Fensterverhalten: Fensterverhaltenreiter -> Aktivierung unter Mauszeiger, Nach vorne holen verzögern (500ms)
+      - Standard-Komponenten: Email->Thunderbird; Webbrowser->Firefox
+      - Verhalten der Arbeitsfläche: 4 Arbeitsflächen, Wechsel: On-Screen Anzeige aktivieren, Bildschirmränder -> rechts unten: Raster anzeigen
+      - Anzeige und Monitor: Bildschirmschoner deaktivieren
+      - Eingabegeräte: Num immer einschalten, 105 Tasten-Tastatur
+      - Energieverwaltung: keine Bildschirmhelligkeit anpassen oder Dimmen, nach 20 bzw. 5 Min TFT aus, Batteriefüllstand (7, 5), wenn Ladestand kritisch: Herunterfahren
+      - Starten und Beenden: Startprogramm "dropboxd" eintragen, System immer mit leerer Sitzung starten
+      - #Printer: 
+	  - "hp-makeuri 192.168.178.34" in Terminal eingeben und CUPS URI Adresse in Systemeinstellungen eintragen
+	  - Adresse von oben hinzufügen als HP LaserJet Professional m1212nf MFP mit A4 in rainers_office
+	  - in HP Device Manager Plugin installieren
+	  - HP Status Service beenden
+	  - Testprint aus ~/filebox/system/dateitypen/kde/text1.txt drucken
+  - Dolphin:
+      - Einrichten -> Dienste -> Attach to Thunderbird installieren
+      - Werkzeugleisten einrichten: Ordnerhochbutton einfügen mit Trenner zwischen Pfeil-rechts und Miniaturansicht
+      - Ordnerverlinkung für Dropbox unter Home anlegen
+  - Desktop:
+      - Uhr:
+	  - Datum in digitaler Uhr anzeigen (ISO)
+	  - Kalender: checken, ob USA deaktiviert und Deutschland (Feiertage) aktiv ist
+      - Aktivitäten Manager entfernen
+      - Reihenfolge der Favoriten im Menü:
+	  - Firefox
+	  - Thunderbird
+	  - Kopete
+	  - Skype
+	  - Taschenrechner
+	  - Konsole
+	  - Systemüberwachung
+	  - Ordner
+      - Desktop: Rechtsklick -> Miniprogramme sperren
+  - Standarddateitypen KDE:
+      - Bilder: Gwenview 
+      - Musik: Amarok
+      - Vektorgrafik: Inkscape
+      - Video: VLC
+  - HandBrake:
+      - Preferences -> Audio/Subtitles: Language: Deutsch
+  - LibreOffice:
+      - Extras -> Autokorrektur Optionen: Wortvervollständigung mit Tab, Länge: 5
+  - kate: 
+      - Terminal mit aktuellem Verzeichnis synchronisieren
+      - Bereich zwischen Klammern betonen
+      - Zeilennummerierung
+  - Kile:
+      - Portierung auf KDE4? -> ja
+      - Keine Tipps zum Programmstart anzeigen
+      - Autor: Sebastian Sonntag, Document class options: a4paper, 10pt, Zeichen-Kodierung: latin9, kein Splash-Screen
+      - PDFLaTeX -> PDF (Okular)
+      - Dynamischer Zeilenumbruch, Zeilennummern anzeigen, Bereiche zwischen Klammern besonders hervorheben
+      - Rechtschreibprüfung: Deutsch(Deutschland), direkt bei der Eingabe
+      - Speichern in ISO-8859-15
+  - Kopete:
+      - Schnellsuchleiste nicht anzeigen
+      - Accounts (ICQ, IP verbergen, Autorisieren, ISO-8859-15 Kodierung; MSN; \\Facebook via sebastian.sonntag.31)
+      - Kontaktliste:
+	  - keine baumartigen Linien anzeigen
+	  - Bildaufleiste nach 5 Sekunden ausblenden
+	  - compactes Layout
+      - Verhalten:
+	  - Automatische Rechtschreibprüfung deaktivieren
+      - Module:
+	  - Anzeigenvorschau in Chat anzeigen
+	  - KopeteTeX
+  - Thunderbird 15.x:
+      - Ordner aus ~/filebox/system/software/thunderbird laden und als .thunderbird im Home-Ornder speichern
+      - Thunderbird erstmals starten und in offline Modus gehen
+  - Firefox 15.x:
+      - Grundsätzlich:
+	  - key3.db und signons.sqlite aus ~/filebox/system/software/firefox in ~.mozilla/??.default/ kopieren
+      - Einstellungen:
+	  - Tabs und Fenster der letzten Sitzung anzeigen
+          - Startseite ist "www.google.de" anstelle von "about:startpage"
+	  - Kein Downloadmanager
+	  - immer fragen wohin speichern
+	  - Deutsche Sprachunterstützung checken
+      - Allgemein: 
+	  - About:Config: print: letter->a4
+	  - keine Vorschau bei neuen Tabs
+      - Addons nachinstallieren bzw. einrichten:
+	  - 1. AdBlock Plus (Deutscher Filter zusätzlich)
+	  - 2. DownloadHelper (Speichern in ~/Downloads, 20 Downloads max, kein Social Share)
+	  - 3. Xmarks (sync Tabs, keine Search bars, Bookmarks from Server, don't ask for snyc)
+	  - 4. Download Statusbar (Kompakt Modus, oben rechts)
+	  - 5. AdBlock Plus Popup-Addon
+	  - 6. German Dictionary
+      - Oberfläche:
+	  - kleine Symbole verwenden			
+	  - Download Manager oben mittig rechts neben Home platzieren
+	  - keine Status/Addon-Bar
+	  - ggf. Download-Button rechts oben entfernen
+
+      
+	Konoslenbefehle für Installation:
+=========================================
+sudo apt-get update && sudo apt-get upgrade && echo "Update und Upgrade erfolgreich. Nächster Schritt: HandBrake-PPA hinzufügen" && sleep 5 && sudo add-apt-repository ppa:stebbins/handbrake-releases && sudo apt-get update && echo "HandBrake-PPA erfolgreich hinzugefügt. Nächster Schritt: Medibuntu-Quellen hinzfügen und libdvdcss2 sowie gstreamer0.10-plugins-ugly installieren" && sleep 5 && sudo wget --output-document=/etc/apt/sources.list.d/medibuntu.list http://www.medibuntu.org/sources.list.d/$(lsb_release -cs).list && sudo apt-get --quiet update && sudo apt-get --yes --quiet --allow-unauthenticated install medibuntu-keyring && sudo apt-get --quiet update && sudo apt-get install -y libdvdcss2 gstreamer0.10-plugins-ugly wajig && echo "Medibuntu-Quellen erfolgreich hinzugefügt, libdvdcss2 und gstreamer0.10-plugins-ugly erfolgreich installiert. Nächster Schritt: Dropbox installieren" 
+
+&& sleep 5 && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf - && echo "Dropbox erfolgreich installiert. Nächster Schritt: Truecrypt  installieren" && sudo sh ~/Dropbox/system/software/linux/truecrypt/truecrypt-7.1a-setup-x64 && echo "Truecrypt erfolgreich installiert. Naechster Schritt: restliche Programme installieren" && sleep 5 && sudo wajig -y install libreoffice-calc libreoffice-draw libreoffice-impress libreoffice-math libreoffice-writer firefox mozplugger thunderbird gcc g++ bash-completion kompare okteta kde-l10n-de soundconverter lame gscan2pdf partitionmanager texlive* kalzium pyrenamer kolourpaint4 vlc kdegames dvipng unetbootin kile kile-l10n kstars automake autoconf ipython python-scipy python-matplotlib 
+
+p7zip-* kate imagemagick aspell aspell-de hunspell hunspell-de-de nano lynx kde-wallpapers pdfmod skype flashplugin-installer ttf-mscorefonts-installer kubuntu-restricted-extras gwenview kipi-plugins kbibtex openjdk-7-jre icedtea-plugin choqok audex htop  screen handbrake-gtk inkscape octave arista unrar avidemux 0ad calibre && echo "Restliche Programme erfolgreich installiert. Nächster Schritt: Update und Upgrade-Befehl einkopieren und ausführen" && sleep 5
+
+
+	ROOT - Installation [Schritt 4]:
+========================================
+      - Checke die aktuellste ROOT Version unter "root.cern.ch/drupal", ggf. unten anpassen
+      - sudo wajig -y install subversion dpkg-dev make g++ gcc binutils libx11-dev libxpm-dev libxft-dev libxext-dev gfortran libssl-dev libpcre3-dev xlibmesa-glu-dev libglew1.5-dev libftgl-dev libmysqlclient-dev libfftw3-dev cfitsio-dev graphviz-dev libavahi-compat-libdnssd-dev libldap2-dev python-dev libxml2-dev libkrb5-dev libgsl0-dev libqt4-dev xfs xfstt t1-xfree86-nonfree ttf-xfree86-nonfree ttf-xfree86-nonfree-syriac xfonts-75dpi xfonts-100dpi && cd /opt && sudo svn co http://root.cern.ch/svn/root/tags/v5-34-02 && sudo mv v5-34-02/ root_5.34.02/ && cd root_5.34.02 && sudo ./configure && sudo make -j 4 && sudo chown -cR sonntux /opt/root_5.34.02/* && cd
+      - update bashrc:
+	  - . /opt/root_5.34.02/bin/thisroot.sh
+	  - -> bashrc neustarten: "source ~/.bashrc"
+
+                
+	Konsolenbefehle für Aktualisierung:
+===========================================
+- per apt-get: sudo apt-get update && sudo apt-get upgrade && sudo apt-get autoremove --purge && sudo apt-get autoremove && sudo apt-get autoclean && sudo apt-get clean
+
+- per wajig: sudo wajig update && sudo wajig upgrade && sudo wajig autoremove && sudo wajig autoclean && sudo wajig clean
+
+
+	Anmerkung zum Deinstallieren:
+===============================
+ggf. sind Abhängigkeitsprobleme und zusätlich relevante Pakete in "ubuntu_12.04_lts_archiv.txt" zufinden.

@@ -1,0 +1,235 @@
+
+========================================================================================
+                      ============================================
+                      |               __        __               |
+                      |     |  /     |  \      |       |         |
+                      |     |<       |   |     |--     |         |
+                      |     |  \     |__/      |__     ---|-     |     
+                      |                                   |      |
+                      ============================================
+========================================================================================
+Datum: 2012-11-27                                                            Zeit: 15:30
+
+
+	Installieren:
+=====================
+    - Nullter Installationsprozess
+	- Repos von Packman und libdvdcss2 hinzufügen
+    - Erster Installationsprozess:
+	- Codecs und flash-player icedtea-web vlc-mozillaplugin installieren
+    - Zweiter Installationsprozess:
+	- Dropbox installieren
+	- encfs installieren
+	- Ordner filebox im Home Folder anlegen
+	- filebox aus ~/Dropbox/safe mounten
+    - Dritter Installations:
+	- libreoffice-calc, -draw, -impress, -math, -writer installieren
+	- !MozillaFirefox installieren
+#	- \\mozplugger installieren -> pdf plugin für firefox nutzen, schauen, ob sonst benötigt
+#	- !MozillaThunderbird installieren
+	- gcc installieren
+	- gcc-c++ installieren
+	- bash-completion installieren
+	- kompare installieren
+	- okteta installieren
+	- kde4-l10n-de installieren
+	- !Soundconverter installieren
+	- lame installieren
+	- simple-scan installieren
+	- texlive* installieren
+	- kalzium installieren
+	- krename installieren
+	- kolourpaint installieren
+	- vlc installieren
+	- kdegames4 installieren
+	- imagewriter installieren
+	- kile installieren
+	- kstars installieren
+	- automake installieren
+	- autoconf installieren
+	- ipython python-scipy python-matplotlib python-numpy python-progressbar installieren
+	- p7zip installieren
+	- kate installieren
+	- imagemagick installieren
+	- aspell aspell-de installieren
+	- hunspell installieren
+	- nano installieren
+	- lynx installieren
+	- kdebase4-wallpapers installieren
+	- pdfmod installieren
+	- \\librecad installieren -> gucken, ob überhaupt benötigt
+	- \\kicad installieren -> gucken, ob kompatibel mit Uni
+	- \skype installieren
+	- gwenview kipi-plugins installieren
+	- kbibtex installieren
+	- java-1_7_0-openjdk installieren
+	- choqok installieren!gimp installieren
+	- \\audex installieren -> rippen von audio CDs mit k3b oder amarok versuchen
+	- htop installieren
+	- screen installieren
+	- handbrake-gtk installieren
+	- inkscape dia-gnome pstoedit installieren
+	- octave installieren
+	- arista installieren
+	- synaptiks installieren
+	- plasma-theme-oxygen installieren
+	- kopete installieren
+	- calibre installieren
+	- xournal installieren
+	- winff installieren
+	- openssh installieren
+	- alpine installieren
+	- subversion installieren
+	- kdesvn installieren
+    - Vierter Installationsprozess: [MANUELL!!!]
+	- ROOT installieren, s.u.
+
+
+	Einrichten:
+===================
+#	- Dropbox-Ordner ins Home-Verzeichnis kopieren
+	- System updaten
+	- Neustarten
+	- Installation aller benötigten Programme
+	- Neustarten
+	- #filebox/dropbox/EncFS
+		- (filebox Ordner im Home-Verzeichnis erstellen: "mkdir filebox")
+		- (filebox einhängen: "encfs ~/Dropbox/safe ~/filebox")
+		- filebox Skripte von ~/filebox/system/argus nach ~/.kde/Autostart kopieren, checken ob ausführbar und KDE, in System Settings eintragen
+		- .atilla in Home kopieren
+		- Dropbox-Icons in Ordner aus ~/filebox/system/software/dropbox einfügen
+		- Dropboxstarter im Menü anlegen unter Internet -> Data Exchange
+	- Systemeinstellungen:
+		- Locale: Country: Germany, Spell Checker: German(Germany)
+		- Shortcuts and Geastures: Examples aktivieren, Konsole aktivieren
+		- Default Applications: Email->thunderbird; checken ob Webbrowser->Firefox
+		- Window Behavior: Effect beim Fensterwechsel via Alt+Tab: Cover Switch
+		- Workspace Behavior: 4 Workspaces, Screen Edges -> rechts unten: Grid
+		- #Printer: 
+			- "hp-makeuri 192.168.178.34" in Terminal eingeben und CUPS URI Adresse in Systemeinstellungen eintragen
+			- Adresse von oben hinzufügen als HP LaserJet Professional m1212nf MFP mit A4 in rainers_office
+			- in HP Device Manager Plugin installieren
+			- HP Status Service beenden
+			- Testprint aus ~/filebox/system/dateitypen/kde/text1.txt drucken
+		- Display & Monitor: Screensaver deaktivieren
+		- #Input Devices: Num immer einschalten, 105 Tasten-Tastatur, Touchpad one finger = left mouse
+		- Power Management: 
+			- kein Brightness oder Dimmen, nach 10 bzw. 5 Min TFT aus, nach 30 bzw. 10 Min in hibernate, Batteriefüllstand (7, 5)
+		- Startup and Shutdown: Startprogramm "dropboxd" eintragen, /Yakuake hinzufügen, System immer mit leerer Sitzung starten, EncFS Skripte checken (s.o.)
+	- YaST:
+		- Network devices: Hostname zu sonntux-xxxxx ändern
+	- Dolphin:
+		- Configure -> Services -> Attach to Thunderbird installieren
+		- Ordnerverlinkung für Dropbox unter Home anlegen
+		- Ordnerverlinkung für filebox unter Dropbox anlegen
+	- Desktop:
+		- Uhr:
+			- Datum in digitaler Uhr anzeigen, compact Date
+			- Kalender: Germany days off
+		- Activities Manager, Dolphin und Firefox Launcher entfernen
+		- Show Desktop Widget rechts von Arbeitsflächenumschalter einfügen
+		- Firefox Launcher, Office Launcher und Online Hilfe von Hintergrund entfernen
+		- Lock widgets
+		- #Reihenfolge der Favoriten im Menü:
+			- Firefox
+			- Thunderbird
+			- Kopete
+			- Skype
+			- Taschenrechner
+			- Konsole
+			- Ordner
+			- Systemüberwachung
+	- #Standarddateitypen KDE:
+		- Bilder: Gwenview 
+		- Musik: Amarok
+		- Vektorgrafik: Inkscape
+		- Text: Kate
+		- Video: VLC
+	- HandBrake:
+		- Preferences -> Audio/Subtitles: Language: Deutsch
+	- LibreOffice:
+		- Options -> Languages: Default currency: EUR (German(Germany)), Default language for documents (German(Germany))
+		- Tools -> AutoCorrect Options: Accept with Tab, Length: 5
+	- #kate: 
+		- keine Tipps zu Start anzeigen
+		- Terminal mit aktuellem Verzeichnis synchronisieren
+		- Dynamic WordWrap
+		- Klammern betonen
+		- Zeilennummerierung
+	- #Kile:
+		- Portierung auf KDE4? -> ja
+		- Keine Tipps zum Programmstart anzeigen
+		- Autor: Sebastian Sonntag, Document class options: a4paper, 10pt, Zeichen-Kodierung: latin9, kein Splash-Screen
+		- PDFLaTeX -> PDF (Okular)
+		- Dynamischer Zeilenumbruch, Zeilennummern anzeigen, Bereiche zwischen Klammern besonders hervorheben
+		- Rechtschreibprüfung: Deutsch(Deutschland), Automatic by default
+		- Save in ISO-8859-15
+	- #Thunderbird 14.0:
+		- Ordner aus ~/filebox/system/software/thunderbird laden und als .thunderbird im Home-Ornder speichern
+		- Thunderbird erstmals starten und in offline Modus gehen
+	- Kopete:
+		- Schnellsuchleiste nicht anzeigen
+		- Accounts (ICQ, IP verbergen, Autorisieren, ISO-8859-15 Kodierung; MSN; Facebook via jabber: sebastian.sonntag.31@chat.facebook.de)
+		- Contact List:
+			- keine baumartigen Linien anzeigen
+			- Bildaufleiste nach 5 Sekunden ausblenden
+			- compactes Layout
+		- Behavior:
+			- Automatische Rechtschreibprüfung deaktivieren
+		- Plugins:
+			- Bildvorschauen in Chat anzeigen
+			- KopeteTeX
+	- #Firefox 14.0:
+		- Grundsätzlich:
+			- key3.db und signons.sqlite aus ~/filebox/system/software/firefox in ~.mozilla/??.default/ kopieren
+		- Einstellungen:
+			- Tabs und Fenster der letzten Sitzung anzeigen
+|			- Startseite ist "" anstelle von "http://www.opensuse.org/"
+			- Kein Downloadmanager
+			- immer fragen wohin speichern
+			- Deutsche Sprachunterstützung hinzufügen
+		- Allgemein: 
+			- About:Config: print: letter->a4
+		- Addons nachinstallieren bzw. einrichten:
+			- 1. AdBlock Plus (Deutscher Filter zusätzlich)
+			- 2. DownloadHelper (Speichern in ~/Downloads, 20 Downloads max, kein Social Share)
+			- 3. Xmarks (sync Tabs, keine Search bars, Bookmarks from Server, don't ask for snyc)
+			- 4. Download Statusbar (mini mode, oben rechts)
+			- 5. AdBlock Plus Popup-Addon
+			- 6. German Dictionary
+		- Oberfläche:
+			- kleine Symbole verwenden			
+			- Download Manager oben mittig rechts neben Home platzieren
+			- keine Status/Addon-Bar
+			- ggf. Download-Button rechts oben entfernen
+
+
+	Konsolenbefehle für Installation:
+=========================================
+sudo zypper update && sudo zypper addrepo -f http://ftp.gwdg.de/pub/linux/packman/suse/12.2/ packman && sudo zypper addrepo -f http://opensuse-guide.org/repo/12.2/ dvd && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf - && sudo zypper in encfs && mkdir filebox && encfs ~/Dropbox/container ~/filebox && sudo zypper in libxine2-codecs k3b-codecs ffmpeg lame gstreamer-0_10-plugins-bad gstreamer-0_10-plugins-ugly gstreamer-0_10-plugins-ugly-orig-addon gstreamer-0_10-plugins-ffmpeg libdvdcss2 flash-player icedtea-web vlc-mozillaplugin && sudo zypper in libreoffice-calc libreoffice-draw libreoffice-impress libreoffice-math libreoffice-writer MozillaFirefox gcc gcc-c++ bash-completion kompare okteta kde4-l10n-de soundconverter lame simple-scan texlive* kalzium krename kolourpaint vlc kdegames4 imagewriter kile kstars automake autoconf ipython python-matplotlib python-numpy python-progressbar p7zip kate imagemagick aspell aspell-de hunspell nano lynx kdebase4-wallpapers pdfmod gwenview kipi-plugins java-1_7_0-openjdk choqok htop screen handbrake-gtk inkscape dia pstoedit arista synaptiks plasma-theme-oxygen kopete calibre xournal winff openssh alpine subversion kdesvn
+
+
+#	ROOT - Installation [Schritt 4]:
+========================================
+	- Checke die aktuellste ROOT Version unter "root.cern.ch/drupal", ggf. unten anpassen
+	- sudo zypper in sudo zypper in subversion make gcc-c++ gcc binutils libX11-devel libXpm-devel libXft-devel libXext-devel gcc-fortran openssl-devel pcre-devel mesa-libGL-devel glew-devel ftgl-devel mysql-devel fftw-devel cftsio-devel graphviz-devel avahi-compat-libdns_sd-devel libldap-dev python-devel libxml2-devel gsl-static && cd /opt && sudo svn co http://root.cern.ch/svn/root/tags/v5-34-01 && sudo mv v5-34-01/ root_5.34.01/ && cd root_5.34.01 && sudo ./configure && sudo make -j 4 && sudo chown -cR sonntux /opt/root_5.34.01/* && cd
+	- update bashrc:
+		- . /opt/root_5.34.01/bin/thisroot.sh
+		- -> bashrc neustarten: "source ~/.bashrc"
+
+
+	Konsolenbefehle für Aktualisierung:
+===========================================
+sudo zypper up
+
+
+	Anmerkung zum Deinstallieren:
+=====================================
+ggf. sind Abhängigkeitsprobleme und zusätlich relevante Pakete in "opensuse_12.2.txt" zufinden. 
+
+
+	(aktuelle) Probleme:
+============================
+kbibtex, (audex) nicht in den Quellen, genauso wie skype -> zur Zeit noch manuell installieren
+Skype gibt es nur in 32bit, daher: sudo zypper in xorg-x11-libXv-32bit libqt4-32bit libqt4-x11-32bit libpng12-0-32bit alsa-plugins-pulse-32bit && sudo zypper in ~/Downloads/skype*.rpm && sudo rm ~/Downloads/*
+Wenn Firefox bei Flash abstürzt das Paket entfernen: sudo zypper rm libproxy1-pacrunner-mozjs 

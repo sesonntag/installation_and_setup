@@ -1,0 +1,213 @@
+=========================================================================================
+                        =========================================                
+                        |                   ___  ____           |
+                        |     |   |  |\  |   |     |   |__|     |
+                        |     |   |  | \ |   |     |    /       |
+                        |     |___|  |  \|  _|_    |   /        |
+                        |                                       |
+                        =========================================
+=========================================================================================
+Datum: 2012-09-10                                                             Zeit: 16:30  
+
+
+=====================================================
+ - Nullter Installationsprozess: [MANUELL!!!]
+	- Partnerquellen für Ubuntu in der /etc/apt/sources.list unten mit sudo-Rechten aktivieren und Paketquellen updaten (s.u.)
+	- Dropbox-Version auf https://www.dropbox.com/install?os=lnx checken und unten eintragen
+ - Erster Installationsprozess:
+	- sudo add-apt-repository ppa:stebbins/handbrake-releases installieren
+	- Medienkey-Ring libdvdcss gstreamer0.10-plugins-ugly installieren
+ - Zweiter Installationsprozess:
+	- wajig installieren
+	- Dropbox installieren
+	- encfs installieren
+	- sonntux als User zur Gruppe fuse hinzufügen
+	- Ordner filebox im Home Folder anlegen
+	- filebox aus ~/Dropbox/safe mounten
+ - Dritter Installationsprozess:
+	- libreoffice-calc, -draw, -impress, -math, -writer installieren
+	- firefox installieren
+	- mozplugger installieren
+	- thunderbird installieren
+	- gcc installieren
+	- g++ installieren
+	- bash-completion installieren
+	- meld installieren
+	- ghex installieren
+	- language-pack-de language-pack-de-base language-support-de language-pack-gnome-de language-pack-gnome-de-base
+	- soundconverter installieren
+	- lame installieren
+	- gscan2pdf installieren
+	- gparted installieren
+	- texlive-full installieren
+	- gelemental installieren
+	- pyrenamer installieren
+	- pinta installieren
+	- vlc installieren
+	- gnome-games installieren
+	- dvipng installieren
+	- unetbootin installieren
+	- \\lyx installieren
+	- stellarium installieren
+	- automake installieren
+	- autoconf installieren
+	- ipython, python-scipy, python-matplotlib installieren
+	- p7zip-* installieren
+	- gedit, -plugins installieren
+	- ImageMagick installieren
+	- aspell aspell-de installieren
+	- hunspell hunspell-de-de installieren
+	- nano installieren
+	- lynx installieren
+	- pdfmod installieren
+	- arista installieren
+	- \\freecad installieren
+	- \\librecad installieren
+	- \\kicad installieren
+	- skype installieren		
+	- flashplugin-installer installieren
+	- ttf-mscorefonts-installer installieren
+	- ubuntu-restricted-extras installieren
+	- gthumb installieren
+	- nautilus-image-converter installieren
+	- nautilus-open-terminal installieren
+	- gnome-sushi installieren
+	- gwibber installieren
+	- openjdk-7-jre installieren
+	- icedtea-7-plugin installieren
+	- screen installieren
+	- handbrake-gtk installieren
+	- \\myunity installieren
+	- geany geany-plugins installieren
+	- lo-menubar installieren
+	- inkscape dia-gnome libwmf-bin pstoedit sketch installieren
+	- libnotify-bin installieren
+	- shutter installieren
+	- sound-juicer gstreamer0.10-plugins-ugly installieren
+	- octave installieren
+	- vino vinagre installieren
+        - unrar installieren
+ - Vierter Installationsprozess: [MANUELL!!!]
+	- ROOT installieren, s.u.
+
+
+	Einrichten:
+=============
+	- Dropbox-Ordner ins Home-Verzeichnis kopieren
+	- System updaten
+	- Neustarten
+	- Evtl. zusätzliche Treiber installieren
+	- Neustarten
+	- Installation aller benötigten Programme
+	- filebox/Dropbox/EncFS
+		- (User der Gruppe Fuse hinzufügen: "sudo usermod -aG fuse sonntux")
+		- (filebox Ordner im Home-Verzeichnis erstellen: "mkdir filebox")
+		- (filebox einhängen: "encfs ~/Dropbox/safe ~/filebox")
+		- .atilla in ~ anlegen
+		- filebox Skript von ~/filebox/system/argus nach /usr/local/bin kopieren, checken ob Unity ausgewählt und ausführbar gesetzt, in Startprogramme neuen Eintrag nur mit "encfs_mount_filebox.sh" machen, in ".bash_logout" den Inhalt unter Gnome-Zeile aus "encfs_unmount_filebox.sh" eintragen
+	- Neustarten
+	- System Settings:
+	  - Appearance: Icons in Pixelgröße 40 im Dash zeigen
+		- Brightness & Lock: Kein Dimmen, Sperre aus
+		- Language Support: fehlende Sprachen nachinstallieren, Regionale Formate: checken, ob Deutsch(Deutschland)
+		- Power: ggf. Ausschalten bei kritischem Akku
+		- Details: Vorgabe-Programme: Video-VLC, Foto-gThumb
+		- Time and Date: 24h, Wochentag, Wochennummer in Kalender anzeigen
+		- #Printing: Network printer: HP... in Rainers Office, Paper size: A4
+	- Reihenfolge der Favoriten im Dock:
+		- Home-Ordner
+		- Firefox
+		- Thunderbird
+		- Empathy
+		- Skype
+		- Taschenrechner
+	- Vorlagen in Vorlagen-Ordner einfügen
+	- Standarddateitypen: 
+		- Bilder: gThumb
+		- #Latex: geany
+		- \Lyx: Lyx
+		- Musik: Rhythmbox
+		- Skript: geany
+		- Video: VLC
+	- Geany:
+		- Plugins: Activate Latex and Spellcheck (KOMA by default; Spell while typing, /usr/share/hunspell with de_DE)
+		- Interface: Monospace 10 -> Ubuntu Mono 12
+                - Editor: activate line wrap, width 2, use spaces
+		- Tools: x-terminal-emulator -> gnome-terminal
+		- Templates: Mail is bs.sonntag@googlemail.com
+		- Terminal: User background colour "#300A24" anstelle von Schwarz
+	- gThumb:
+		- Ansicht -> Sortieren nach... -> Dateiname
+		- checken, ob: Einstellungen -> Betrachter -> Bild ans Fenster anpassen, falls größer
+	- HandBrake:
+		- Preferences -> Audio/Subtitles: Language: Deutsch 
+	- \Lyx:
+		- Einstellungen -> Rechtschreibung: Enchant, de_DE als alternative Sprache, Rechschreibung bei Eingabe Prüfen
+	- LibreOffice:
+	  - Optionen -> Alles Deutsch/Euro bis auf das Interface
+		- Autokorrektur Optionen: Tab als Vervollständigungsbefehl, Länge: 5
+	- Gwibber:
+		- Twitter-Account einrichten
+		- auf minimale Breite reduzieren
+		- Einstellungen: Service nicht mit System starten
+	- Empathy:
+		- Konto für Netzwerkchat überspringen, Konto für ICQ anlegen, ISO8859-15 setzen, Konto für Facebook anlegen mit sebastian.sonntag.31 und Alias Sebastian Sonntag
+		- Einstellungen:
+			- Benachrichtigen: Alle bis auf Abwesenheit aktivieren, das deaktivieren
+			- Klänge: Deaktiviere "bei Abwesenheit oder Beschäftigung deaktivieren", aber aktiviere: Kontakt meldet sich an/ab
+			- Rechtschreibprüfung: Keine 
+	- Thunderbird 15.0:
+		- Ordner aus ~/filebox/system/software/thunderbird laden und als .thunderbird in Home-Ornder entpacken
+		- Thunderbird erstmals starten, Systemmigration bei Emails und Überprüfung zustimmen und in Offline-Modus gehen
+	- Firefox 15.0:
+		- Grundsätzlich:
+			- key3.db und signons.sqlite aus ~/filebox/system/software/firefox in ~.mozilla/??.default/ kopieren
+		- Einstellungen:
+			- Tabs und Fenster der letzten Sitzung anzeigen
+			- Kein Downloadmanager
+			- immer fragen wohin speichern
+			- Deutsche Sprachunterstützung hinzufügen
+		- Allgemein: 
+			- About:Config: print: letter->a4
+		- Addons nachinstallieren bzw. einrichten:
+			- 1. AdBlock Plus (Deutscher Filter zusätzlich)
+			- 2. DownloadHelper (Speichern in ~/Downloads, 20 Downloads max, kein Social Share)
+			- 3. Xmarks (sync Tabs, keine Search bars, Bookmarks from Server, don't ask for snyc)
+			- 4. unity downloader
+			- 5. AdBlock Plus Popup-Addon
+			- 6. German Dictionary
+		- Oberfläche:
+			- kleine Symbole verwenden			
+			- keine Status/Addon-Bar
+			- ggf. Download-Button rechts oben entfernen
+
+
+	Konoslenbefehle für Installation [Schritte 1-3]:
+==================================================
+sudo apt-get update && sudo apt-get upgrade && sudo add-apt-repository ppa:stebbins/handbrake-releases && sudo apt-get update && sudo wget --output-document=/etc/apt/sources.list.d/medibuntu.list http://www.medibuntu.org/sources.list.d/$(lsb_release -cs).list && sudo apt-get --quiet update && sudo apt-get --yes --quiet --allow-unauthenticated install medibuntu-keyring && sudo apt-get --quiet update && sudo apt-get install -y libdvdcss2 gstreamer0.10-plugins-ugly && sudo apt-get install wajig && sudo wajig install https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_1.4.0_amd64.deb && sudo wajig -y install encfs && sudo usermod -aG fuse sonntux && mkdir ~/filebox && encfs ~/Dropbox/safe ~/filebox && sudo wajig -y install libreoffice-calc libreoffice-draw libreoffice-impress libreoffice-math libreoffice-writer firefox mozplugger thunderbird gcc g++ bash-completion meld ghex language-pack-de language-pack-de-base language-pack-gnome-de language-pack-gnome-de-base soundconverter lame gscan2pdf gparted texlive-full gelemental pyrenamer pinta vlc gnome-games dvipng unetbootin stellarium automake autoconf ipython python-scipy python-matplotlib p7zip-* gedit gedit-plugins imagemagick aspell aspell-de hunspell hunspell-de-de nano lynx pdfmod arista skype flashplugin-installer ttf-mscorefonts-installer ubuntu-restricted-extras gthumb nautilus-image-converter nautilus-open-terminal gnome-sushi gwibber openjdk-7-jre icedtea-7-plugin htop screen handbrake-gtk geany geany-plugins lo-menubar inkscape dia-gnome libwmf-bin pstoedit sketch libnotify-bin shutter sound-juicer gstreamer0.10-plugins-ugly octave vino vinagre unrar
+
+
+	ROOT - Installation [Schritt 4]:
+==================================
+	- Checke die aktuellste ROOT Version unter "root.cern.ch/drupal", ggf. unten anpassen
+	- \sudo apt-get install subversion dpkg-dev make g++ gcc binutils libx11-dev libxpm-dev libxft-dev libxext-dev xfs xfstt t1-xfree86-nonfree ttf-xfree86-nonfree ttf-xfree86-nonfree-syriac xfonts-75dpi xfonts-100dpi && cd /opt && sudo svn co http://root.cern.ch/svn/root/tags/v5-34-01 && sudo mv v5-34-01/ root_5.34.01/ && cd root_5.34.01 && sudo ./configure && sudo make -j 4 && sudo chown -cR sonntux /opt/root_5.34.01/* && cd
+	- update bashrc:
+		- . /opt/root_5.34.01/bin/thisroot.sh
+		- -> bashrc neustarten: "source ~/.bashrc"
+
+
+	Konsolenbefehle für Aktualisierung:
+=====================================
+sudo apt-get update && sudo apt-get upgrade && sudo apt-get autoremove --purge && sudo apt-get autoremove && sudo apt-get autoclean && sudo apt-get clean
+
+sudo wajig update && sudo wajig upgrade && sudo wajig autoremove && sudo wajig autoclean && sudo wajig clean 
+
+
+	Tests und Tipps:
+==================
+Handbrake noch nicht verfügbar, daher so lange in Software Center nach hinzufügen der Quelle auf oneiric umstellen (dazu erst kurz passiv setzen), htop* geht nicht da Plugin nicht zu installieren ist
+
+
+	Anmerkung zum Deinstallieren:
+===============================
+ggf. sind Abhängigkeitsprobleme und zusätlich relevante Pakete in "ubuntu_12.04_lts_archiv.txt" zufinden.

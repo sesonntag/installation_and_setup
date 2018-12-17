@@ -1,0 +1,227 @@
+================================================================================
+                  ============================================
+                  |               __        __               |
+                  |     |  /     |  \      |       |         |
+                  |     |<       |   |     |--     |         |
+                  |     |  \     |__/      |__     ---|-     |     
+                  |                                   |      |
+                  ============================================
+=================================================================================
+Datum: 2013-03-22						                                          Zeit: 22:30  
+
+
+	Installieren [Softwareverwaltung] Liste s.u.:
+=====================================================
+    - Erster Installationsprozess: [MANUELL!!!]
+	- Fedora Utils installieren
+    - Zweiter Installationsprozess: [MANUELL!!!]
+	- Programme in autoplus installieren (s.u.)
+    - Dritter Installationsprozess:
+	- encfs installieren
+	- Ordner filebox im Home Folder anlegen
+	- filebox aus ~/Dropbox/safe mounten
+    - Vierter Installationsprozess:
+	- @kde-desktop installieren
+	- libreoffice-calc, -draw, -graphicfilter, -impress, -math, -writer, -xsltfilter installieren
+	- !firefox installieren
+	- mozplugger installieren
+	- !thunderbird installieren
+	- gcc installieren
+	- gcc-c++ installieren
+	- bash-completion installieren
+	- kdesdk (okteta, kompare) installieren
+	- kde-l10n-de installieren
+	- !soundconverter installieren
+	- lame installieren
+	- !gscan2pdf installieren
+	- texlive-* installieren
+	- kdeedu (kalzium) installieren
+	- pyrenamer installieren
+	- kdegraphics (kolourpaint) installieren
+	- vlc installieren
+	- kdegames installieren
+	- dvipng installieren
+	- unetbootin installieren
+	- kile installieren
+	- \\lyx installieren
+	- kdeedu-kstars installieren
+	- krusader installieren
+	- gnuplot installieren
+	- root-system installieren
+	- \\ktechlab installieren
+	- \\kicad installieren
+	- automake installieren
+	- autoconf installieren
+	- ipython, scipy, python-matplotlib installieren
+	- p7zip p7zip-plugins installieren
+	- kate installieren
+	- ImageMagick installieren
+	- aspell-de installieren
+	- hunspell-de installieren
+	- kbibtex installieren
+	- nano installieren
+	- lynx installieren
+	- kde-partitionmanager installieren
+	- java-1.7.0-openjdk installieren
+	- icedtea-web installieren
+	- oxygen-cursor-themes installieren
+	- choqok installieren
+	- !gimp installieren
+	- gwenview, kipi-plugins installieren
+	- hplip* installieren
+	- audex installieren
+	- htop installieren
+	- screen installieren
+	- inkscape dia pstoedit sketch installieren
+	- octave installieren
+	- krfb krdc installieren
+  
+
+	Einrichten:
+===================
+	- Dropbox-Ordner ins Home-Verzeichnis kopieren
+	- System updaten
+	- Neustarten
+	- autoplus installieren "su -c 'yum -y --nogpgcheck install http://dnmouse.org/autoplus-1.4-5.noarch.rpm'" und starten:
+		- 1. Dropbox installieren und starten
+		- 2. flash-plugin installieren
+		- 3. mp3-Codecs installieren
+		- 4. DVD-Codecs installieren
+		- 5. Most codecs installieren
+		- 6. Skype installieren
+		- 7. Hugin installieren
+		- 8. winff installieren
+		- 9. Handbrake installieren
+	- Installation aller benötigten Programme (s.u.)
+	- filebox/Dropbox/EncFS
+		- (filebox Ordner im Home-Verzeichnis erstellen: "mkdir filebox")
+		- (filebox einhängen: "encfs ~/Dropbox/safe ~/filebox")
+		- .atilla in ~ anlegen
+		- #filebox Skripte von ~/filebox/system/argus nach ~/.kde/Autostart kopieren, checken ob ausführbar und kde
+		- Ordnerverlinkung in Dolphin unter Home anlegen
+		- Icons (PNGs) von ~/filebox/system/software/dropbox/141519-dropbox-icons.tar.gz nach ~/.dropbox-dist/icons/hicolor/16x16/status/ verschieben, alte Icons
+	- #grub2-Datei mit sudo-Rechten anpassen "gedit /etc/default/grub":
+	  - timeout-Zeile kopieren und auf 0 setzen, Original auskommentieren
+	  - SYSFONT=True in SYSFONT=latarcyrheb-sun16 ändern
+	  - "grub2-mkconfig -o /boot/grub2/grub.cfg && grub2-install /dev/sda" mit sudo-Rechten ausführen
+  - Neustarten
+	- System Settings:
+		- Locale: Country: Germany, Spell Checker: German(Germany)
+		- Shortcuts and Gestures: Exmaples und Konsole aktivieren
+		- Desktop Effects: Einschalten
+		- Workspace Appearance: Cursor Theme: Oxygen black; Desktop Theme: Oxygen (black)
+		- Default Applications: Email->Thunderbird; Webbrowser->Firefox
+		- Workspace Behaviour: 4 Desktops, 2 rows, Switch via Slide
+		- Window beah. -> ...slide
+		- Input Devices: Num immer einschalten, 105 Tasten-Tastatur, ggf. Touchpad aktivieren
+		- Power Management: kein Dimmen, nach 45/20 Min Hibernate, nach 10/5 oder 20/10 Min Bildschirm aus, 7%/5% low/critical
+		- Startup and Shutdown: Startprogramm "Dropbox" checken, EncFS-Skripte aus ~/.kde/Autostart eintragen, System immer mit leerer Sitzung starten
+		- Printer: 
+			- "hp-makeuri 192.168.178.34" in Terminal eingeben und CUPS URI Adresse in Systemeinstellungen eintragen
+			- Adresse von oben hinzufügen als HP LaserJet Professional m1212nf MFP mit A4 in rainers_office
+			- in HP Device Manager Plugin installieren
+			- HP Status Service beenden
+			- #Testprint aus ~/filebox/system/dateitypen/kde/text1.txt drucken
+	- Dolphin
+		- Configure -> Services -> Attach to Thunderbird installieren
+		- Configure Toolsbars: Ordnerhochbutton einfügen mit Trenner zwischen Pfeil-rechts und Miniaturansicht
+	- Desktop:
+		- Shortcut von Autoplus auf Desktop entfernen ggf. immer ohne fragen in Müll verschieben
+		- Datum in digitaler Uhr anzeigen, inkl. Wochentag (Iso Date), Deutsche Days-Off anstelle USA
+		- Activities Manager entfernen
+		- Show Desktop Applet zur Taskleiste rechts neben Desktop Manager hinzufügen
+		- Reihenfolge der Favoriten im Menü:
+			- Firefox
+			- Thunderbird
+			- Kopete
+			- Skype
+			- Taschenrechner
+			- Konsole
+			- Systemüberwachung
+			- Ordner
+	- Standarddateitypen: 
+		- Bilder: gwenview
+		- Musik: Amarok
+		- txt: Kate
+		- Vektorgraphik: Inkscape
+		- Video: VLC
+	- Amarok:
+		- Germany für Shop auswählen
+		- ~/Music as path for synchronisation
+		- Nicht zeigen, dass in Tray minimiert wird
+		- Quit Amarok ohne nochmals gefragt zu werden
+	- Handbrake:
+		- Preferences -> Audio/Subtitles: Language: Deutsch
+	- Skype: 
+		- Autologin
+		- Look auf Oxygen stellen
+	- Kate: 
+		- Keine Tipps zum Programmstart anzeigen
+		- Synchronize terminal path with file path
+		- dynamischer Zeilenumbruch
+		- Klammern betonen
+		- Zeilennummerierung
+	- LibreOffice:
+		- Options-> Languages: Default currency: EUR (German(Germany)), Default language for documents (German(Germany))
+		- Tools -> AutoCorrect Options: Accept with Tab, Length: 5
+	- Kile:
+		- Portierung auf KDE4? -> ja
+		- Keine Tipps zum Programmstart anzeigen
+		- Autor: Sebastian Sonntag, Document class options: a4paper, 10pt, Zeichen-Kodierung: latin9, Dateien nach dem schließen automatisch aufräumen, kein Splash-Screen
+		- PDFLaTeX -> PDF (Okular)
+		- Dynamischer Zeilenumbruch, Zeilennummern anzeigen, Bereiche zwischen Klammern besonders hervorheben
+		- Rechtschreibprüfung: Deutsch(Deutschland), Automatic by default
+		- Save in ISO-8859-15
+	- Lyx:
+		- Language: Spellcheck via Enchant und de_DE als alternative Sprache
+		- continous Spellcheck
+	- Thunderbird 13.0:
+		- Ordner aus ~/filebox/system/software/thunderbird laden und als .thunderbird in Home-Ornder entpacken
+		- Thunderbird erstmals starten, Systemmigration bei Emails und Überprüfung zustimmen und in Offline-Modus gehen
+	- Kopete:
+		- Schnellsuchleiste nicht anzeigen
+		- Accounts (ICQ, IP verbergen, Autorisieren, ISO-8859-15 Kodierung)
+		- Contact List:
+			- keine baumartigen Linien anzeigen
+			- Vertikale Bildaufleiste nach 5 Sekunden
+			- compactes Layout
+		- Behavior:
+			- Automatische Rechtschreibprüfung deaktivieren
+		- Plugins:
+			- Bildvorschauen in Chat anzeigen
+			- KopeteTeX
+	- Choqok:
+		- Twitter Account hinzufügen
+		- Brieftasche ohne Passwort akzeptieren
+	- Firefox 13.0:
+		- Einstellungen:
+			- Tabs und Fenster der letzten Sitzung anzeigen
+			- Kein Downloadmanager
+			- immer fragen wohin speichern
+			- Deutsche Sprachunterstützung hinzufügen
+		- Allgemein: 
+			- About:Config: print: letter->a4
+		- Oberfläche:
+			- kleine Symbole verwenden
+			- keine Status/Addon-Bar
+			- ggf. Download-Button rechts oben entfernen
+			- Download Manager oben mittig zwischen Home und LastPass
+		- Addons nachinstallieren bzw. einrichten:
+			- 0. Siphon
+			- 1. AdBlock Plus (Deutscher Filter zusätzlich)
+			- 2. DownloadHelper (Speichern in ~/Downloads, 20 Downloads max, kein Social Share)
+			- 3. Xmarks (sync Tabs, keine Search bars, Bookmarks from Server, don't ask for snyc)
+			- 4. Download Manager (mini mode, oben rechts)
+			- 5. Last Pass (save password)
+			- 6. AdBlock Plus Popup-Addon
+			- 7. German Dictionary
+			
+			
+      Konoslenbefehle für KDE-Installation:
+===========================================
+sudo yum update && sudo yum install -y fuse-encfs && mkdir ~/filebox && encfs ~/Dropbox/safe ~/filebox && sudo yum install @kde-desktop libreoffice-calc libreoffice-draw libreoffice-graphicfilter libreoffice-impress libreoffice-math libreoffice-writer libreoffice-xsltfilter firefox mozplugger thunderbird gcc gcc-c++ bash-completion kdesdk kde-l10n-de soundconverter lame gscan2pdf texlive-* kdeedu pyrenamer kdegraphics vlc kdegames dvipng unetbootin kile kdeedu-kstars krusader gnuplot root-* automake autoconf ipython scipy python-matplotlib p7zip p7zip-plugins kate ImageMagick aspell-de hunspell-de kbibtex nano lynx kde-partitionmanager java-1.7.0-openjdk icedtea-web oxygen-cursor-themes choqok gimp gwenview kipi-plugins kipi-plugins-libs hplip* audex htop screen inkscape dia pstoedit sketch octave
+
+
+      Anmerkung zum Deinstallieren:
+===================================
+ggf. sind Abhängigkeitsprobleme und zusätzlich relevante Pakete in "fedora_16_archiv.txt" zu finden.

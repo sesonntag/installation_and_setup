@@ -1,0 +1,227 @@
+========================================================================================
+                      ============================================
+                      |               __        __               |
+                      |     |  /     |  \      |       |         |
+                      |     |<       |   |     |--     |         |
+                      |     |  \     |__/      |__     ---|-     |     
+                      |                                   |      |
+                      ============================================
+========================================================================================
+Datum: 2012-09-19							     Zeit: 12:30
+
+
+=====================================================
+  - Nullter Installationsprozess: [MANUELL!!!]
+     - Partnerquellen für Ubuntu in der /etc/apt/sources.list unten mit sudo-Rechten aktivieren und Paketquellen updaten (s.u.)
+  - Erster Installationsprozess:
+    - sudo add-apt-repository ppa:stebbins/handbrake-releases installieren
+    - Medienkey-Ring libdvdcss gstreamer0.10-plugins-ugly installieren
+    - wajig installieren
+  - Zweiter Installationsprozess:
+    - Dropbox installieren
+    - encfs installieren
+    - sonntux als User zur Gruppe fuse hinzufügen
+    - Ordner filebox im Home Folder anlegen
+    - filebox aus ~/Dropbox/safe mounten
+  - Dritter Installationsprozess:
+    - libreoffice-calc, -draw, -impress, -math, -writer installieren
+    - !firefox installieren
+    - mozplugger installieren
+    - !thunderbird installieren
+    - gcc installieren
+    - g++ installieren
+    - bash-completion installieren
+    - kompare installieren
+    - okteta installieren
+    - kde-l10n-de installieren
+    - !Soundconverter installieren
+    - lame installieren
+    - !gscan2pdf installieren
+    - partitionmanager installieren
+    - texlive* installieren
+    - kalzium installieren
+    - !pyrenamer installieren
+    - kolourpaint4 installieren
+    - vlc installieren
+    - kdegames installieren
+    - dvipng installieren
+    - unetbootin installieren
+    - kile installieren
+    - kstars installieren
+    - automake installieren
+    - autoconf installieren
+    - ipython, python-scipy, python-matplotlib installieren
+    - p7zip-* installieren
+    - kate installieren
+    - ImageMagick installieren
+    - aspell aspell-de installieren
+    - hunspell hunspell-de-de installieren
+    - nano installieren
+    - lynx installieren
+    - kde-wallpapers installieren
+    - pdfmod installieren
+    - skype installieren		
+    - flashplugin-installer installieren
+    - ttf-mscorefonts-installer installieren
+    - kubuntu-restricted-extras installieren
+    - gwenview kipi-plugins installieren
+    - kbibtex installieren
+    - openjdk-7-jre installieren
+    - icedtea-7-plugin installieren
+    - choqok installieren!gimp installieren
+    - audex installieren
+    - htop installieren
+    - \\oxygen-cursor-theme -extra installieren
+    - screen installieren
+    - handbrake-gtk installieren
+    - inkscape installieren
+    - octave installieren
+    - arista installieren
+    - unrar installieren
+    - avidemux installieren
+  - Vierter Installationsprozess: [MANUELL!!!]
+    - ROOT installieren, s.u.
+
+
+	Einrichten:
+===================
+  - Partnerquellen für Ubuntu in der /etc/apt/sources.list unten mit sudo-Rechten aktivieren, Paketquellen updaten
+  - Dropbox-Ordner ins Home-Verzeichnis kopieren
+  - System updaten
+  - Neustarten
+  - Evtl. aktuellsten Grafiktreiber installieren: Driver -> nVidia
+  - Neustarten
+  - filebox/dropbox/EncFS
+      - (User der Gruppe Fuse hinzufügen: "sudo usermod -aG fuse sonntux")
+      - (filebox Ordner im Home-Verzeichnis erstellen: "mkdir filebox")
+      - (filebox einhängen: "encfs ~/Dropbox/safe ~/filebox")
+      - filebox Skripte von ~/filebox/system/argus nach ~/.kde/Autostart kopieren, checken ob ausführbar und KDE, in Systemeinstellungen eintragen
+      - .atilla in Home kopieren
+      - Dropbox-Icons einfügen
+      - Dropboxstarter im Menü anlegen, dazu Icon aus Dropbox-Ordner nutzen
+  - Installation aller benötigten Programme
+  - Neustarten
+  - Systemeinstellungen:
+      - Kurzbefehle und Gestensteuerung: Beispiele aktivieren, Konsole aktivieren
+      - Locale: Country: Germany, Spell Checker: German(Germany), System Languages installieren Systemsprache: English(US)
+      - Desktop Effects: checken ob aktiv (ab Systemstart)
+      - Workspace Appearance: Cursor Theme: Oxygen black; Desktop Theme: Oxygen (black)
+      - Default Applications: Email->Thunderbird; Webbrowser->Firefox
+      - Workspace Behavior: 4 Workspaces, switch via slide, use strg+alt+down für nächste und strg+alt+up für letzte Workspace
+      - Display & Monitor: Screensaver deaktivieren
+      - Input Devices: Num immer einschalten, 105 Tasten-Tastatur
+      - Power Management: 
+	  - Batteriefüllstand (10, 7, 5),  kein Dimmen, nach 30/15 bzw. 60 Min in Tiefschlaf, nach 10/5 Min Bildschirm aus)
+	  - #ggf. neues Schema mit Presentation anlegen (alles leer), Symbol von Kpresenter
+      - Startup and Shutdown: Startprogramm "dropboxd" eintragen, System immer mit leerer Sitzung starten
+      - #Printer: 
+	  - "hp-makeuri 192.168.178.34" in Terminal eingeben und CUPS URI Adresse in Systemeinstellungen eintragen
+	  - Adresse von oben hinzufügen als HP LaserJet Professional m1212nf MFP mit A4 in rainers_office
+	  - in HP Device Manager Plugin installieren
+	  - HP Status Service beenden
+	  - Testprint aus ~/filebox/system/dateitypen/kde/text1.txt drucken
+  - Dolphin:
+      - Configure -> Services -> Attach to Thunderbird installieren
+      - Configure Toolsbars: Ordnerhochbutton einfügen mit Trenner zwischen Pfeil-rechts und Miniaturansicht
+      - Ordnerverlinkung für Dropbox unter Home anlegen
+  - Desktop:
+      - Uhr:
+	  -Datum in digitaler Uhr anzeigen, inkl. Wochentag (compact Date)
+	  - Kalender: United (not used) und German (days off)
+      - Activities Manager entfernen
+      - Desktop_shortcuts aus ~/filebox/system/software/kde in Desktop entpacken
+      - Reihenfolge der Favoriten im Menü:
+	  - Firefox
+	  - Thunderbird
+	  - Kopete
+	  - Skype
+	  - Taschenrechner
+	  - Konsole
+	  - Systemüberwachung
+	  - Ordner
+	  - Icons sperren
+  - Standarddateitypen KDE:
+      - Bilder: Gwenview 
+      - Musik: Amarok
+      - Vektorgrafik: Inkscape
+      - Video: VLC
+  - HandBrake:
+      - Preferences -> Audio/Subtitles: Language: Deutsch
+  - LibreOffice:
+      - Tools -> AutoCorrect Options: Accept with Tab, Length: 5
+  - kate: 
+      - Terminal mit aktuellem Verzeichnis synchronisieren
+      - Klammern betonen
+      - Zeilennummerierung
+  - Kile:
+      - Portierung auf KDE4? -> ja
+      - Keine Tipps zum Programmstart anzeigen
+      - Autor: Sebastian Sonntag, Document class options: a4paper, 10pt, Zeichen-Kodierung: latin9, kein Splash-Screen
+      - PDFLaTeX -> PDF (Okular)
+      - Dynamischer Zeilenumbruch, Zeilennummern anzeigen, Bereiche zwischen Klammern besonders hervorheben
+      - Rechtschreibprüfung: Deutsch(Deutschland), Automatic by default
+      - Save in ISO-8859-15
+  - Kopete:
+      - Schnellsuchleiste nicht anzeigen
+      - Accounts (ICQ, IP verbergen, Autorisieren, ISO-8859-15 Kodierung; MSN; Facebook via sebastian.sonntag.31)
+      - Contact List:
+	  - keine baumartigen Linien anzeigen
+	  - Bildaufleiste nach 5 Sekunden ausblenden
+	  - compactes Layout
+      - Behavior:
+	  - Automatische Rechtschreibprüfung deaktivieren
+      - Plugins:
+	  - Bildvorschauen in Chat anzeigen
+	  - KopeteTeX
+  - Thunderbird 15.x:
+      - Ordner aus ~/filebox/system/software/thunderbird laden und als .thunderbird im Home-Ornder speichern
+      - Thunderbird erstmals starten und in offline Modus gehen
+  - Firefox 15.x:
+      - Grundsätzlich:
+	  - key3.db und signons.sqlite aus ~/filebox/system/software/firefox in ~.mozilla/??.default/ kopieren
+      - Einstellungen:
+	  - Tabs und Fenster der letzten Sitzung anzeigen
+    |     - Startseite ist "" anstelle von "http://www.opensuse.org/"
+	  - Kein Downloadmanager
+	  - immer fragen wohin speichern
+	  - Deutsche Sprachunterstützung checken
+      - Allgemein: 
+	  - About:Config: print: letter->a4
+      - Addons nachinstallieren bzw. einrichten:
+	  - 1. AdBlock Plus (Deutscher Filter zusätzlich)
+	  - 2. DownloadHelper (Speichern in ~/Downloads, 20 Downloads max, kein Social Share)
+	  - 3. Xmarks (sync Tabs, keine Search bars, Bookmarks from Server, don't ask for snyc)
+	  - 4. Download Statusbar (mini mode, oben rechts)
+	  - 5. AdBlock Plus Popup-Addon
+	  - 6. German Dictionary
+      - Oberfläche:
+	  - kleine Symbole verwenden			
+	  - Download Manager oben mittig rechts neben Home platzieren
+	  - keine Status/Addon-Bar
+	  - ggf. Download-Button rechts oben entfernen
+
+      
+	Konoslenbefehle für Installation:
+=========================================
+sudo apt-get update && sudo apt-get upgrade && sudo add-apt-repository ppa:stebbins/handbrake-releases && sudo apt-get update && sudo wget --output-document=/etc/apt/sources.list.d/medibuntu.list http://www.medibuntu.org/sources.list.d/$(lsb_release -cs).list && sudo apt-get --quiet update && sudo apt-get --yes --quiet --allow-unauthenticated install medibuntu-keyring && sudo apt-get --quiet update && sudo apt-get install -y libdvdcss2 gstreamer0.10-plugins-ugly wajig && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf - && sudo wajig -y install encfs && sudo usermod -aG fuse sonntux && mkdir filebox && encfs ~/Dropbox/safe ~/filebox && sudo wajig -y install libreoffice-calc libreoffice-draw libreoffice-impress libreoffice-math libreoffice-writer firefox mozplugger thunderbird gcc g++ bash-completion kompare okteta kde-l10n-de soundconverter lame gscan2pdf partitionmanager texlive* kalzium pyrenamer kolourpaint4 vlc kdegames dvipng unetbootin kile kstars automake autoconf ipython python-scipy python-matplotlib p7zip-* kate imagemagick aspell aspell-de hunspell hunspell-de-de nano lynx kde-wallpapers pdfmod skype flashplugin-installer ttf-mscorefonts-installer kubuntu-restricted-extras gwenview kipi-plugins kbibtex openjdk-7-jre icedtea-plugin choqok audex htop  screen handbrake-gtk inkscape octave arista unrar avidemux
+
+
+	ROOT - Installation [Schritt 4]:
+========================================
+      - Checke die aktuellste ROOT Version unter "root.cern.ch/drupal", ggf. unten anpassen
+      - sudo wajig -y install subversion dpkg-dev make g++ gcc binutils libx11-dev libxpm-dev libxft-dev libxext-dev gfortran libssl-dev libpcre3-dev xlibmesa-glu-dev libglew1.5-dev libftgl-dev libmysqlclient-dev libfftw3-dev cfitsio-dev graphviz-dev libavahi-compat-libdnssd-dev libldap2-dev python-dev libxml2-dev libkrb5-dev libgsl0-dev libqt4-dev xfs xfstt t1-xfree86-nonfree ttf-xfree86-nonfree ttf-xfree86-nonfree-syriac xfonts-75dpi xfonts-100dpi && cd /opt && sudo svn co http://root.cern.ch/svn/root/tags/v5-34-01 && sudo mv v5-34-01/ root_5.34.01/ && cd root_5.34.01 && sudo ./configure && sudo make -j 4 && sudo chown -cR sonntux /opt/root_5.34.01/* && cd
+      - update bashrc:
+	  - . /opt/root_5.34.01/bin/thisroot.sh
+	  - -> bashrc neustarten: "source ~/.bashrc"
+
+                
+	Konsolenbefehle für Aktualisierung:
+===========================================
+- per apt-get: sudo apt-get update && sudo apt-get upgrade && sudo apt-get autoremove --purge && sudo apt-get autoremove && sudo apt-get autoclean && sudo apt-get clean
+
+- per wajig: sudo wajig update && sudo wajig upgrade && sudo wajig autoremove && sudo wajig autoclean && sudo wajig clean
+
+
+	Anmerkung zum Deinstallieren:
+===============================
+ggf. sind Abhängigkeitsprobleme und zusätlich relevante Pakete in "ubuntu_12.04_lts_archiv.txt" zufinden.

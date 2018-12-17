@@ -1,0 +1,200 @@
+==================================================================
+           ============================================
+           |               __        __               |
+           |     |  /     |  \      |       |         |
+           |     |<       |   |     |--     |         |
+           |     |  \     |__/      |__     ---|-     |     
+           |                                   |      |
+           ============================================
+==================================================================
+
+
+	Einbinden der Softwarequellen Liste s.u.:
+=================================================:
+	- "sudo zypper ar -f -n packman http://packman.inode.at/suse/openSUSE_11.4 packman"
+	- skype.rpm homepage
+
+	One-Click-Installtionen:
+================================
+	- http://opensuse-community.org/Restricted_formats/11.4 -> Restricted Multimedia Formats for the K-Environment
+	- kfilebox installieren
+	- pdfedit installieren
+	- Hedgewars installieren
+	- Stellarium installieren
+	- unetbootin installieren
+	- WxMaxima installieren
+	- referencer installieren
+	- ktechlab installieren
+	- kicad installieren
+	- gspiceui installieren
+	- plasmoid-gmailnotifier installieren
+	- PokerTH installieren
+	- smc, smc-music-addon installieren
+	- ipython, python-scipy installieren
+	- mkisofs installieren
+	- cdrecord installieren
+
+
+
+	Installieren [Softwareverwaltung] Liste s.u.:
+=====================================================
+	- libreoffice-calc, -draw, -graphicfilter, -impress, -math, -writer, -xsltfilter installieren
+	- fiefox installieren
+	- gcc installieren
+	- okteta installieren
+	- Soundkonverter installieren
+	- lame installieren
+	- #gscan2pdf installieren
+	- partitionmanager, partitionmanager-lang installieren
+	- texlive-* installieren
+	- #HomeBank (kmymoney) installieren
+	- kalzium installieren
+	- krename installieren
+	- kolourpaint installieren
+	- dvdrip cdrdao mjpegtools mplayer ogmtools unrar subtitleripper vcdimager xine-ui xvid4conf installieren
+	- dvdauthor installieren
+	- vlc installieren
+	- gimp installieren
+	- kdegames installieren
+	- #dvipng installieren
+	- Lyx installieren
+	- kile, kile-lang installieren
+	- krusader installieren
+	- Xournal installieren
+	- gnuplot installieren
+	- scidavis installieren
+	- #ROOT-system installieren
+	- Geany, geany-plugins*, xterm installieren
+	- automake installieren
+	- autoconf installieren
+	- python-matplotlib installieren
+	- #eclipse, eclipse-pydev, eclipse-cdt installieren
+	- p7zip installieren
+	- #okular-extra-backends installieren
+	- kate installieren
+	- evolution evolution-webcal #evolution-plugins installieren
+	- ImageMagick installieren
+	- qalculate installieren
+	- aspell-de installieren
+	- hunspell-de installieren
+	- kbibtex installieren
+
+
+	Einrichten:
+===================
+	- Netzwerk einstellen (Schlüssel, speichern, KWallet: kein Passwort - unsichere Verschlüsselung verwenden)
+	- System updaten
+	- Kfilebox
+		- Dropbox-Ordner laden
+		- kfilebox aktivieren (Programm erstmals starten)
+	- Kontrollzentrum:
+		- Default Applications: Mail: Evolution
+		- Sprache: Country: Deutschland (System), Sprache: Deutsch, Rechtschreibung: Deutsch (Deuschland)
+		- Sitzungsverwaltung: System immer mit leerer Sitzung starten
+		- Eingabegeräte: Num immer einschalten
+		- Leistung (10Min Bildschirm, 30min Ruhezustand, kein Dimmen)
+		- Tastaturbelegung Examples aktivieren, Konsole aktivieren
+		- 105 Tasten-Tastatur
+		- ggf. Touchpad aktivieren
+	- Yast:
+		- Sprache Deutsch -> erweitert root: ja
+		- Drucker hinzufügen (socket://192.168.178.1) -> CMYK drucken (IP3600 als IP4600 einstellen))
+	- #Standarddateitypen: 
+		- Musik: Totem
+		- Video: vlc
+		- Bilder: gwenview
+		- PDF: okular
+		- djvu: okular
+	- #gThumb 
+		- Ansicht: Sortieren nach ... Dateiname
+		- Einstellungen: Bild an Breite anpassen falls größer
+	- Evolution: Backup laden
+	- #Skype: Look auf GTK+ stellen
+	- Eclipse: Bei Fenster -> Benutzervorgaben -> PyDev -> Interpreter - Python -> autoconfig ausführen
+	- Geany: 
+		- Plugins: alle Plugins unter Werkzeuge aktivieren
+		- Editor: Vervollständigung aller Wörter, ab 2 Zeichen vervollständigen
+	- dvd::rip:
+		- /home/USER/Videos als Zielverzeichnis
+		- unrar statt rar zum packen nutzen
+	- (HomeBank:
+		- Einstellungen: Geldbörse, Importieren, Exportieren /home/wayne/Dropbox/Dokumente/HomeBank
+		- Backup laden)
+	- #kate: 
+		- Zeilennummerierung
+		- Klammern betonen
+		- Aktulle Zeile betonen
+	- checkgmail: 
+		- bs.sonntag@googlemail.com
+		- save password
+		- Sprache Deutsch
+		- 24h-clock
+		- in den Autostart legen aktivieren
+	- Lyx:
+		- Sichere Orig. beim Speichern deaktivieren
+		- Rechtschreibung: Hunspell, de_DE als Alternative, bei der Eingabe testen
+	- Kile:
+		- Keine Tipps zum Programmstart anzeigen
+		- Autor: Sebastian Sonntag, Document class options: a4paper, 10pt, Zeichen-Kodierung: latin9, Dateien nach dem schließen automatisch aufräumen
+		- PDFLaTeX -> PDF (Okular)
+		- Dynamischer Zeilenumbruch, Zeilennummern anzeigen, Bereiche zwischen Klammern besonders hervorheben
+		- Kodierung Westeuropäisch (ISO 8859-15), Keine Sicherungskopie anlegen
+	- #Kopete:
+		- Konten (ICQ-Nr, IP verbergen, Autorisieren, Bild)
+		- Schnellsuchleiste, Statusleiste nicht anzeigen
+		- Kontaktliste:
+			- Keine Kontaktfotos anzeigen
+			- Vertikale Bildaufleiste nach 5 Sekunden
+			- compactes Layout
+		- Verhalten:
+			- Anfangszustand offline
+			- Automatische Abwesenheit deaktivieren
+			- Automatische Rechtschreibprüfung deaktivieren
+		- Chat-Fenster:
+			- Stil: Pidgin Name-Colors
+			- Animierte ICQ6 Smilies
+		- Module:
+			- KopeteTeX
+			- Nachrichtenanzeiger
+			- Verlauf (10 Nachrichten, schwarze Schrift)
+	- Firefox 5.0.0:
+		- Allgemein: 
+			- Meldungen nicht anzeigen: Neustarten, Beenden, Privates Browsen, PDFs als Kopie speichern
+		- Einstellungen:
+			- Grundsätzlich: Letzte Sitzungen Laden, Home: http://www.google.de statt "http://start.fedoraproject.org/"
+		- Anwendungen: PDF mit AdobeReader in Firefox
+		- Oberfläche:
+			- kleine Symbole verwenden
+			- keine Status/Addon-Bar
+			- kein Downloadhelper-Applet
+		- Addons nachinstallieren:
+			- AdBlock Plus
+			- AdBlock Plus Popup-Addon
+			- DownloadHelper (Speichern in /home/USER/Downloads)
+			- TubeStop
+			- Xmarks (Bookmarks und Passwörter synchronisieren, automatisch, nicht nachfragen, Sync beim Beenden)
+	- Reihenfolge der Favoriten im Menü:
+		- Firefox
+		- Evolution
+		- Kopete
+		- Taschenrechner
+		- Konsole
+		- Systemüberwachung
+		- Ordner
+
+
+	Konoslenbefehle für Installation:
+=========================================
+sudo yum -y --nogpgcheck install http://dnmouse.org/autoplus-1.1-8.noarch.rpm && sudo yum install @kde-desktop libreoffice-calc libreoffice-draw libreoffice-graphicfilter libreoffice-impress libreoffice-math libreoffice-writer libreoffice-xsltfilter planner firefox gcc bash-completion kdesdk kde-l10n-de soundconverter lame gscan2pdf pdfedit kde-partitionmanager texlive-* homebank kdeedu krename kdegraphics dvdrip cdrdao cdrecord mjpegtools mkisofs mplayer ogmtools unrar subtitleripper vcdimager xine-ui xvid4conf dvdauthor vlc gimp hedgewars kdegames dvipng liveusb-creator lyx kile stellarium krusader xournal wxmaxima gnuplot scidavis referencer root-* ktechlab kicad gspiceui checkgmail geany geany-plugins* xterm automake autoconf pokerth smc smc-music ipython scipy python-matplotlib eclipse eclipse-pydev eclipse-cdt eclipse-texlipse p7zip kate evolution evolution-webcal aspell-de hunspell-de kbibtex
+
+kayali-/ okular-exra-backends->/ evolution-plugins->/
+
+
+	Konsolenbefehle für Aktualisierung:
+===========================================
+sudo yum update
+
+
+	Anmerkung zum Deinstallieren:
+=====================================
+ggf. sind Abhängigkeitsprobleme und zusätlich relevante Pakete in "Install-Uninstall-Undefined.txt" zufinden.

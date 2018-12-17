@@ -1,0 +1,52 @@
+Deinstallieren über: sudo yum remove [...]
+==============================================
+
+
+Zur Zeit sind folgende Programm nicht eingestellt, z.T. aber installiert:
+=========================================================================		
+	- /Texmakerx:
+		- Wörterbuch: /usr/share/myspell/de_DE.dic
+		- externer Betrachter für PDF -> Evince
+		- schnelles erzeugen über pdflatex+viewpdf
+		- Editorschrift ISO 8859-15
+	- /tint2
+		- Zeile 007: roundef = 0 vorher 7
+		- Zeile 009: backgroundcolour = 100 vorher 60
+		- Zeile 010: boardcolour = #000000 100 vorher #FFFFFF 16
+		- Zeile 027: panel_size = 100 27 vorher 94 30
+		- Zeile 075: systray = 0 vorher 1
+		- Zeile 087: clock_font_colour #000000 100 vorher #FFFFFF 74
+		- Zeile 103: mouse_right = none vorher close
+	- /checkgmail: 
+		- bs.sonntag@googlemail.com
+		- save password
+		- Sprache Deutsch
+		- 24h-clock
+	- /googsystray: 
+		- Konto anlegen
+		- Mail, Kalender und Reader
+		- in Autostart
+		- GTK Popup
+		- Optische Benachrichtigung: Native
+	- /Empathy:
+		- Kontodeteils eingeben: ICQ, Nummer, Passwort, ISO-8859-15, Personen in deiner Nähe deaktivieren
+		- Persönliche Informationen: Bild einfügen
+		- Ansicht: Kompakte Größe wählen 
+		- Einstellungen:
+			- automatisch beim Starten verbinden deaktivieren
+			- Benachrichtigung bei Abwesenheit/Beschäftigung deaktiveren ausstellen
+			- Benachrichtigung wenn Chat nicht fokussiert ist
+			- Benachrichtigung wenn Kontakt anmeldet
+			- Benachrichtigung wenn Kontakt abmeldet
+			- Klänge immer für Nachricht empfangen, neue Unterhaltung, Kontakt meldet sich an oder ab
+			- Keine Rechtschreibprüfung
+			- Chat-Erscheinungsbild Ubuntu
+	    - /Klang -> Default statt Mint
+	    - /"sudo apt-get install sound-theme-freedesktop" installieren [Terminal] 
+	- /Eclipse: Bei Fenster -> Benutzervorgaben -> PyDev -> Interpreter - Python -> autoconfig ausführen (eclipse, eclipse-cdt, eclipse-pydev)
+	- /Lyx: Rechtschreibung: Hunspell, de_DE als Alternative, bei der Eingabe testen
+	- planner
+	- xournal
+	- inkscape
+	- krita
+	

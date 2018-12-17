@@ -1,0 +1,172 @@
+===========================================================================
+           =====================================================
+           |      __           ___            __      ___      |
+           |     |  |  |\  |  |   |  |\  /|  |           |     |
+           |     |__   | \ |  |   |  | \/ |  |--     ,---´     |
+           |     |__|  |  \|  |___|  |    |  |__     |___      |
+           |        |                                          |
+           =====================================================
+===========================================================================
+
+
+	Einbinden der Softwarequellen Liste s.u.:
+=================================================:
+	- su -c 'yum -y --nogpgcheck install http://dnmouse.org/autoplus-1.1-7.noarch.rpm'
+
+
+	Installieren [Softwareverwaltung] Liste s.u.:
+=====================================================
+	- gcc installieren
+	- autoplus installieren
+	- Office/Productivity installieren
+	- bash-completion installieren
+	- bless installieren
+	- Soundconverter installieren
+	- lame installieren
+	- gscan2pdf installieren
+	- pdfshuffler installieren
+	- gparted installieren
+	- texlive-* installieren
+	- AdobeReader_deu installieren
+	- gthumb installieren
+	- HomeBank installieren
+	- gnome-chemistry-utils installieren
+	- pyrenamer installieren
+	- pinta installieren
+	- dvdrip cdrdao cdrecord mjpegtools mkisofs mplayer ogmtools unrar subtitleripper vcdimager xine-ui xvid4conf installieren
+	- dvdauthor installieren
+	- vlc installieren
+	- gimp installieren
+	- urbanterror installieren
+	- Hedgewars installieren
+	- gnome-games installieren
+	- gbrainy installieren
+	- dvipng installieren
+	- liveusb-creator installieren (früher unetbootin)
+	- Lyx installieren
+	- TeXMakerx installieren
+	- Stellarium installieren
+	- GNOME Commander installieren
+	- Xournal installieren
+	- WxMaxima installieren
+	- gnuplot installieren
+	- scidavis installieren
+	- referencer installieren
+	- Guake installieren
+	- ROOT-system installieren
+	- gspiceui installieren
+	- checkgmail installieren
+	- nautilus-image-converter installieren
+	- gresistor installieren
+	- Geany, geany-plugins*, xterm installieren
+	- automake installieren
+	- autoconf installieren
+	- PokerTH installieren
+	- smc, smc-music installieren
+	- ipython, scipy, python-matplotlib installieren
+	- eclipse, eclipse-pydev, eclipse-cdt installieren
+	- gnomedo installieren
+
+
+	Einrichten:
+===================
+	- Netzwerk einstellen (Schlüssel, speichern, Brieftasche: kein Passwort - unsichere Verschlüsselung verwenden)
+	- gnome-disk-utility aus Autostart entfernen
+	- System updaten
+	- autoplus starten:
+		- flash-plugin installieren
+		- mp3-Codecs installieren
+		- DVD-Codecs installieren
+		- Most codecs installieren
+		- Skype installieren
+		- Sudo-Account with Password einrichten
+		- Sun Java installieren
+		- winff installieren
+		- Dropbox installieren
+	- Dropbox
+		- Dropbox-Ordner laden
+		- Drobpox aktivieren (Programm erstmals starten)
+	- Vorlagen einfügen "de_DE"
+	- Sprache Deutsch(Deutschland) installieren im Menü
+	- Leistung, Bildschirm
+	- Drucker hinzufügen (socket://192.168.178.1) -> CMYK drucken (IP3600 als IP4600 einstellen)
+	- Tastaturbelegung: Alt+T Terminal, ggf. Taschenrechner-Shortcut auf (Suche-Taste)
+	- ggf. Audiohardware auf Analog Surround 4.0 Output + Input
+	- Ort in Uhr entfernen, außerdem kein Wetter und keine Temperatur anzeigen
+	- Standarddateitypen: 
+		- Musik: Totem
+		- Video: vlc
+		- Bilder: gThumb
+		- PDF: Evince
+		- LaTeX-Dokumente: TeXMaker
+	- gThumb -> Ansicht -> Sortieren nach ... -> file name
+	- Evolution: Backup laden, Standard dabei bestätigen
+	- Skype: Look auf GTK+ stellen	
+	- gnomedo in Autostart, aber nicht anzeigen
+	- Eclipse: Benutzervorgaben -> Pydev -> Interpreter auto config
+	- Geany: 
+		- Plugins: alle Plugins unter Werkzeuge aktivieren
+		- Editor: Vervollständigung aller Wörter, ab 2 Zeichen vervollständigen
+	- dvd::rip:
+		- Desktop als Zielverzeichnis
+		- unrar statt rar zum packen nutzen
+	- (HomeBank:
+		- Einstellungen: Geldbörse, Importieren, Exportieren /home/wayne/Dropbox/Dokumente/HomeBank
+		- Backup laden)
+	- gedit: 
+		- Zeilennummerierung
+		- Klammern betonen
+		- Aktulle Zeile betonen
+	- checkgmail: 
+		- bs.sonntag@googlemail.com
+		- save password
+		- Sprache Deutsch
+		- 24h-clock
+		- in den Autostart legen aktivieren
+	- TeXMakerx: 
+		- Kodierung auf ISO-8859-15 setzen
+		- Schnelles Erzeugen mit PDFlatex + View PDF
+		- Deutsche Rechtschreibung "/usr/share/myspell/de_DE.dic"
+	- Lyx:
+		- Sichere Orig. beim Speichern deaktivieren
+		- Rechtschreibung: Hunspell, de_DE als Alternative, bei der Eingabe testen
+	- Empathy:
+		- Kontos hinzufügen: ICQ: 281324035, xxxxxxxxx; MSN: rueffer01@live.de
+		- Einstellungen:
+			- Automatisch beim Start verbinden deaktivieren
+			- Alle Benachrichtigungen aktivieren, [also 1. deaktivieren]
+			- Klänge auch für an- und abmeldende Kontakte
+			- Rechtschreibprüfung deaktivieren
+		- Ansicht: kompakte Ansicht
+	- Firefox 3.6.xx:
+		- Allgemein: 
+			- Meldungen nicht anzeigen: Neustarten, Beenden, Privates Browsen, PDFs als Kopie speichern
+		- Einstellungen:
+			- Grundsätzlich: Letzte Sitzungen Laden, Home: www.google.de statt "http://start.fedoraproject.org/", Download-Speicherort nachfragen
+		- Anwendungen: PDF mit AdobeReader in Firefox
+		- Oberfläche:
+			- kleine Symbole verwenden
+			- keine Status/Addon-Bar
+			- keine Lesezeichenleiste
+		- Addons nachinstallieren:
+			- AdBlock Plus
+			- AdBlock Plus Popup-Addon
+			- DownloadHelper (Speichern in /home/USER/Desktop)
+			- TubeStop
+			- Fission
+			- Xmarks (Bookmarks und Passwörter synchronisieren, automatisch, nicht nachfragen, Sync beim Beenden)
+
+
+	Konoslenbefehle für Installation:
+=========================================
+su -c 'yum -y --nogpgcheck install http://dnmouse.org/autoplus-1.1-7.noarch.rpm' && sudo yum groupinstall 'office/productivity' && sudo yum install gcc bash-completion soundconverter lame gscan2pdf pdfshuffler gparted texlive-* AdobeReader_deu gthumb homebank gnome-chemistry-utils pyrenamer pinta dvdrip cdrdao cdrecord mjpegtools mkisofs mplayer ogmtools unrar subtitleripper vcdimager xine-ui xvid4conf dvdauthor vlc gimp urbanterror hedgewars gnome-games gbrainy dvipng liveusb-creator lyx texmakerx stellarium gnome-commander xournal wxmaxima gnuplot scidavis referencer guake root-* gspiceui checkgmail nautilus-image-converter gresistor geany geany-plugins* xterm automake autoconf pokerth smc smc-music ipython scipy python-matplotlib eclipse eclipse-pydev eclipse-cdt gnomedo
+
+
+	Konsolenbefehle für Aktualisierung:
+===========================================
+sudo yum update [&& sudo yum clean all]
+
+
+	Anmerkung zum Deinstallieren:
+=====================================
+ggf. sind Abhängigkeitsprobleme und zusätlich relevante Pakete in "Install-Uninstall-Undefined.txt" zufinden.

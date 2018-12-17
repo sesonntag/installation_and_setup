@@ -1,0 +1,212 @@
+===========================================================================
+           =====================================================
+           |      __           ___            __      ___      |
+           |     |  |  |\  |  |   |  |\  /|  |           |     |
+           |     |__   | \ |  |   |  | \/ |  |--      ---|     |
+           |     |__|  |  \|  |___|  |    |  |__      ___|     |
+           |        |                                          |
+           =====================================================
+===========================================================================
+Datum: 2012-07-13                                               Zeit: 21:30
+
+
+	Installieren [Softwareverwaltung] Liste s.u.:
+=====================================================
+    - Erster Installationsprozess: [MANUELL!!!]
+	- fedorautils installieren
+    - Zweiter Installationsprozess: [MANUELL!!!]
+	- Programme in fedorautils installieren (s.u.)
+    - Dritter Installationsprozess:
+	- Dropbox installieren, vorher auf aktuellste Version checken
+    - Vierter Installationsprozess:
+	- encfs installieren
+	- Ordner filebox im Home Folder anlegen
+	- filebox aus ~/Dropbox/safe mounten
+    - Fünfter Installationsprozess:
+	- Office/Productivity installieren
+    - Sechster Installationsprozess:
+	- gnome-desktop installieren
+	- firefox installieren
+	- thunderbird installieren
+	- mozplugger installieren
+	- gcc installieren
+	- g++ installieren
+	- bash-completion installieren
+	- meld installieren
+	- ghex installieren
+	- system-config-language installieren
+	- system-config-printer installieren
+	- soundconverter installieren
+	- lame installieren
+	- gscan2pdf installieren
+	- pdfshuffler installieren
+	- gparted installieren
+	- texlive-* installieren
+	- ipe installieren
+	- gthumb installieren
+	- gnome-chemistry-utils installieren
+	- pyrenamer installieren
+	- pinta installieren
+	- vlc installieren
+	- gimp installieren
+	- gnome-games installieren
+	- dvipng installieren
+	- unetbootin installieren
+	- \\lyx installieren
+	- stellarium installieren
+	- root-system installieren
+	- automake installieren
+	- autoconf installieren
+	- ipython scipy python-matplotlib ipython-gui installieren
+	- p7zip p7zip-plugins installieren
+	- gedit gedit-plugins installieren
+	- ImageMagick installieren
+	- hunspell hunspell-de installieren
+	- aspell aspell-de installieren
+	- nano installieren
+	- lynx installieren
+	- \\kicad installieren
+	- nautilus-image-converter installieren
+	- nautilus-open-terminal installieren
+	- evince-djvu installieren
+	- java-1.7.0-openjdk installieren
+	- icedtea-web installieren
+	- sushi installieren
+	- gwibber installieren
+	- sound-juicer installieren
+	- htop installieren
+	- screen installieren
+	- inkscape dia pstoedit sketch installieren
+	- geany geany-plugins-* installieren
+  	- shutter installieren
+	- octave installieren
+	- gnome-tweak-tool installieren
+	- vino vinagre installieren
+
+
+	Einrichten:
+===================
+	- ggf. Num auf Tastatur einschalten
+	- Dropbox-Ordner ins Home-Verzeichnis kopieren
+	- grub2-Datei mit sudo-Rechten anpassen "gedit /etc/default/grub":
+	  - timeout-Zeile kopieren und auf 0 setzen, Original auskommentieren
+	  - SYSFONT=True in SYSFONT=latarcyrheb-sun16 ändern
+	  - "grub2-mkconfig -o /boot/grub2/grub.cfg && grub2-install /dev/sda" mit sudo-Rechten ausführen
+	- System updaten
+	- Neustarten
+	- fedorautils installieren 'su -c "curl http://master.dl.sourceforge.net/project/fedorautils/fedorautils.repo -o /etc/yum.repos.d/fedorautils.repo && yum install fedorautils"' und starten:
+		- 1. Essential tweaks & tasks
+		  - Install Microsoft core fonts, Enable DVD playback, Install multimedia codecs, Install Adobe flash plugin
+		- 2. Install additional software:
+		  - Install Arista Transcoder, Install HandBreake, Install Skype, Install Teamviewer
+	- Installation aller benötigten Programme (s.u.), dabei Dropbox starten
+	- filebox/Dropbox/EncFS
+		- (filebox Ordner im Home-Verzeichnis erstellen: "mkdir filebox")
+		- (filebox einhängen: "encfs ~/Dropbox/safe ~/filebox")
+		- .atilla in ~ anlegen
+		- filebox Skript von ~/filebox/system/argus nach /usr/local/bin kopieren, checken ob gnome-shell ausgewählt und ausführbar und in gnome-session-properties eintragen
+  - Neustarten
+	- System Settings:
+		- Brightness & Lock: No Dim, No Locking
+		- Region and Language: English; Formats: German(Germany); Input: German ; Copy System	
+		- Keyboard: Activate Terminal auf Strg+Alt+T
+		- ggf. Mouse/Touchpad: Enable mouse clicks with touchpad
+		- Details: Defaults: Mail-Thunderbird, Videos-VLC, Bilder-gThumb
+	- Advanced Configuration -> Shell:
+		- Show date in clock
+		- Show week date in calendar
+	 	- Arrangement of buttons on the titlebar -> all
+		- Laptop lid close on both: hibernate
+	- Reihenfolge der Favoriten im Menü:
+	        - Firefox
+	        - Thunderbird
+	        - Empathy
+	        - Skype
+	        - Taschenrechner
+	        - Nautilus
+	- Vorlagen in ~/Templates einfügen
+	- Standarddateitypen: 
+		- Bilder: gThumb
+		- Latex: geany
+		- \\Lyx: Lyx
+		- Musik: Rhythmbox
+		- Skript: geany
+		- Vektorgraphik: Inkscape
+		- Video: VLC
+	- Geany:
+		- Plugins: Activate Latex and Spellcheck (KOMA by default; Spell while typing, /usr/share/hunspell with de_DE)
+    - Editor: activate line wrap, width 2, use spaces
+		- Tools: x-terminal-emulator -> gnome-terminal
+		- Templates: Mail is bs.sonntag@googlemail.com
+	- gThumb 
+		- View: Sort by ... File name
+		- check: Preferences -> View: Fit to window if larger
+	- Skype: 
+		- Automatisches Einloggen
+		- Style auf GTK+ stellen
+	- Handbrake:
+		- Preferences -> Audio/Subtitles: Language: Deutsch
+	- LibreOffice:
+		- Options -> Languages: alles bis auf User interface: German(Germany)/Euro(Germany)
+		- Tools -> AutoCorrect Options: Accept with Tab, Length: 5
+	- \\Lyx:
+		- Language: Spellcheck via Hunspell und de_DE als alternative Sprache, continous Spellcheck
+	- Gwibber:
+		- Twitter account einrichten
+		- An rechter Seite platzieren und Breite minimieren
+		- nicht beim Systemstart starten
+	- Empathy:
+		- Konto für Netzwerkchat überspringen, Konto für ICQ anlegen, ISO8859-15 setzen, Konto für Facebook anlegen mit sebastian.sonntag.31 und Alias Sebastian Sonntag
+		- Einstellungen:
+			- Benachrichtigen: Alle bis auf Abwesenheit aktivieren, das deaktivieren
+			- Klänge: Deaktiviere "bei Abwesenheit oder Beschäftigung deaktivieren", aber aktiviere: Kontakt meldet sich an/ab
+			- Rechtschreibprüfung: Keine 
+  - Thunderbird 13.0:
+		- Ordner aus ~/filebox/system/software/thunderbird laden und als .thunderbird in Home-Ornder entpacken
+		- Thunderbird erstmals starten, Systemmigration bei Emails und Überprüfung zustimmen und in Offline-Modus gehen
+	- Firefox 13.0:
+		- Einstellungen:
+			- Fenster und Tabs von letzte Sitzung anzeigen
+			- #Homepage ist nicht "", sondern "about:home"
+			- Keinen Downloadmanager nutzen
+			- Immer Fragen, wohin speichern
+			- Contents immer als German[Germany] anzeigen
+			- Applications: PDF nicht mit mozplugger, sondern document viewer
+		- Allgemein: 
+			- about:config: print: letter->a4
+		- Oberfläche:
+			- kleine Symbole verwenden
+			- keine Status/Addon-Bar
+			- ggf. Download-Button rechts oben entfernen
+			- Download Manager oben mittig zwischen Home und LastPass
+		- Addons nachinstallieren bzw. einrichten:
+			- 0. Siphon
+			- 1. AdBlock Plus (Englischer Filter zusätzlich)
+			- 2. DownloadHelper (Speichern in ~/Downloads, 20 Downloads max, keine Sozialen Netzwerke)
+			- 3. Xmarks (keine Search bars, Lesezeichen von Server, "vorher fragen" deaktivieren)
+			- 4. Last Pass (save password)
+			- 5. AdBlock Plus Popup-Addon
+			- 6. Download Manager (mini mode)
+			- 7. German Dictionary
+			- 8. PDF Viewer
+
+
+	Konoslenbefehle für Installation:
+=========================================
+sudo yum update && wget https://www.dropbox.com/download?dl=packages/fedora/nautilus-dropbox-1.4.0-1.fedora.x86_64.rpm && sudo yum install -y libgnome && sudo rpm -ivh nautilus-dropbox-1.4.0-1.fedora.x86_64.rpm && sudo rm nautilus-dropbox-1.4.0-1.fedora.x86_64* && sudo yum install -y fuse-encfs && mkdir ~/filebox && encfs ~/Dropbox/safe ~/filebox && sudo yum groupinstall -y 'office/productivity' && sudo yum install -y @gnome-desktop firefox thunderbird mozplugger gcc gcc-c++ bash-completion meld ghex system-config-language soundconverter lame gscan2pdf pdfshuffler gparted texlive-* ipe gthumb gnome-chemistry-utils pyrenamer pinta vlc gimp gnome-games dvipng unetbootin stellarium root-* automake autoconf ipython scipy python-matplotlib ipython-gui p7zip p7zip-plugins gedit gedit-plugins ImageMagick hunspell hunspell-de aspell aspell-de nano lynx nautilus-image-converter nautilus-open-terminal evince-djvu java-1.7.0-openjdk icedtea-web sushi gwibber sound-juicer htop screen inkscape dia pstoedit sketch geany geany-plugins-* shutter octave gnome-tweak-tool vino vinagre
+
+
+	Probleme:
+=================
+- hplip* system-config-printer nicht installiert, da hplip nicht mit (unserem) Drucker geht
+
+
+	Konsolenbefehle für Aktualisierung:
+===========================================
+sudo yum update
+
+
+	Anmerkung zum Deinstallieren:
+=====================================
+ggf. sind Abhängigkeitsprobleme und zusätlich relevante Pakete in "fedora_17_archiv.txt" zu finden.
+

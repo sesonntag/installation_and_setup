@@ -1,0 +1,116 @@
+#!/bin/bash
+#
+#**********************************************************************************************
+# Title: Fedora 22 Installationsskript.txt
+# Description: Shell-skript zur Installation und Einrichtung von Fedora 22
+# Author: Sebastian Sonntag
+# Date: 2015-05-29
+# Time: 12:00
+# License: 
+#**********************************************************************************************
+
+
+#======================
+### System einrichten #
+#======================
+#   - Fedy
+#     - Suchen der aktuellsten Version und in Terminal laufen lassen
+#     - Programme und Codecs installieren
+#   - Installationsskript aufrufen und durchlaufen lassen
+#   - Dropbox erstmals starten
+#   - ggf. Num auf Tastatur einschalten
+#   - Systemeinstellungen:
+#     - Region and Language: Deutsch/Deutschland
+#     - Keyboard: Activate Terminal auf Strg+Alt+T
+#     - ggf. Mouse/Touchpad: Activate Click with Pad
+#     - System Info: Defaults: Videos-VLC, Bilder-gThumb
+#     - Printer:
+#   - Desktop:
+#     - Reihenfolge der Favoriten im Menü:
+#       - Files
+#       - Firefox
+#       - Evolution
+#       - Skype
+#       - Gedit
+#       - Terminal
+#       - gitg
+#       - Unison
+#       - VLC
+#   - Vorlagen in ~/Templates einfügen
+#   - Standarddateitypen: 
+#     - Bilder: gThumb
+#     - Musik: Rythmbox
+#     - Skript und Text: gedit
+#     - Vektorgrafik: Inkscape
+#     - Video: VLC
+#   - gThumb 
+#     - View: Sort by ... File name
+#     - Preferences -> View: Fit to window if larger
+#   - Handbrake:
+#     - Preferences -> Audio/Subtitles: Language: Deutsch
+#   - Gedit:
+#     - 1. Line numbers
+#     - 2. Highlite current line
+#     - 3. Highlite matching brackets
+#     - 4. Insert tab width as spaces with 2
+#     - 5. Automatic Identation
+#     - 6. Plugin für Code Comment aktivieren
+#     - 7. Plugin für Embedded Terminal aktivieren
+#     - 8. Plugin für Smart Spaces aktivieren
+#     - 9. Plugin für Word Completion aktivieren
+#   - LibreOffice:
+#     - Options -> Languages: Default currency: EUR (German(Germany)), Default language for documents (German(Germany))
+#     - Tools -> AutoCorrect Options: Accept with Tab, Length: 5
+#   - Gwibber:
+#     - Twitter account einrichten
+#     - nicht beim Systemstart starten
+#   - Cisco Systems VPN Client Uni Siegen Version:
+#     - auf "http://www.zimt.uni-siegen.de/dienste/netzwerk/vpn/" die Webinstallation starten
+#     - Skript manuell downloaden und mit sudo Rechten ausführen
+#     - Cisco Any Connect starten und "vpn.uni-siege 24.x:n.de" als connect to eintragen
+#   - ggf. Steam:
+#     - Erstmals Programm öffnen und Clienten automatisch nachladen
+#     - im Client Sprache auf Deutsch einstellen
+#     - Bibliothek öffnen und gekaufte Spiele checken und entsprechend downloaden
+
+
+
+
+
+
+#=============================================================================================================================
+### Beginn des eigentlichen Skriptteils #
+#=============================================================================================================================
+
+# Zurückgehalten: system-config-language system-config-printer unetbootin lyx
+
+### Deklaration wichtiger Variablen #
+list_of_apps="gnome-desktop firefox mozplugger gcc gcc-c++ bash-completion meld ghex soundconverter lame gscan2pdf pdfshuffler gparted texlive-* gthumb gnome-chemistry-utils pyrenamer pinta vlc gimp gimp-resynthesizer gnome-games dvipng stellarium root root-* automake autoconf pokerth ipython scipy python-matplotlib ipython-gui python-setuptools python-progressbar p7zip gedit gedit-plugins ImageMagick hunspell-de aspell-de nano nautilus-image-converter nautilus-open-terminal nautilus-sendto evince-djvu gconf-editor gnome-tweak-tool java-1.8.0-openjdk icedtea-web htop screen inkscape dia pstoedit sketch sound-juicer unrar sushi gwibber hplip* desktop-backgrounds-gnome gnome-backgrounds backintime-gnome latexila filezilla 0ad 0ad-data openssh-server samba system-config-samba cifs-utils fdupes unison unison-gtk diffpdf jabref tree ioquake3 hedgewars supertuxkart supertux terminator cmake git git-gui gitg codeblocks gphotoframe"
+
+list_of_group_packages="'office/productivity'"
+
+
+
+
+
+### Updaten des Systems #
+echo ""
+echo "Das System wird aktualisiert und die Installation aller benoetigten Programme und Tools vorbereitet..."
+sleep 5
+sudo dnf update
+echo "Das System ist up to date. Naechster Schritt: Installation aller Gruppen-Pakete"
+echo ""
+sleep 5
+
+
+### Installation von group packages # 
+sudo dnf groupinstall -y $list_of_group_packages
+echo "Gruppen-Pakete erfolgreich installiert. Naechster Schritt: Programme installieren"
+echo "" 
+sleep 5
+
+
+### Installation von Paketen # 
+sudo dnf install -y $list_of_apps
+echo "Dialog-packages erfolgreich installiert. Das System ist soweit fertig installiert. Ein Neustart wird empfohlen!"
+echo "" 
