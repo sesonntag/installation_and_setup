@@ -4,7 +4,6 @@ dropbox
 google-earth-pro
 keka
 mactex
-macvim
 pokerth
 pycharm-ce
 skype
