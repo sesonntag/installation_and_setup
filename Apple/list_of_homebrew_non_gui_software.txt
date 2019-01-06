@@ -2,6 +2,7 @@ autoconf
 automake
 cairo
 calc
+colordiff
 coreutils
 cscope
 ctags
@@ -41,8 +42,10 @@ p11-kit
 pcre
 pcre2
 perl
+pipenv
 pixman
 pkg-config
+pyenv
 python
 rbenv
 rbenv-default-gems
