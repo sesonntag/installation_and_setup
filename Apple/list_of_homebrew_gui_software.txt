@@ -1,5 +1,4 @@
 android-platform-tools
-caffeine
 clipy
 dropbox
 google-earth-pro
