@@ -4,7 +4,7 @@
 # Title: install_new_mac.sh
 # Description: setup a new (or fresh macos installed) mac
 # Author: Sebastian Sonntag
-# Date: 2019-02-23
+# Date: 2019-02-24
 # License:
 #*******************************************************************************
 
