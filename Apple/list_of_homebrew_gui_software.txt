@@ -1,6 +1,8 @@
 android-platform-tools
+caffeine
 clipy
 dropbox
+dupeguru
 google-earth-pro
 keka
 mactex
