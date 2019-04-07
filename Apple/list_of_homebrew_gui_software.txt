@@ -1,15 +1,11 @@
-android-platform-tools
-caffeine
 clipy
 dropbox
 dupeguru
 google-earth-pro
 keka
 mactex
-pokerth
 pycharm-ce
 skype
-sourcetree
 teamviewer
 texpad
 visual-studio-code
