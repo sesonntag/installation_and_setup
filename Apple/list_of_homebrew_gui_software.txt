@@ -6,12 +6,12 @@ keka
 libreoffice
 libreoffice-language-pack
 mactex
+macvim
 meld
 pycharm-ce
 skype
 sourcetree
 teamviewer
 texpad
-vimr
 visual-studio-code
 zoomus
