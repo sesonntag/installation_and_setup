@@ -1,0 +1,6 @@
+# Modernized from /etc/apt/sources.list
+Types: deb
+URIs: https://www.deb-multimedia.org/
+Suites: trixie
+Components: main non-free
+Signed-By: /usr/share/keyrings/deb-multimedia-keyring.pgp
